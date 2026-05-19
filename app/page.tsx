@@ -101,8 +101,8 @@ function buildFeatured() {
     [pool[i], pool[j]] = [pool[j], pool[i]];
   }
   
-  const picked = [];
-  const tierCounts = {};
+  const picked: typeof pool = [];
+  const tierCounts: Record<string, number> = {};
   
   for (const f of pool) {
     if (picked.length >= 8) break;
