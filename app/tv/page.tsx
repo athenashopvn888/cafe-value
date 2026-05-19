@@ -555,11 +555,9 @@ function AddOnsCard({ items, hiIdx }: { items: Item[]; hiIdx: number }) {
    VERTICAL TICKER — slides up, 3s per section
    ══════════════════════════════════════════════ */
 const TICKER_SLIDES = [
-  "🔥 Cafe Value — 654 Spadina Ave, Toronto",
+  "🔥 Cafe Value — 654 Spadina Ave,
   "200+ Strains In Stock",
-  "Open 10:00 AM - 10:00 PM !!",
-  "Exotic $20/g  •  Premium $15/g  •  AAA+ $10/g",
-  "AA $4/g  •  Budget $3.33/g",
+  "Open 24 Hours",
   "ALL SALES ARE FINAL",
   "🎮 Play Games at cafevaluecannabisdispensary.com/games",
 ];
