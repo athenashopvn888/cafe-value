@@ -82,13 +82,13 @@ export default function FAQPage() {
         <Navbar />
 
         {/* FAQ Banner */}
-        <div className={styles.bannerWrap}>
+        <section style={{ width: "100%", overflow: "hidden", marginTop: "92px" }}>
           <img
             src="/banners/cafe-value-faq.png"
             alt="Cafe Value FAQ — Your Questions Answered"
-            className={styles.bannerImg}
+            style={{ width: "100%", height: "auto", display: "block", objectFit: "contain" }}
           />
-        </div>
+        </section>
 
         <div className={styles.content}>
           <h1 className={styles.pageTitle}>Frequently Asked Questions</h1>
@@ -114,7 +114,7 @@ export default function FAQPage() {
               Call us at <strong>(437) 577-2589</strong> or visit us at 654 Spadina Ave, Toronto.
             </p>
             <a
-              href="https://www.google.com/maps/dir/?api=1&destination=605+Center+St+Toronto+ON"
+              href="https://www.google.com/maps/dir//654+Spadina+Ave,+Toronto,+ON+M5S+2H7"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.ctaLink}
