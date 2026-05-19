@@ -51,7 +51,7 @@ export default function BlogAdmin() {
 
   function handleLogin(e: React.FormEvent) {
     e.preventDefault();
-    if (username === "seowiz" && password === "ottawaseo") {
+    if (username === "seowiz" && password === "torontoseo") {
       setCookie("blog_auth", "seowiz_ok", 30);
       setLoggedIn(true);
       setLoginError("");
@@ -68,7 +68,7 @@ export default function BlogAdmin() {
   async function fetchPosts() {
     setLoading(true);
     try {
-      const res = await fetch(`${APPS_SCRIPT_URL}?action=blog&store=SCC01&admin=1`);
+      const res = await fetch(`${APPS_SCRIPT_URL}?action=blog&store=CHC01&admin=1`);
       const data = await res.json();
       setPosts(data.posts || []);
     } catch {
@@ -112,7 +112,7 @@ export default function BlogAdmin() {
         <div className={styles.loginCard}>
           <div className={styles.loginLogo}>📝</div>
           <h1 className={styles.loginTitle}>Blog Admin</h1>
-          <p className={styles.loginSub}>Spirit Corner Cannabis</p>
+          <p className={styles.loginSub}>Cafe Value</p>
           <form onSubmit={handleLogin} className={styles.loginForm}>
             <input
               type="text"

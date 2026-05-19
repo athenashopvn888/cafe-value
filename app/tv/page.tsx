@@ -555,13 +555,13 @@ function AddOnsCard({ items, hiIdx }: { items: Item[]; hiIdx: number }) {
    VERTICAL TICKER — slides up, 3s per section
    ══════════════════════════════════════════════ */
 const TICKER_SLIDES = [
-  "🔥 Spirit Corner Cannabis — 251 Dalhousie St, Ottawa",
+  "🔥 Cafe Value — 654 Spadina Ave, Toronto",
   "200+ Strains In Stock",
-  "Open 24hrs !!",
+  "Open 10:00 AM - 10:00 PM !!",
   "Exotic $20/g  •  Premium $15/g  •  AAA+ $10/g",
   "AA $4/g  •  Budget $3.33/g",
   "ALL SALES ARE FINAL",
-  "🎮 Play Games at spiritcornercannabis.com/games",
+  "🎮 Play Games at cafevaluecannabis.com/games",
 ];
 
 function VerticalTicker() {
@@ -687,20 +687,20 @@ export default function TVMenuPage() {
 
   return (
     <div className={styles.tvPage}>
-      {/* Floating particles */}
+      {/* ── Floating Particles ── */}
       <div className={styles.particles}>
-        {Array.from({length: 25}, (_, i) => {
-          const size = 4 + Math.random() * 8;
-          const colors = ['rgba(220,38,38,.12)','rgba(245,158,11,.10)','rgba(59,130,246,.10)','rgba(16,185,129,.08)','rgba(168,85,247,.08)'];
+        {Array.from({length: 30}, (_, i) => {
+          const size = 6 + Math.random() * 10;
+          const colors = ['rgba(99,102,241,.35)','rgba(168,85,247,.30)','rgba(34,211,238,.30)','rgba(52,211,153,.25)','rgba(251,146,60,.20)','rgba(244,63,94,.20)'];
           const color = colors[i % colors.length];
           return (
             <span key={i} className={styles.dot} style={{
               width: size, height: size,
               left: `${5 + Math.random() * 90}%`,
               background: color,
-              boxShadow: `0 0 ${size*3}px ${color}`,
-              animationDuration: `${18 + Math.random() * 22}s`,
-              animationDelay: `${-Math.random() * 25}s`,
+              boxShadow: `0 0 ${size*2}px ${color}`,
+              animationDuration: `${14 + Math.random() * 20}s`,
+              animationDelay: `${-Math.random() * 20}s`,
             }} />
           );
         })}

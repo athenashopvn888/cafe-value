@@ -28,7 +28,7 @@ export async function generateMetadata({
 
   return {
     title: catInfo.config.seoTitle || `${catInfo.config.name} — ${items.length} Products`,
-    description: catInfo.config.seoIntro || `Shop ${items.length} ${catInfo.config.name.toLowerCase()} at Spirit Corner Cannabis.`,
+    description: catInfo.config.seoIntro || `Shop ${items.length} ${catInfo.config.name.toLowerCase()} at Cafe Value.`,
   };
 }
 
@@ -52,6 +52,17 @@ export default async function ItemsCategoryPage({
   return (
     <main className={styles.main}>
       <Navbar />
+
+      {/* Category Banner */}
+      {config.banner && (
+        <section className={styles.bannerSection}>
+          <img
+            src={config.banner}
+            alt={`${config.name} — Cafe Value`}
+            className={styles.bannerImg}
+          />
+        </section>
+      )}
 
       {/* Hero */}
       <section className={styles.hero} style={{ "--cat-color": config.color } as React.CSSProperties}>
@@ -105,12 +116,12 @@ export default async function ItemsCategoryPage({
 
           {/* Visit CTA */}
           <div className={styles.visitCta}>
-            <h3 className={styles.visitTitle}>Visit Spirit Corner Cannabis</h3>
+            <h3 className={styles.visitTitle}>Visit Cafe Value</h3>
             <p className={styles.visitText}>
-              251 Dalhousie St, Ottawa, ON K1N 1E7 · Open 24 Hours
+              654 Spadina Ave, Toronto, ON M5S 2H7 · Open 10:00 AM - 10:00 PM
             </p>
             <a
-              href="https://maps.app.goo.gl/yVDY1PZ8qSwAjQ6s6"
+              href="https://maps.app.goo.gl/6VfAL3aJzuRDL3gbA"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.visitBtn}

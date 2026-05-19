@@ -14,7 +14,7 @@ const ALL_LINKS = [
   { href: "/items/prerolls", label: "Pre-Rolls" },
   { href: "/items/vapes", label: "Nic Vape" },
   { href: "/items/vape-disposables", label: "THC Vape" },
-  { href: "/items/concentrates", label: "Extracts" },
+  { href: "/items/concentrates", label: "Concentrates" },
   { href: "/items/magic", label: "Magic Stuff" },
   { href: "/items/cigarettes", label: "Cigarettes" },
   { href: "/items/add-ons", label: "Accessories" },
@@ -33,8 +33,8 @@ export default function Navbar() {
       <div className={styles.topBar}>
         <Link href="/" className={styles.logo}>
           <img
-            src="/banners/logo.jpg"
-            alt="Spirit Corner Cannabis — Ottawa Dispensary"
+            src="/banners/logo.png"
+            alt="Cafe Value — Toronto Dispensary"
             className={styles.logoImg}
           />
         </Link>

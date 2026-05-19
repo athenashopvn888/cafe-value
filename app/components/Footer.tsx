@@ -9,22 +9,22 @@ export default function Footer() {
           {/* Column 1 — Store Description */}
           <div className={styles.col}>
             <div className={styles.brand}>
-              SPIRIT<span className={styles.fire}>✨</span>CORNER
+              CAFE<span className={styles.fire}>🔥</span>VALUE
             </div>
             <p className={styles.desc}>
-              Your Local Cannabis Dispensary At 251 Dalhousie St, Ottawa. Visit
-              Spirit Corner Cannabis For Premium Flower, Edibles, Vapes &amp; More.
-              Open 24 Hours.
+              Your Local Cannabis Dispensary At 654 Spadina Ave, Toronto. Visit
+              Cafe Value For Premium Flower, Edibles, Vapes &amp; More.
+              Open 10:00 AM - 10:00 PM.
             </p>
             <div className={styles.buttons}>
               <a
-                href="tel:+16136122107"
+                href="tel:+14375772589"
                 className={styles.btnPrimary}
               >
                 Call Now
               </a>
               <a
-                href="https://maps.app.goo.gl/yVDY1PZ8qSwAjQ6s6"
+                href="https://maps.app.goo.gl/6VfAL3aJzuRDL3gbA"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.btnSecondary}
@@ -39,17 +39,17 @@ export default function Footer() {
             <h3 className={styles.colTitle}>Contact Info</h3>
             <div className={styles.infoBlock}>
               <span className={styles.infoLabel}>Address:</span>
-              <span>251 Dalhousie St</span>
-              <span>Ottawa, ON K1N 1E7</span>
+              <span>654 Spadina Ave</span>
+              <span>Toronto, ON M5S 2H7</span>
               <span>Canada</span>
             </div>
             <div className={styles.infoBlock}>
               <span className={styles.infoLabel}>Phone:</span>
-              <span><a href="tel:+16136122107" style={{color: "inherit"}}>(613) 612-2107</a></span>
+              <span><a href="tel:+14375772589" style={{color: "inherit"}}>(437) 577-2589</a></span>
             </div>
             <div className={styles.infoBlock}>
               <span className={styles.infoLabel}>Hours:</span>
-              <span className={styles.highlight}>Open 24 Hours</span>
+              <span className={styles.highlight}>Open 10:00 AM - 10:00 PM</span>
             </div>
           </div>
 
@@ -70,13 +70,13 @@ export default function Footer() {
               <Link href="/faq">FAQ</Link>
               <Link href="/delivery">Delivery (Coming Soon)</Link>
               <Link href="/games">Games Arcade</Link>
-              <Link href="/info/ottawa-weed-dispensary">Ottawa Dispensary</Link>
-              <Link href="/info/cheap-weed-ottawa">Cheap Weed Ottawa</Link>
-              <Link href="/info/native-cigarettes-ottawa">Native Cigarettes</Link>
-              <Link href="/info/weed-store-near-gatineau">Weed Store Near Gatineau</Link>
+              <Link href="/info/toronto-weed-dispensary">Toronto Dispensary</Link>
+              <Link href="/info/cheap-weed-toronto">Cheap Weed Toronto</Link>
+              <Link href="/info/native-cigarettes-toronto">Native Cigarettes</Link>
+              <Link href="/info/weed-store-near-mississauga">Weed Store Near Mississauga</Link>
               <Link href="/contact">Contact Us</Link>
               <a
-                href="https://maps.app.goo.gl/yVDY1PZ8qSwAjQ6s6"
+                href="https://maps.app.goo.gl/6VfAL3aJzuRDL3gbA"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -88,7 +88,7 @@ export default function Footer() {
 
         <div className={styles.bottom}>
           <p>
-            © {new Date().getFullYear()} Spirit Corner Cannabis. Must be 19+ to
+            © {new Date().getFullYear()} Cafe Value. Must be 19+ to
             enter. Please consume responsibly.
           </p>
         </div>

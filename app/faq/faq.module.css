@@ -3,10 +3,22 @@
   background: var(--bg-primary);
 }
 
+.bannerWrap {
+  padding: 88px 24px 0;
+}
+.bannerImg {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
 .content {
   max-width: 900px;
   margin: 0 auto;
-  padding: 120px 24px 80px;
+  padding: 40px 24px 80px;
 }
 
 .pageTitle {

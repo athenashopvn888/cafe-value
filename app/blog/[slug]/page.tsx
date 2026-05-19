@@ -57,7 +57,7 @@ export default function BlogPostPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`${APPS_SCRIPT_URL}?action=blog&store=SCC01`)
+    fetch(`${APPS_SCRIPT_URL}?action=blog&store=CHC01`)
       .then((r) => r.json())
       .then((data) => {
         const found = (data.posts || []).find((p: BlogPost) => p.slug === slug);
@@ -128,7 +128,7 @@ export default function BlogPostPage() {
 
         <div className={styles.cta}>
           <p>
-            <strong>Spirit Corner Cannabis</strong> — 251 Dalhousie St, Ottawa · Open 24 Hours · (613) 612-2107
+            <strong>Cafe Value</strong> — 654 Spadina Ave, Toronto · Open 10:00 AM - 10:00 PM · (437) 577-2589
           </p>
           <Link href="/exotic" className={styles.ctaBtn}>Browse Our Menu</Link>
         </div>

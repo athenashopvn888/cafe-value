@@ -4,13 +4,13 @@ import Footer from "../components/Footer";
 import styles from "./contact.module.css";
 
 export const metadata: Metadata = {
-  title: "Contact Us — Spirit Corner Cannabis | 251 Dalhousie St, Ottawa",
+  title: "Contact Us — Cafe Value | 654 Spadina Ave, Toronto",
   description:
-    "Visit Spirit Corner Cannabis at 251 Dalhousie St, Ottawa, ON K1N 1E7. Open 24 hours, 7 days a week. Walk-ins welcome. ByWard Market.",
+    "Visit Cafe Value at 654 Spadina Ave, Toronto, ON M5S 2H7. Open 10:00 AM - 10:00 PM, 7 days a week. Walk-ins welcome. Spadina.",
   openGraph: {
-    title: "Contact Spirit Corner Cannabis — Ottawa Dispensary",
+    title: "Contact Cafe Value — Toronto Dispensary",
     description:
-      "251 Dalhousie St, Ottawa. Open 24 hours, 7 days a week. Premium cannabis, always fire.",
+      "654 Spadina Ave, Toronto. Open 10:00 AM - 10:00 PM, 7 days a week. Premium cannabis, always fire.",
   },
 };
 
@@ -23,10 +23,10 @@ export default function ContactPage() {
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>
-            Visit <span className={styles.heroAccent}>Spirit Corner</span>
+            Visit <span className={styles.heroAccent}>Cafe Value</span>
           </h1>
           <p className={styles.heroSub}>
-            251 Dalhousie St · Ottawa, ON K1N 1E7
+            654 Spadina Ave · Toronto, ON M5S 2H7
           </p>
         </div>
       </section>
@@ -40,14 +40,14 @@ export default function ContactPage() {
               <div className={styles.infoIcon}>📍</div>
               <h2 className={styles.infoTitle}>Location</h2>
               <p className={styles.infoText}>
-                251 Dalhousie St
+                654 Spadina Ave
                 <br />
-                Ottawa, ON K1N 1E7
+                Toronto, ON M5S 2H7
                 <br />
-                <span className={styles.infoMuted}>ByWard Market &amp; Bathurst</span>
+                <span className={styles.infoMuted}>Spadina &amp; Bathurst</span>
               </p>
               <a
-                href="https://maps.app.goo.gl/YFPDuRCjwiuZL4J86"
+                href="https://www.google.com/maps/dir//654+Spadina+Ave,+Toronto,+ON+M5S+2H7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.infoBtn}
@@ -63,36 +63,36 @@ export default function ContactPage() {
               <div className={styles.hoursTable}>
                 <div className={styles.hoursRow}>
                   <span>Monday</span>
-                  <span className={styles.hoursTime}>24 Hours</span>
+                  <span className={styles.hoursTime}>10:00 AM - 10:00 PM</span>
                 </div>
                 <div className={styles.hoursRow}>
                   <span>Tuesday</span>
-                  <span className={styles.hoursTime}>24 Hours</span>
+                  <span className={styles.hoursTime}>10:00 AM - 10:00 PM</span>
                 </div>
                 <div className={styles.hoursRow}>
                   <span>Wednesday</span>
-                  <span className={styles.hoursTime}>24 Hours</span>
+                  <span className={styles.hoursTime}>10:00 AM - 10:00 PM</span>
                 </div>
                 <div className={styles.hoursRow}>
                   <span>Thursday</span>
-                  <span className={styles.hoursTime}>24 Hours</span>
+                  <span className={styles.hoursTime}>10:00 AM - 10:00 PM</span>
                 </div>
                 <div className={styles.hoursRow}>
                   <span>Friday</span>
-                  <span className={styles.hoursTime}>24 Hours</span>
+                  <span className={styles.hoursTime}>10:00 AM - 10:00 PM</span>
                 </div>
                 <div className={styles.hoursRow}>
                   <span>Saturday</span>
-                  <span className={styles.hoursTime}>24 Hours</span>
+                  <span className={styles.hoursTime}>10:00 AM - 10:00 PM</span>
                 </div>
                 <div className={styles.hoursRow}>
                   <span>Sunday</span>
-                  <span className={styles.hoursTime}>24 Hours</span>
+                  <span className={styles.hoursTime}>10:00 AM - 10:00 PM</span>
                 </div>
               </div>
               <div className={styles.openBadge}>
                 <span className={styles.openDot}></span>
-                Open 24/7 — Never Closed
+                Open Daily — 10AM to 10PM
               </div>
             </div>
 
@@ -131,14 +131,14 @@ export default function ContactPage() {
           {/* Map */}
           <div className={styles.mapSection}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.0!2d-75.6928!3d45.4292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce04c8524ed59b%3A0x5836a82438336497!2s251+Dalhousie+St%2C+Ottawa%2C+ON+K1N+1E7!5e0!3m2!1sen!2sca!4v1"
+              src="https://maps.google.com/maps?q=654%20Spadina%20Ave,%20Toronto,%20ON%20M5S%202H7&t=&z=15&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="400"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Spirit Corner Cannabis — 251 Dalhousie St, Ottawa"
+              title="Cafe Value — 654 Spadina Ave, Toronto"
             ></iframe>
           </div>
         </div>

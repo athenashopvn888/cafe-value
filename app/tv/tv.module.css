@@ -7,44 +7,51 @@
 .tvPage {
   position: fixed;
   inset: 0;
-  background: #f8f9fc;
+  background: #06080f;
   background-image: var(--bgImg, none);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: #1a1a2e;
+  color: #e2e8f0;
   font: 650 clamp(18px,1.25vw,22px)/1.18 'Outfit', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   overflow: hidden;
   margin: 0;
   padding: 0;
 }
 
-/* Soft warm gradient wash */
+/* Ambient animated gradient behind everything */
 .tvPage::before {
   content: "";
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(ellipse 100% 80% at 10% 10%, rgba(220,38,38,.04) 0%, transparent 50%),
-    radial-gradient(ellipse 90% 70% at 90% 90%, rgba(59,130,246,.04) 0%, transparent 50%),
-    radial-gradient(ellipse 80% 60% at 50% 40%, rgba(245,158,11,.03) 0%, transparent 45%);
+    radial-gradient(ellipse 120% 80% at 15% 20%, rgba(99,102,241,.12) 0%, transparent 60%),
+    radial-gradient(ellipse 100% 70% at 85% 80%, rgba(168,85,247,.10) 0%, transparent 55%),
+    radial-gradient(ellipse 80% 60% at 50% 50%, rgba(34,211,238,.06) 0%, transparent 50%);
   pointer-events: none;
   z-index: 0;
+  animation: ambientShift 12s ease-in-out infinite alternate;
+}
+@keyframes ambientShift {
+  0% { opacity: .7; transform: scale(1); }
+  100% { opacity: 1; transform: scale(1.08); }
 }
 
-/* Floating particles */
+/* ── FLOATING PARTICLES ── */
 .particles {
   position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden;
 }
 .dot {
-  position: absolute; border-radius: 50%; opacity: 0;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
   animation: floatDot linear infinite;
 }
 @keyframes floatDot {
-  0%   { transform: translateY(110vh) scale(.6); opacity: 0; }
+  0%   { transform: translateY(110vh) scale(.5); opacity: 0; }
   10%  { opacity: 1; }
   90%  { opacity: 1; }
-  100% { transform: translateY(-10vh) scale(1.3); opacity: 0; }
+  100% { transform: translateY(-10vh) scale(1.2); opacity: 0; }
 }
 
 /* ── CANVAS (3840×2160 auto-fit) ── */
@@ -64,23 +71,12 @@
   box-sizing: border-box;
 }
 
-/* ── TITLE BAR ── */
+/* ── TITLE BAR (HIDDEN — more room for cards) ── */
 .titleBar {
-  height: 110px;
-  border-radius: 18px;
-  width: calc(100% + 276px);
-  margin-left: -138px;
-  flex-shrink: 0;
-  box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.55);
-  border: 2px solid rgba(255, 255, 255, 0.22);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 16px 34px rgba(2, 6, 23, 0.18);
+  display: none !important;
+  height: 0;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  padding: 0 30px;
+  flex-shrink: 0;
 }
 
 .titleInner {
@@ -146,7 +142,7 @@
   50% { opacity: 0.4; box-shadow: 0 0 20px #34d399; }
 }
 
-/* ── STAGE ── */
+/* ── STAGE (glassmorphic panel behind grid) ── */
 .stage {
   flex: 1 1 auto;
   min-height: 0;
@@ -155,11 +151,11 @@
   box-sizing: border-box;
   margin-left: 90px;
   margin-right: 90px;
-  background: rgba(255,255,255,0.65);
-  border: 1px solid rgba(0,0,0,0.06);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  box-shadow: 0 22px 58px rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,0.8);
+  background: rgba(15,20,35,0.55);
+  border: 1px solid rgba(148,163,184,0.10);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 22px 58px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.04);
   position: relative;
 }
 
@@ -171,7 +167,7 @@
   border-radius: 22px;
   z-index: 0;
   pointer-events: none;
-  background: linear-gradient(180deg, rgba(255,255,255,0.4) 0%, transparent 100%);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, transparent 100%);
 }
 
 /* ── GRID — 4 cols × 2 rows (like the original TVMenu) ── */
@@ -183,7 +179,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(0, 0.30fr);
   grid-template-rows: repeat(2, minmax(0, 1fr));
-  gap: 32px;
+  gap: 36px;
   grid-template-areas:
     "EXOTIC  PREMIUM AAA    ADDONS"
     "AA      BUDGET  OZ     ADDONS";
@@ -191,23 +187,17 @@
 
 /* ── CARD ── */
 .card {
-  background: #ffffff;
-  border: 1px solid rgba(0,0,0,0.06);
-  border-radius: 20px;
+  background: rgba(15,20,35,0.75);
+  border: 1px solid rgba(148,163,184,0.12);
+  border-radius: 18px;
   overflow: hidden;
-  /* Raised 3D: layered shadow stack */
-  box-shadow:
-    0 1px 2px rgba(0,0,0,0.04),
-    0 4px 8px rgba(0,0,0,0.04),
-    0 12px 24px rgba(0,0,0,0.06),
-    0 24px 48px rgba(0,0,0,0.08),
-    0 2px 0 rgba(255,255,255,0.9) inset;
-  transform: translateY(-2px);
+  box-shadow: 0 22px 48px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
   display: flex;
   flex-direction: column;
   position: relative;
   z-index: 1;
-  transition: transform 300ms ease, box-shadow 300ms ease;
+  color: #e2e8f0;
 }
 
 .cardExotic  { grid-area: EXOTIC; }
@@ -219,193 +209,166 @@
 .cardAddons  { grid-area: ADDONS; }
 
 /* ── Tier-specific card styling ── */
-/* EXOTIC: white card with animated crimson border stroke */
+/* EXOTIC: dark glass + subtle crimson accent */
 .tierExotic {
-  background: #ffffff !important;
-  border: 2px solid transparent;
-  background-clip: padding-box;
+  background: rgba(15,10,18,0.82) !important;
+  border: 1px solid rgba(220,38,38,.25);
   overflow: visible;
-  color: #1a1a2e;
-  animation: borderPulseRed 3s ease-in-out infinite;
-  box-shadow:
-    0 2px 4px rgba(220,38,38,0.06),
-    0 8px 16px rgba(220,38,38,0.08),
-    0 20px 40px rgba(220,38,38,0.10),
-    0 32px 64px rgba(0,0,0,0.08),
-    0 2px 0 rgba(255,255,255,0.9) inset;
-  transform: translateY(-3px);
-}
-@keyframes borderPulseRed {
-  0%, 100% {
-    border-color: rgba(220,38,38,.20);
-    box-shadow: 0 2px 4px rgba(220,38,38,.06), 0 8px 16px rgba(220,38,38,.08), 0 20px 40px rgba(220,38,38,.10), 0 32px 64px rgba(0,0,0,.08);
-    transform: translateY(-3px);
-  }
-  50% {
-    border-color: rgba(220,38,38,.55);
-    box-shadow: 0 4px 8px rgba(220,38,38,.10), 0 12px 24px rgba(220,38,38,.14), 0 28px 56px rgba(220,38,38,.12), 0 40px 80px rgba(0,0,0,.10);
-    transform: translateY(-5px);
-  }
+  color: #e2e8f0;
+  animation: exoticRedAura 3.5s ease-in-out infinite;
 }
 
-/* PREMIUM: white card with animated amber border stroke */
+/* PREMIUM: dark glass + subtle amber accent */
 .tierPremium {
-  background: #ffffff !important;
-  border: 2px solid transparent;
+  background: rgba(18,14,10,0.82) !important;
+  border: 1px solid rgba(245,158,11,.25);
   overflow: visible;
-  color: #1a1a2e;
-  animation: borderPulseGold 3.2s ease-in-out infinite;
-  box-shadow:
-    0 2px 4px rgba(245,158,11,0.06),
-    0 8px 16px rgba(245,158,11,0.08),
-    0 20px 40px rgba(245,158,11,0.10),
-    0 32px 64px rgba(0,0,0,0.08),
-    0 2px 0 rgba(255,255,255,0.9) inset;
-  transform: translateY(-3px);
-}
-@keyframes borderPulseGold {
-  0%, 100% {
-    border-color: rgba(245,158,11,.22);
-    box-shadow: 0 2px 4px rgba(245,158,11,.06), 0 8px 16px rgba(245,158,11,.08), 0 20px 40px rgba(245,158,11,.10), 0 32px 64px rgba(0,0,0,.08);
-    transform: translateY(-3px);
-  }
-  50% {
-    border-color: rgba(245,158,11,.60);
-    box-shadow: 0 4px 8px rgba(245,158,11,.10), 0 12px 24px rgba(245,158,11,.14), 0 28px 56px rgba(245,158,11,.12), 0 40px 80px rgba(0,0,0,.10);
-    transform: translateY(-5px);
-  }
+  color: #e2e8f0;
+  animation: premiumGoldAura 3.8s ease-in-out infinite;
 }
 
-/* AAA+: white card with animated sapphire border stroke */
+/* AAA+: dark glass + subtle sapphire accent */
 .tierAaa {
-  background: #ffffff !important;
-  border: 2px solid transparent;
+  background: rgba(10,12,22,0.82) !important;
+  border: 1px solid rgba(59,130,246,.25);
   overflow: visible;
-  color: #1a1a2e;
-  animation: borderPulseBlue 3.4s ease-in-out infinite;
-  box-shadow:
-    0 2px 4px rgba(59,130,246,0.06),
-    0 8px 16px rgba(59,130,246,0.08),
-    0 20px 40px rgba(59,130,246,0.10),
-    0 32px 64px rgba(0,0,0,0.08),
-    0 2px 0 rgba(255,255,255,0.9) inset;
-  transform: translateY(-3px);
-}
-@keyframes borderPulseBlue {
-  0%, 100% {
-    border-color: rgba(59,130,246,.20);
-    box-shadow: 0 2px 4px rgba(59,130,246,.06), 0 8px 16px rgba(59,130,246,.08), 0 20px 40px rgba(59,130,246,.10), 0 32px 64px rgba(0,0,0,.08);
-    transform: translateY(-3px);
-  }
-  50% {
-    border-color: rgba(59,130,246,.55);
-    box-shadow: 0 4px 8px rgba(59,130,246,.10), 0 12px 24px rgba(59,130,246,.14), 0 28px 56px rgba(59,130,246,.12), 0 40px 80px rgba(0,0,0,.10);
-    transform: translateY(-5px);
-  }
+  color: #e2e8f0;
+  animation: aaaBlueAura 4.0s ease-in-out infinite;
 }
 
-/* AA: clean white with copper accent */
 .tierAa {
-  background: #ffffff;
-  border: 2px solid rgba(234,88,12,.15);
-  animation: borderPulseCopper 3.6s ease-in-out infinite;
-  box-shadow:
-    0 2px 4px rgba(234,88,12,0.04),
-    0 8px 16px rgba(234,88,12,0.06),
-    0 18px 36px rgba(0,0,0,0.08),
-    0 2px 0 rgba(255,255,255,0.9) inset;
-  transform: translateY(-2px);
+  background: rgba(18,14,10,0.78);
+  border: 1px solid rgba(234,88,12,.18);
+  color: #e2e8f0;
 }
-@keyframes borderPulseCopper {
-  0%, 100% { border-color: rgba(234,88,12,.12); transform: translateY(-2px); }
-  50% { border-color: rgba(234,88,12,.40); transform: translateY(-3px); }
-}
-
-/* BUDGET: clean white with emerald accent */
 .tierBudget {
-  background: #ffffff;
-  border: 2px solid rgba(22,163,74,.12);
-  animation: borderPulseGreen 3.8s ease-in-out infinite;
-  box-shadow:
-    0 2px 4px rgba(22,163,74,0.04),
-    0 8px 16px rgba(22,163,74,0.06),
-    0 18px 36px rgba(0,0,0,0.08),
-    0 2px 0 rgba(255,255,255,0.9) inset;
-  transform: translateY(-2px);
-}
-@keyframes borderPulseGreen {
-  0%, 100% { border-color: rgba(22,163,74,.12); transform: translateY(-2px); }
-  50% { border-color: rgba(22,163,74,.40); transform: translateY(-3px); }
+  background: rgba(10,18,14,0.78);
+  border: 1px solid rgba(22,163,74,.18);
+  color: #e2e8f0;
 }
 
-/* Top-3 subtle corner accent glow */
+/* EXOTIC: subtle red glow aura */
+@keyframes exoticRedAura {
+  0%, 100% { filter: drop-shadow(0 0 8px rgba(220,38,38,.15)) drop-shadow(0 0 24px rgba(220,38,38,.08)); }
+  50% { filter: drop-shadow(0 0 16px rgba(220,38,38,.30)) drop-shadow(0 0 48px rgba(220,38,38,.15)); }
+}
+@keyframes premiumGoldAura {
+  0%, 100% { filter: drop-shadow(0 0 8px rgba(245,158,11,.15)) drop-shadow(0 0 24px rgba(245,158,11,.08)); }
+  50% { filter: drop-shadow(0 0 16px rgba(245,158,11,.30)) drop-shadow(0 0 48px rgba(245,158,11,.15)); }
+}
+@keyframes aaaBlueAura {
+  0%, 100% { filter: drop-shadow(0 0 8px rgba(59,130,246,.15)) drop-shadow(0 0 24px rgba(59,130,246,.08)); }
+  50% { filter: drop-shadow(0 0 16px rgba(59,130,246,.30)) drop-shadow(0 0 48px rgba(59,130,246,.15)); }
+}
+
+/* Subtle colored edge glow behind top-3 */
 .tierExotic::before {
-  content: ""; position: absolute; inset: -8px; border-radius: calc(20px + 8px);
+  content: ""; position: absolute; inset: -16px; border-radius: calc(18px + 16px);
   pointer-events: none; z-index: 0;
-  background: radial-gradient(circle at 10% 10%, rgba(220,38,38,.10), transparent 40%), radial-gradient(circle at 90% 90%, rgba(220,38,38,.06), transparent 40%);
-  filter: blur(12px); opacity: 0.8;
+  background: radial-gradient(circle at 30% 25%, rgba(220,38,38,.18), transparent 55%), radial-gradient(circle at 70% 70%, rgba(220,38,38,.12), transparent 55%);
+  filter: blur(14px); opacity: 0.7;
+  animation: exoticRedBreathe 3.5s ease-in-out infinite;
 }
 .tierPremium::before {
-  content: ""; position: absolute; inset: -8px; border-radius: calc(20px + 8px);
+  content: ""; position: absolute; inset: -14px; border-radius: calc(18px + 14px);
   pointer-events: none; z-index: 0;
-  background: radial-gradient(circle at 10% 10%, rgba(245,158,11,.10), transparent 40%), radial-gradient(circle at 90% 90%, rgba(245,158,11,.06), transparent 40%);
-  filter: blur(12px); opacity: 0.75;
+  background: radial-gradient(circle at 30% 30%, rgba(245,158,11,.16), transparent 55%), radial-gradient(circle at 70% 65%, rgba(245,158,11,.10), transparent 55%);
+  filter: blur(14px); opacity: 0.65;
+  animation: premiumGoldBreathe 3.8s ease-in-out infinite;
 }
 .tierAaa::before {
-  content: ""; position: absolute; inset: -8px; border-radius: calc(20px + 8px);
+  content: ""; position: absolute; inset: -14px; border-radius: calc(18px + 14px);
   pointer-events: none; z-index: 0;
-  background: radial-gradient(circle at 10% 10%, rgba(59,130,246,.10), transparent 40%), radial-gradient(circle at 90% 90%, rgba(59,130,246,.06), transparent 40%);
-  filter: blur(12px); opacity: 0.75;
+  background: radial-gradient(circle at 30% 30%, rgba(59,130,246,.16), transparent 55%), radial-gradient(circle at 70% 65%, rgba(59,130,246,.10), transparent 55%);
+  filter: blur(14px); opacity: 0.65;
+  animation: aaaGlowBreathe 4.0s ease-in-out infinite;
 }
 
-/* ── PREMIUM TIER HEADER OVERRIDES ── */
-/* Exotic: deep black to crimson luxury */
-.tierExotic .cardHeader {
-  background: linear-gradient(135deg, #1a0a0a 0%, #4a0e0e 30%, #b91c1c 60%, #7f1d1d 85%, #1a0a0a 100%) !important;
-  background-size: 200% 200% !important;
-  animation: shimmerExoticHdr 6s ease-in-out infinite !important;
+@keyframes exoticRedBreathe {
+  0%, 100% { transform: scale(0.97); opacity: 0.45; }
+  50% { transform: scale(1.02); opacity: 0.75; }
 }
-@keyframes shimmerExoticHdr {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+@keyframes premiumGoldBreathe {
+  0%, 100% { transform: scale(0.97); opacity: 0.40; }
+  50% { transform: scale(1.02); opacity: 0.70; }
 }
-
-/* Premium: rich amber-gold metallic sheen */
-.tierPremium .cardHeader {
-  background: linear-gradient(135deg, #1c1300 0%, #92610a 25%, #f59e0b 45%, #d97706 65%, #78450a 85%, #1c1300 100%) !important;
-  background-size: 200% 200% !important;
-  animation: shimmerPremHdr 6.5s ease-in-out infinite !important;
-}
-@keyframes shimmerPremHdr {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+@keyframes aaaGlowBreathe {
+  0%, 100% { transform: scale(0.97); opacity: 0.40; }
+  50% { transform: scale(1.02); opacity: 0.70; }
 }
 
-/* AAA+: deep navy to sapphire */
+/* TOP 3: light header text on dark cards */
+.tierExotic .cardHeader,
+.tierPremium .cardHeader,
 .tierAaa .cardHeader {
-  background: linear-gradient(135deg, #0a0e24 0%, #1e3a6e 25%, #3b82f6 45%, #2563eb 65%, #1e3a5c 85%, #0a0e24 100%) !important;
-  background-size: 200% 200% !important;
-  animation: shimmerAaaHdr 7s ease-in-out infinite !important;
+  color: #f1f5f9;
+  text-shadow: 0 2px 8px rgba(0,0,0,.4);
 }
-@keyframes shimmerAaaHdr {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
-
-/* AA: warm copper gradient */
-.tierAa .cardHeader {
-  background: linear-gradient(135deg, #1a0c00 0%, #7c3f10 30%, #ea580c 55%, #c2410c 75%, #451a03 100%) !important;
+.tierExotic .headerDeal,
+.tierPremium .headerDeal,
+.tierAaa .headerDeal {
+  color: rgba(241,245,249,.8);
 }
 
-/* Budget: deep emerald gradient */
-.tierBudget .cardHeader {
-  background: linear-gradient(135deg, #022c22 0%, #065f46 30%, #16a34a 55%, #0d9488 75%, #022c22 100%) !important;
+/* ═══════════════════════════════════
+   ADD ONS CARD — full styling
+   ═══════════════════════════════════ */
+.cardAddons {
+  grid-area: ADDONS;
+  background: rgba(10,18,14,0.78);
+  border: 1px solid rgba(52,211,153,.15);
 }
 
-/* OZ: rose gradient */
-.tierOz .cardHeader {
-  background: linear-gradient(135deg, #1a0510 0%, #831843 30%, #db2777 55%, #be185d 75%, #1a0510 100%) !important;
+.addonsBody {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow: hidden;
+  min-height: 0;
 }
+
+/* Hero section — keep the big image */
+.addonsHero {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.addonsHeroImg {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid rgba(2,6,23,.10);
+  box-shadow: 0 8px 18px rgba(2,6,23,.10);
+}
+
+/* List header */
+.addonsListHead {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+  font-weight: 900;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #111827;
+  background: rgba(22,163,74,.08);
+  border: 2px solid rgba(22,163,74,.15);
+  border-radius: 10px;
+  margin-bottom: 4px;
+}
+
+/* Scrollable list */
+.addonsList {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+/* ── CARD HEADER ── */
 .cardHeader {
   font-weight: 900;
   letter-spacing: 2px;
@@ -555,12 +518,12 @@
 .mediaFrame {
   width: 100%;
   aspect-ratio: 1/1;
-  background: #fff;
-  border: 2px solid rgba(2, 6, 23, 0.10);
+  background: rgba(15,20,35,0.6);
+  border: 1px solid rgba(148,163,184,0.10);
   border-radius: 14px;
   padding: 8px;
   box-sizing: border-box;
-  box-shadow: 0 10px 20px rgba(2, 6, 23, 0.10);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
   overflow: hidden;
 }
 
@@ -568,7 +531,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: rgba(15,20,35,0.4);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -579,7 +542,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background: #fff;
+  background: rgba(15,20,35,0.4);
   opacity: 0;
   transition: opacity 900ms ease-in-out;
   z-index: 1;
@@ -590,22 +553,34 @@
   z-index: 2;
 }
 
-/* THC badge on image — top right */
+/* Fade-out: slow dissolve */
+.budImgFadeOut {
+  opacity: 0;
+  transition: opacity 900ms ease-in-out;
+}
+/* Fade-in: slow appear */
+.budImgFadeIn {
+  opacity: 1;
+  z-index: 2;
+  transition: opacity 900ms ease-in-out;
+}
+
+/* THC badge on image — top right, big */
 .imgThcBadge {
   position: absolute;
   top: 10px;
   right: 10px;
   z-index: 12;
-  background: rgba(255,255,255,0.90);
+  background: rgba(0,0,0,0.70);
   backdrop-filter: blur(8px);
-  color: #059669;
+  color: #34d399;
   font-weight: 900;
   font-size: 28px;
   padding: 8px 14px;
   border-radius: 10px;
   letter-spacing: 0.5px;
-  border: 1px solid rgba(5,150,105,0.25);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  border: 1px solid rgba(52,211,153,0.30);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.35);
 }
 
 /* Sale badge */
@@ -632,13 +607,13 @@
 
 /* Detail card below image */
 .detailCard {
-  background: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(10px);
-  color: #0b1220;
+  color: #e2e8f0;
   border-radius: 14px;
   padding: 10px 12px;
-  border: 2px solid rgba(2, 6, 23, 0.10);
-  box-shadow: 0 12px 22px rgba(2, 6, 23, 0.10);
+  border: 1px solid rgba(148,163,184,0.08);
+  box-shadow: 0 12px 22px rgba(0,0,0,0.20);
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -673,8 +648,8 @@
 }
 
 .detailSep { opacity: 0.35; }
-.detailThc { color: #065f46; }
-.detailPrice { font-weight: 900; }
+.detailThc { color: #34d399; }
+.detailPrice { font-weight: 900; color: #e2e8f0; }
 
 /* Type badges (Sativa/Indica/Hybrid) */
 .typeBadges {
@@ -694,19 +669,19 @@
 }
 
 .typeSativa {
-  background: rgba(234, 179, 8, 0.12);
-  border: 1px solid rgba(234, 179, 8, 0.3);
-  color: #b45309;
+  background: rgba(234, 179, 8, 0.15);
+  border: 1px solid rgba(234, 179, 8, 0.25);
+  color: #fbbf24;
 }
 .typeIndica {
-  background: rgba(124, 58, 237, 0.12);
-  border: 1px solid rgba(124, 58, 237, 0.3);
-  color: #7c3aed;
+  background: rgba(167, 139, 250, 0.15);
+  border: 1px solid rgba(167, 139, 250, 0.25);
+  color: #a78bfa;
 }
 .typeHybrid {
-  background: rgba(45, 106, 79, 0.12);
-  border: 1px solid rgba(45, 106, 79, 0.3);
-  color: #2d6a4f;
+  background: rgba(52, 211, 153, 0.15);
+  border: 1px solid rgba(52, 211, 153, 0.25);
+  color: #34d399;
 }
 
 /* ── LIST SIDE ── */
@@ -723,9 +698,9 @@
 .listHead {
   display: grid;
   align-items: center;
-  background: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(8px);
-  border: 2px solid rgba(2, 6, 23, 0.08);
+  border: 1px solid rgba(148,163,184,0.08);
   border-radius: 12px;
   overflow: hidden;
 }
@@ -739,8 +714,8 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 20px;
-  color: #0b1220;
-  background: linear-gradient(180deg, rgba(2, 6, 23, 0.04), rgba(255, 255, 255, 1));
+  color: rgba(148,163,184,0.8);
+  background: rgba(255,255,255,0.03);
 }
 
 /* Rows */
@@ -750,22 +725,22 @@
   min-height: 68px;
   border-radius: 12px;
   margin-top: 6px;
-  background: rgba(248,249,252,0.85);
+  background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(148,163,184,0.06);
   overflow: hidden;
   transition: background-color 160ms ease, transform 160ms ease, box-shadow 300ms ease;
 }
 
 .rowHi {
-  background: rgba(248,249,252,0.50) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
   transform: translateY(-1px);
 }
 
 .mc {
   padding: 10px 8px;
-  border-top: 1px solid rgba(2, 6, 23, 0.06);
-  color: #0b1220;
+  border-top: 1px solid rgba(148,163,184,0.06);
+  color: #e2e8f0;
 }
 
 .mcStrain {
@@ -781,13 +756,13 @@
 .mcThc {
   font-weight: 900;
   font-size: 26px;
-  color: #2e7d32;
+  color: #34d399;
   text-align: center;
 }
-/* On dark-bg tiers (Exotic white is handled, Premium/AAA+ are dark metals) */
+/* All tiers use same THC color on dark bg */
 .tierPremium .mcThc,
 .tierAaa .mcThc {
-  color: #43a047;
+  color: #34d399;
 }
 
 .mcPrice {
@@ -842,8 +817,17 @@
 .pLab {
   font-size: 22px;
   font-weight: 900;
-  color: rgba(26,26,46,.55);
+  color: rgba(148,163,184,.75);
   letter-spacing: .4px;
+  text-shadow: none;
+}
+/* All tiers: consistent label color on dark bg */
+.tierAa .pLab,
+.tierBudget .pLab,
+.tierExotic .pLab,
+.tierPremium .pLab,
+.tierAaa .pLab {
+  color: rgba(148,163,184,.75);
   text-shadow: none;
 }
 
@@ -853,7 +837,7 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
-  padding: 8px;
+  padding: 10px;
   overflow: hidden;
   min-height: 0;
   position: relative;
@@ -863,28 +847,23 @@
 .addonRow {
   display: flex;
   align-items: center;
-  gap: 6px;
-  background: rgba(255, 255, 255, 0.16);
-  border: 1px solid rgba(2, 6, 23, 0.08);
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(148,163,184,0.06);
   border-radius: 10px;
-  padding: 6px;
+  padding: 10px 12px;
   min-height: 0;
   transition: all 160ms ease;
 }
 
 .addonRowHi {
-  background: rgba(255, 255, 255, 0.01) !important;
+  background: rgba(52, 211, 153, 0.08) !important;
   transform: translateY(-1px);
 }
 
+/* HIDE small thumbnails in addon list */
 .addonImg {
-  width: 48px;
-  height: 48px;
-  border-radius: 8px;
-  object-fit: cover;
-  border: 1px solid rgba(2, 6, 23, 0.08);
-  flex-shrink: 0;
-  background: #fff;
+  display: none !important;
 }
 
 .addonInfo {
@@ -894,9 +873,9 @@
 
 .addonName {
   font-weight: 800;
-  font-size: 16px;
-  color: #0b1220;
-  line-height: 1.15;
+  font-size: 24px;
+  color: #e2e8f0;
+  line-height: 1.2;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -906,33 +885,16 @@
 
 .addonPrice {
   font-weight: 900;
-  font-size: 18px;
-  color: #2e7d32;
+  font-size: 26px;
+  color: #34d399;
 }
 
-/* ── TICKER (vertical scroll, section by section) ── */
+/* ── TICKER (HIDDEN — more room for cards) ── */
 .ticker {
-  height: 100px;
-  border-radius: 18px;
-  width: calc(100% + 276px);
-  margin-left: -138px;
-  flex-shrink: 0;
-  box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.55);
-  border: 2px solid rgba(255, 255, 255, 0.22);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 16px 34px rgba(2, 6, 23, 0.18);
+  display: none !important;
+  height: 0;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 30px;
-  color: #fff;
-  font-weight: 900;
-  letter-spacing: 1.2px;
-  font-size: 42px;
-  text-shadow: 0 3px 0 rgba(0,0,0,.35), 0 8px 24px rgba(0,0,0,.55);
+  flex-shrink: 0;
 }
 
 .tickerInner {
@@ -1007,9 +969,9 @@
 }
 .tagSale { background:#dc2626; color:#fff; }
 .tagHot { background:#16a34a; color:#fff; }
-.tagSat { background:rgba(234,179,8,.12); color:#b45309; border:1px solid rgba(234,179,8,.3); }
-.tagInd { background:rgba(147,51,234,.12); color:#7c3aed; border:1px solid rgba(147,51,234,.3); }
-.tagHyb { background:rgba(16,185,129,.12); color:#059669; border:1px solid rgba(16,185,129,.3); }
+.tagSat { background:rgba(250,204,21,.20); color:#facc15; border:1px solid rgba(250,204,21,.40); }
+.tagInd { background:rgba(192,132,252,.20); color:#c084fc; border:1px solid rgba(192,132,252,.40); }
+.tagHyb { background:rgba(52,211,153,.20); color:#34d399; border:1px solid rgba(52,211,153,.40); }
 
 /* ── Price colors ── */
 .priceGreen { color:#c2410c; }
@@ -1360,32 +1322,32 @@
   color:#111827; border-color:rgba(0,0,0,.18);
 }
 
-/* ── OZ detail text (dark on pink) ── */
+/* ── OZ detail text (dark bg) ── */
 .ozDetailName {
-  font-weight:900; font-size:26px; color:#1e1e2e;
+  font-weight:900; font-size:26px; color:#e2e8f0;
   line-height:1.1; padding-left:4px;
 }
 .ozDetailMeta {
   display:flex; flex-wrap:wrap; gap:6px 12px;
   padding-left:4px; font-weight:700; font-size:20px;
 }
-.ozDetailThc { color:#831843; font-weight:900; }
-.ozDetailSep { opacity:0.35; color:#1e1e2e; }
-.ozDetailPrice { color:#9f1239; font-weight:900; }
+.ozDetailThc { color:#f472b6; font-weight:900; }
+.ozDetailSep { opacity:0.35; color:#94a3b8; }
+.ozDetailPrice { color:#fb7185; font-weight:900; }
 
 /* ── AddOns detail card (under hero) ── */
 .addonsDetailCard {
-  background:rgba(255,255,255,.20); backdrop-filter:blur(8px);
-  border:2px solid rgba(2,6,23,.10); border-radius:10px;
+  background:rgba(255,255,255,.06); backdrop-filter:blur(8px);
+  border:1px solid rgba(148,163,184,.08); border-radius:10px;
   padding:8px 10px; text-align:center;
 }
 .addonsDetailName {
-  font-weight:900; font-size:18px; color:#0b1220;
+  font-weight:900; font-size:18px; color:#e2e8f0;
   line-height:1.15; overflow:hidden; text-overflow:ellipsis;
   display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;
 }
 .addonsDetailPrice {
-  font-weight:900; font-size:22px; color:#16a34a;
+  font-weight:900; font-size:22px; color:#34d399;
   letter-spacing:0.5px; margin-top:3px;
 }
 
