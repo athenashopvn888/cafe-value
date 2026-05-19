@@ -93,25 +93,27 @@ const TIERS = [
 
 /* ── Build featured strains dynamically from real inventory ── */
 function buildFeatured() {
-  // Prioritize: hot strains first, then sale, then highest THC
-  const hot = allFlowers.filter((f) => f.isHot);
-  const sale = allFlowers.filter((f) => f.isSale && !f.isHot);
-  const rest = allFlowers
-    .filter((f) => !f.isHot && !f.isSale && f.image)
-    .sort((a, b) => parseFloat(b.thc) - parseFloat(a.thc));
-
-  const pool = [...hot, ...sale, ...rest];
-  // Pick up to 8, ensuring variety across tiers
-  const picked: typeof pool = [];
-  const tierCounts: Record<string, number> = {};
+  const pool = [...allFlowers].filter(f => f.image);
+  
+  // Shuffle pool securely
+  for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [pool[i], pool[j]] = [pool[j], pool[i]];
+  }
+  
+  const picked = [];
+  const tierCounts = {};
+  
   for (const f of pool) {
     if (picked.length >= 8) break;
     const tc = tierCounts[f.tier] || 0;
-    if (tc >= 3) continue; // max 3 per tier
-    if (!f.image) continue; // skip strains without images
+    if (tc >= 2) continue; // max 2 per tier
+    // Prevent duplicate strains with the same name
+    if (picked.some(p => p.name === f.name)) continue;
     picked.push(f);
     tierCounts[f.tier] = tc + 1;
   }
+  
   return picked.map((f) => ({
     name: f.name,
     sku: f.sku,
@@ -294,7 +296,7 @@ export default function HomePage() {
         <div className={styles.container}>
           <div className={styles.sectionBanner}>
             <img
-              src="/banners/hot_right_now_in_neon_glow.webp"
+              src="/banners/cafe-value-hot-right-now.png"
               alt="Hot Right Now — Staff picks and top sellers"
               className={styles.sectionBannerImg}
             />
