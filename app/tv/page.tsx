@@ -561,7 +561,7 @@ const TICKER_SLIDES = [
   "Exotic $20/g  •  Premium $15/g  •  AAA+ $10/g",
   "AA $4/g  •  Budget $3.33/g",
   "ALL SALES ARE FINAL",
-  "🎮 Play Games at cafevaluecannabis.com/games",
+  "🎮 Play Games at cafevaluecannabisdispensary.com/games",
 ];
 
 function VerticalTicker() {

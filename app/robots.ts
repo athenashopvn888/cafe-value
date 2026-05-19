@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: "https://cafevaluecannabis.com/sitemap.xml",
+    sitemap: "https://cafevaluecannabisdispensary.com/sitemap.xml",
   };
 }

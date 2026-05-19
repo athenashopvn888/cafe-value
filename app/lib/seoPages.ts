@@ -32,7 +32,7 @@ export const SEO_PAGES: SeoPageData[] = [
       },
       {
         heading: "Beyond Flower — Edibles, Vapes, Concentrates & More",
-        body: "Cafe Value is more than just a flower shop. We carry a comprehensive selection of cannabis edibles (gummies, chocolates, baked goods), vape pens and disposable vapes, concentrates (shatter, wax, hash, diamonds, live resin), pre-rolled joints, magic mushrooms, native cigarettes, rolling papers, and accessories. Our live digital menu at cafevaluecannabis.com updates in real time so you always know exactly what's in stock before you make the trip.",
+        body: "Cafe Value is more than just a flower shop. We carry a comprehensive selection of cannabis edibles (gummies, chocolates, baked goods), vape pens and disposable vapes, concentrates (shatter, wax, hash, diamonds, live resin), pre-rolled joints, magic mushrooms, native cigarettes, rolling papers, and accessories. Our live digital menu at cafevaluecannabisdispensary.com updates in real time so you always know exactly what's in stock before you make the trip.",
       },
       {
         heading: "Open 10:00 AM - 10:00 PM in the Heart of Spadina",
@@ -52,9 +52,9 @@ export const SEO_PAGES: SeoPageData[] = [
       { q: "What are the hours for Cafe Value?", a: "We are open 10:00 AM - 10:00 PM a day, 7 days a week, 365 days a year. Walk in anytime — no appointment needed. Whether it's 2 PM or 9 PM, our staff is here to help." },
       { q: "What cannabis products does Cafe Value carry?", a: "We carry 200+ strains of cannabis flower across 5 quality tiers (Exotic, Premium, AAA+, AA, Budget), plus edibles, vapes, concentrates, pre-rolls, magic mushrooms, native cigarettes, and accessories. Our menu updates in real time online." },
       { q: "What is the cheapest weed at Cafe Value?", a: "Our Budget tier starts at $3/g with value ounces from $40. Our AA tier is $4/g. Every tier includes our Buy 2g Get 1g FREE promotion, making our prices even more competitive." },
-      { q: "Does Cafe Value have a live menu?", a: "Yes! Our online menu at cafevaluecannabis.com updates in real time with current stock, prices, and availability. You can see exactly what we have before you visit." },
+      { q: "Does Cafe Value have a live menu?", a: "Yes! Our online menu at cafevaluecannabisdispensary.com updates in real time with current stock, prices, and availability. You can see exactly what we have before you visit." },
       { q: "What makes Cafe Value different from other Toronto dispensaries?", a: "Three things set us apart: (1) We're open 10:00 AM - 10:00 PM, (2) our transparent 5-tier pricing system means no confusing markups, and (3) every purchase includes our Buy 2g Get 1g FREE promotion. Plus we carry one of Toronto's largest selections with over 200 strains." },
-      { q: "Can I check stock before visiting?", a: "Absolutely. Visit cafevaluecannabis.com to see our live menu. All flower, edibles, vapes, and accessories are listed with real-time stock status, THC levels, and pricing." },
+      { q: "Can I check stock before visiting?", a: "Absolutely. Visit cafevaluecannabisdispensary.com to see our live menu. All flower, edibles, vapes, and accessories are listed with real-time stock status, THC levels, and pricing." },
       { q: "Is there parking near Cafe Value?", a: "Yes. Free street parking is available in the evenings on Center St and surrounding streets. Paid lots are available nearby during the day. We're also easily accessible via OC Transpo." },
     ],
   },
@@ -158,7 +158,7 @@ export const SEO_PAGES: SeoPageData[] = [
       },
       {
         heading: "Full Menu — Cannabis, Edibles, Vapes & More",
-        body: "When you make the trip across the bridge, make it count. Cafe Value carries a full selection including 200+ flower strains, edibles, vape pens, disposable vapes, concentrates (shatter, wax, hash, live resin), pre-rolled joints, magic mushrooms, native cigarettes, and accessories. Check our live online menu at cafevaluecannabis.com before you visit to see exactly what's in stock.",
+        body: "When you make the trip across the bridge, make it count. Cafe Value carries a full selection including 200+ flower strains, edibles, vape pens, disposable vapes, concentrates (shatter, wax, hash, live resin), pre-rolled joints, magic mushrooms, native cigarettes, and accessories. Check our live online menu at cafevaluecannabisdispensary.com before you visit to see exactly what's in stock.",
       },
     ],
     faqs: [
@@ -198,7 +198,7 @@ export const SEO_PAGES: SeoPageData[] = [
       { q: "Where is the closest dispensary in Spadina?", a: "Cafe Value at 654 Spadina Ave is conveniently located in the heart of Spadina — one of Toronto's most accessible neighbourhoods." },
       { q: "Is Cafe Value walk-in friendly?", a: "Absolutely! No appointment needed. Walk in anytime — we're open 10:00 AM - 10:00 PM a day, 7 days a week. Our friendly staff is always ready to help." },
       { q: "What neighbourhoods does Cafe Value serve?", a: "We serve all of Toronto including Spadina, The Annex, Kensington Market, Downtown Core, Liberty Village, Spadina, Scarborough, North York, Richmond Hill, and Mississauga/Etobicoke across the bridge." },
-      { q: "How do I check what's in stock?", a: "Visit cafevaluecannabis.com for our live menu with real-time stock, pricing, and THC levels for all products." },
+      { q: "How do I check what's in stock?", a: "Visit cafevaluecannabisdispensary.com for our live menu with real-time stock, pricing, and THC levels for all products." },
       { q: "Do you sell edibles and vapes?", a: "Yes! In addition to 200+ flower strains, we carry edibles (gummies, chocolates), vape pens, disposable vapes, concentrates, pre-rolls, and accessories." },
     ],
   },

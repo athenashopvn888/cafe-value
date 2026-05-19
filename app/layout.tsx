@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cafevaluecannabis.com"),
+  metadataBase: new URL("https://cafevaluecannabisdispensary.com"),
   title: {
     default: "Cafe Value — Premium Cannabis Dispensary, Toronto",
     template: "%s | Cafe Value",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_CA",
-    url: "https://cafevaluecannabis.com",
+    url: "https://cafevaluecannabisdispensary.com",
     siteName: "Cafe Value",
     title: "Cafe Value — Premium Toronto Cannabis Dispensary",
     description:
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://cafevaluecannabis.com",
+    canonical: "https://cafevaluecannabisdispensary.com",
   },
   verification: {
     // google: "your-google-verification-code",
@@ -72,12 +72,12 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Store",
   additionalType: "https://schema.org/Store",
-  "@id": "https://cafevaluecannabis.com",
+  "@id": "https://cafevaluecannabisdispensary.com",
   name: "Cafe Value",
   description: "Cannabis dispensary at 654 Spadina Ave in Toronto, ON. Shop exotic, premium, AAA+, AA, and budget flower tiers plus edibles, prerolls, and vapes. Open 10:00 AM - 10:00 PM.",
-  url: "https://cafevaluecannabis.com",
+  url: "https://cafevaluecannabisdispensary.com",
   telephone: "+14375772589",
-  image: "https://cafevaluecannabis.com/banners/cafe-value-dispensary.png",
+  image: "https://cafevaluecannabisdispensary.com/banners/cafe-value-dispensary.png",
   priceRange: "$3 - $12/g",
   address: {
     "@type": "PostalAddress",
