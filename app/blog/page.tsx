@@ -104,6 +104,15 @@ export default function BlogPage() {
     <main className={styles.main}>
       <Navbar />
 
+      {/* Blog Banner */}
+      <section style={{ width: "100%", overflow: "hidden", marginTop: "92px" }}>
+        <img
+          src="/banners/cafe-value-blog.png"
+          alt="Cafe Value Blog"
+          style={{ width: "100%", height: "auto", display: "block", objectFit: "contain" }}
+        />
+      </section>
+
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroInner}>
