@@ -46,14 +46,6 @@ export default function ContactPage() {
                 <br />
                 <span className={styles.infoMuted}>Spadina &amp; Bathurst</span>
               </p>
-              <a
-                href="https://www.google.com/maps/dir//654+Spadina+Ave,+Toronto,+ON+M5S+2H7"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.infoBtn}
-              >
-                Get Directions →
-              </a>
             </div>
 
             {/* Hours */}
@@ -130,16 +122,6 @@ export default function ContactPage() {
 
           {/* Map */}
           <div className={styles.mapSection}>
-            <iframe
-              src="https://maps.google.com/maps?q=654%20Spadina%20Ave,%20Toronto,%20ON%20M5S%202H7&t=&z=15&ie=UTF8&iwloc=&output=embed"
-              width="100%"
-              height="400"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Cafe Value — 654 Spadina Ave, Toronto"
-            ></iframe>
           </div>
         </div>
       </section>

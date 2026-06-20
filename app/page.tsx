@@ -403,14 +403,6 @@ export default function HomePage() {
                 <br />
                 Toronto, ON M5S 2H7
                 <br />
-                <a
-                  href="https://www.google.com/maps/dir//654+Spadina+Ave,+Toronto,+ON+M5S+2H7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.storeLink}
-                >
-                  Get Directions →
-                </a>
               </p>
             </div>
             <div className={styles.storeCard}>
@@ -437,16 +429,6 @@ export default function HomePage() {
 
           {/* Embedded map */}
           <div className={styles.mapWrap}>
-            <iframe
-              src="https://maps.google.com/maps?q=654%20Spadina%20Ave,%20Toronto,%20ON%20M5S%202H7&t=&z=15&ie=UTF8&iwloc=&output=embed"
-              width="100%"
-              height="300"
-              style={{ border: 0, borderRadius: "var(--radius-lg)" }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Cafe Value — 654 Spadina Ave, Toronto"
-            ></iframe>
           </div>
         </div>
       </section>

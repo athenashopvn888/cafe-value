@@ -123,14 +123,6 @@ export default async function ItemsCategoryPage({
             <p className={styles.visitText}>
               654 Spadina Ave, Toronto, ON M5S 2H7 · Open 24 Hours
             </p>
-            <a
-              href="https://maps.app.goo.gl/uX3f5K8t2Qd5sW1Z8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.visitBtn}
-            >
-              📍 Get Directions
-            </a>
           </div>
         </div>
       </section>

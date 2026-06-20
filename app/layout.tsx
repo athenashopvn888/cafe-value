@@ -100,20 +100,9 @@ const jsonLd = {
       closes: "23:59",
     },
   ],
-  sameAs: [
-    "https://maps.app.goo.gl/6VfAL3aJzuRDL3gbA",
-    "https://www.google.com/maps/place/?q=place_id:ChIJW-nFN_QFzkwRVCwdzMV1lrQ",
-  ],
-  hasMap: "https://maps.app.goo.gl/6VfAL3aJzuRDL3gbA",
   areaServed: {
     "@type": "City",
     name: "Toronto",
-  },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "5.0",
-    reviewCount: "18",
-    bestRating: "5",
   },
 };
 

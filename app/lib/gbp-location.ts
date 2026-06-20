@@ -24,8 +24,8 @@ export const gbpLocation = {
     "Accessories"
   ],
   menuUrl: "/",
-  directionsUrl: "https://maps.app.goo.gl/uX3f5K8t2Qd5sW1Z8",
-  mapEmbedUrl: "https://maps.google.com/maps?q=Cafe%20Value%20654%20Spadina%20Ave%2C%20Toronto%2C%20ON%20M5S%202H7&t=&z=15&ie=UTF8&iwloc=&output=embed",
+  directionsUrl: "",
+  mapEmbedUrl: "",
   latitude: "43.6631",
   longitude: "-79.4010",
   hours: ["Open 24 Hours"],

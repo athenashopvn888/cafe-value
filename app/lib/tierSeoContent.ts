@@ -98,7 +98,7 @@ export const TIER_SEO: Record<string, TierSeoData> = {
 
   BUDGET: {
     seoTitle: "Budget Cannabis Toronto — Cheap Weed From $3/g",
-    seoIntro: "Cheap weed in Toronto starting at $3/g. Cafe Value Budget tier features shreds and value ounces for cost-conscious smokers. Open daily on Center St.",
+    seoIntro: "Cheap weed in Toronto starting at $3/g. Cafe Value Budget tier features shreds and value ounces for cost-conscious smokers. Check current store hours before visiting Cafe Value.",
     sections: [
       {
         heading: "Affordable Cannabis Without Compromise",
