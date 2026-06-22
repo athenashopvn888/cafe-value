@@ -39,8 +39,8 @@ export const SEO_PAGES: SeoPageData[] = [
         body: "Unlike most dispensaries that close at midnight, Cafe Value is open around the clock — 10:00 AM - 10:00 PM a day, 7 days a week, 365 days a year. Whether you're finishing a late shift, heading out for the night, or need something at 3 AM, our doors are always open. We're centrally located at 654 Spadina Ave, steps from the Spadina, near major OC Transpo bus routes, and minutes from the Eaton Centre and CN Tower. Free street parking is available in the evenings.",
       },
       {
-        heading: "Unbeatable Promotions on Every Purchase",
-        body: "Every purchase at Cafe Value comes with our signature promotions. Our Buy 2g Get 1g FREE deal applies to every single tier — you always get a bonus gram. Our top three tiers (Exotic, Premium, and AAA+) also qualify for Buy 3g Get 3g FREE, effectively doubling your order. Combined with our already competitive pricing, Cafe Value offers some of the best cannabis value in Toronto and the surrounding area.",
+        heading: "Clear Bundle Pricing on Flower",
+        body: "Every purchase at Cafe Value uses clear flower bundle pricing. The 3g bundle offer applies to every single tier — the 3g total is shown clearly before purchase. Our top three tiers (Exotic, Premium, and AAA+) also qualify for 6g bundle pricing for 6g total. Combined with our already competitive pricing, Cafe Value offers some of the best cannabis value in Toronto and the surrounding area.",
       },
       {
         heading: "Serving Toronto & Mississauga",
@@ -51,9 +51,9 @@ export const SEO_PAGES: SeoPageData[] = [
       { q: "Where is Cafe Value located?", a: "We are located at 654 Spadina Ave, Toronto, ON M5S 2H7 — in the heart of Spadina, one of Toronto's most popular and accessible neighbourhoods. We're near the Eaton Centre, CN Tower, and major bus routes." },
       { q: "What are the hours for Cafe Value?", a: "We are open 10:00 AM - 10:00 PM a day, 7 days a week, 365 days a year. Walk in anytime — no appointment needed. Whether it's 2 PM or 9 PM, our staff is here to help." },
       { q: "What cannabis products does Cafe Value carry?", a: "We carry 200+ strains of cannabis flower across 5 quality tiers (Exotic, Premium, AAA+, AA, Budget), plus edibles, vapes, concentrates, pre-rolls, native cigarettes, and accessories. Our menu updates in real time online." },
-      { q: "What is the cheapest weed at Cafe Value?", a: "Our Budget tier starts at $3/g with value ounces from $40. Our AA tier is $4/g. Every tier includes our Buy 2g Get 1g FREE promotion, making our prices even more competitive." },
+      { q: "What is the cheapest weed at Cafe Value?", a: "Our Budget tier starts at $3/g with value ounces from $40. Our AA tier is $4/g. The flower menu includes 3g bundle pricing, making our prices even more competitive." },
       { q: "Does Cafe Value have a live menu?", a: "Yes! Our online menu at cafevaluecannabisdispensary.com updates in real time with current stock, prices, and availability. You can see exactly what we have before you visit." },
-      { q: "What makes Cafe Value different from other Toronto dispensaries?", a: "Three things set us apart: (1) We're open 10:00 AM - 10:00 PM, (2) our transparent 5-tier pricing system means no confusing markups, and (3) every purchase includes our Buy 2g Get 1g FREE promotion. Plus we carry one of Toronto's largest selections with over 200 strains." },
+      { q: "What makes Cafe Value different from other Toronto dispensaries?", a: "Three things set us apart: (1) We're open 10:00 AM - 10:00 PM, (2) our transparent 5-tier pricing system means no confusing markups, and (3) the flower menu includes 3g bundle pricing. Plus we carry one of Toronto's largest selections with over 200 strains." },
       { q: "Can I check stock before visiting?", a: "Absolutely. Visit cafevaluecannabisdispensary.com to see our live menu. All flower, edibles, vapes, and accessories are listed with real-time stock status, THC levels, and pricing." },
       { q: "Is there parking near Cafe Value?", a: "Yes. Free street parking is available in the evenings on Center St and surrounding streets. Paid lots are available nearby during the day. We're also easily accessible via OC Transpo." },
     ],
@@ -62,7 +62,7 @@ export const SEO_PAGES: SeoPageData[] = [
   {
     slug: "cheap-weed-toronto",
     title: "Cheap Weed Toronto — Budget Cannabis Deals From $3/g | Cafe Value",
-    metaDescription: "Looking for cheap weed in Toronto? Cafe Value has budget flower from $3/g, ounces from $40, and Buy 2g Get 1g FREE promos. Open 10:00 AM - 10:00 PM at 654 Spadina Ave.",
+    metaDescription: "Looking for cheap weed in Toronto? Cafe Value has budget flower from $3/g, ounces from $40, and 3g bundle pricing. Open 10:00 AM - 10:00 PM at 654 Spadina Ave.",
     h1: "Cheap Weed Toronto — Budget Cannabis Deals",
     icon: "💰",
     heroTagline: "Budget Flower From $3/g · Ounces From $40 · Always Open",
@@ -73,8 +73,8 @@ export const SEO_PAGES: SeoPageData[] = [
         body: "Looking for cheap weed in Toronto without sacrificing quality? Cafe Value offers some of the most competitive cannabis prices in the city. Our Budget tier starts at just $3/g with value ounces from $40. Our AA tier ($4/g) and AAA+ tier ($5-$6/g) also deliver incredible value with THC levels from 27% to 32%. We believe great cannabis shouldn't break the bank, and our transparent tier-based pricing ensures you always get exactly what you pay for — no hidden markups, no gimmicks.",
       },
       {
-        heading: "Unbeatable Promotions That Stack",
-        body: "Every tier at Cafe Value comes with our signature Buy 2g Get 1g FREE promotion — meaning you always get a free gram with every purchase. Our top three tiers (Exotic, Premium, AAA+) also offer Buy 3g Get 3g FREE, effectively doubling your order. When you combine our already low prices with these promos, Cafe Value delivers the best cannabis value in Toronto. A $15 AAA+ 3g purchase actually gets you 3g of flower — that's just $5/g for THC 30%+ cannabis.",
+        heading: "Flower Bundle Pricing",
+        body: "Every tier at Cafe Value uses clear 3g bundle pricing so the total grams and price are shown before purchase. Our top three tiers (Exotic, Premium, AAA+) also offer 6g bundle pricing for 6g total. When you combine our already low prices with these bundle offers, Cafe Value delivers the best cannabis value in Toronto. A $15 AAA+ 3g purchase actually gets you 3g of flower — that's just $5/g for THC 30%+ cannabis.",
       },
       {
         heading: "Budget Doesn't Mean Low Quality",
@@ -82,15 +82,15 @@ export const SEO_PAGES: SeoPageData[] = [
       },
       {
         heading: "Compare Our Prices",
-        body: "Budget: $3/g — $40/oz. AA: $4/g — $90/oz. AAA+: $5-$6/g — $100/oz. Premium: $7-$10/g. Exotic: $10-$12/g. Every tier includes Buy 2g Get 1g FREE. Top tiers include Buy 3g Get 3g FREE. These are some of the lowest prices you'll find at any dispensary in Toronto, Spadina, The Annex, Kensington Market, or the Spadina area.",
+        body: "Budget: $3/g — $40/oz. AA: $4/g — $90/oz. AAA+: $5-$6/g — $100/oz. Premium: $7-$10/g. Exotic: $10-$12/g. Every tier includes 3g bundle pricing. Top tiers include 6g bundle pricing. These are some of the lowest prices you'll find at any dispensary in Toronto, Spadina, The Annex, Kensington Market, or the Spadina area.",
       },
     ],
     faqs: [
       { q: "What is the cheapest weed at Cafe Value?", a: "Our Budget tier starts at $3/g with value ounces from $40. These are quality, properly-cured strains at Toronto's most competitive prices." },
-      { q: "Do you have ounce deals?", a: "Yes! Budget ounces from $40, AA ounces from $90, AAA+ ounces from $100. All with excellent quality, freshness guaranteed, and Buy 2g Get 1g FREE promotions on top." },
+      { q: "Do you have ounce deals?", a: "Yes! Budget ounces from $40, AA ounces from $90, AAA+ ounces from $100. All with excellent quality, freshness guaranteed, and 3g bundle pricing on top." },
       { q: "Is cheap weed still good quality?", a: "Absolutely. Our Budget flower delivers THC 24-27% from trusted Canadian growers. We never sell old, dry, or improperly stored flower. Every product meets our quality standards regardless of price point." },
       { q: "Where can I buy cheap weed in Toronto?", a: "Cafe Value at 654 Spadina Ave, Toronto. Open 10:00 AM - 10:00 PM a day, walk in anytime, no appointment needed. We're in the heart of Spadina." },
-      { q: "What promotions do you offer?", a: "Every tier includes Buy 2g Get 1g FREE (pay for 2g, get 3g). Our Exotic, Premium, and AAA+ tiers also offer Buy 3g Get 3g FREE (pay for 3g, get 6g). These promos apply on every visit." },
+      { q: "What bundle pricing do you offer?", a: "Every tier includes 3g bundle pricing (pay for 3g total). Our Exotic, Premium, and AAA+ tiers also offer 6g bundle pricing (pay for 6g total). These bundle offers apply on every visit." },
       { q: "Do you offer bulk discounts?", a: "Yes — our ounce pricing is deeply discounted compared to per-gram rates. Budget ounces are $40, AA ounces $90, and AAA+ ounces $100. The more you buy, the more you save." },
     ],
   },
@@ -146,7 +146,7 @@ export const SEO_PAGES: SeoPageData[] = [
       },
       {
         heading: "Why Cross the Bridge to Cafe Value?",
-        body: "Ontario's cannabis market offers a wider selection and more competitive pricing than Ontario's SQDC. At Cafe Value, you'll find over 200 strains across five quality tiers — from ultra-rare Exotic genetics (THC 35-39%) to affordable Budget flower at just $3/g. Our Buy 2g Get 1g FREE promotion applies to every tier, and our top three tiers offer Buy 3g Get 3g FREE. With prices starting at $3/g and ounces from $40, Cafe Value delivers value that's worth the 5-minute drive.",
+        body: "Ontario's cannabis market offers a wider selection and more competitive pricing than Ontario's SQDC. At Cafe Value, you'll find over 200 strains across five quality tiers — from ultra-rare Exotic genetics (THC 35-39%) to affordable Budget flower at just $3/g. Our 3g bundle pricing applies to every tier, and our top three tiers offer 6g bundle pricing. With prices starting at $3/g and ounces from $40, Cafe Value delivers value that's worth the 5-minute drive.",
       },
       {
         heading: "Open 10:00 AM - 10:00 PM — Perfect for Cross-Border Visits",
@@ -163,9 +163,9 @@ export const SEO_PAGES: SeoPageData[] = [
     ],
     faqs: [
       { q: "How far is Cafe Value from Mississauga?", a: "We're located at 654 Spadina Ave in Toronto's Spadina — just 5 minutes from the Gardiner Expressway and 7 minutes from the Don Valley Parkway. It's one of the closest dispensaries to the Ontario border." },
-      { q: "Is it worth crossing the bridge for cannabis?", a: "Absolutely. Cafe Value offers 200+ strains, prices starting at $3/g, and promotions like Buy 2g Get 1g FREE that you won't find at Ontario's SQDC locations. The selection and value are significantly better." },
+      { q: "Is it worth crossing the bridge for cannabis?", a: "Absolutely. Cafe Value offers 200+ strains, prices starting at $3/g, and bundle pricing options like 3g total that you won't find at Ontario's SQDC locations. The selection and value are significantly better." },
       { q: "Is Cafe Value open late?", a: "We're open 10:00 AM - 10:00 PM a day, 7 days a week. Whether you're crossing the bridge at noon or midnight, we're open and ready to serve you." },
-      { q: "What's the cheapest weed near Mississauga?", a: "Cafe Value has Budget flower from $3/g and value ounces from $40. With our Buy 2g Get 1g FREE promo, these are some of the best prices near the Mississauga border." },
+      { q: "What's the cheapest weed near Mississauga?", a: "Cafe Value has Budget flower from $3/g and value ounces from $40. With our 3g bundle pricing, these are some of the best prices near the Mississauga border." },
       { q: "Is there parking at Cafe Value?", a: "Yes. Free evening street parking is available on Center St and surrounding streets. Paid parking lots are also nearby during the day." },
       { q: "Can I take the bus from Mississauga to Cafe Value?", a: "Yes! STO (Mississauga transit) buses cross into downtown Toronto. Cafe Value is also near major OC Transpo routes. The store is walking distance from several downtown bus stops." },
       { q: "Do you carry products besides cannabis?", a: "Yes — we also carry native cigarettes, rolling papers, grinders, and other accessories. Many Mississauga customers appreciate the one-stop convenience." },
@@ -187,7 +187,7 @@ export const SEO_PAGES: SeoPageData[] = [
       },
       {
         heading: "Why Choose Cafe Value Over Other Dispensaries?",
-        body: "What sets Cafe Value apart from other Toronto dispensaries is our combination of selection, pricing, and convenience. We carry 200+ strains across five clear quality tiers — no confusing markups, no inconsistent pricing. Our Buy 2g Get 1g FREE promotion applies to every tier, every purchase. And unlike most dispensaries that close at midnight, we're open 10:00 AM - 10:00 PM a day, 7 days a week. Whether you need flower, edibles, vapes, or concentrates at any hour, Cafe Value is here.",
+        body: "What sets Cafe Value apart from other Toronto dispensaries is our combination of selection, pricing, and convenience. We carry 200+ strains across five clear quality tiers — no confusing markups, no inconsistent pricing. Our 3g bundle pricing applies to every tier, every purchase. And unlike most dispensaries that close at midnight, we're open 10:00 AM - 10:00 PM a day, 7 days a week. Whether you need flower, edibles, vapes, or concentrates at any hour, Cafe Value is here.",
       },
       {
         heading: "Areas We Serve in Toronto & Mississauga",
