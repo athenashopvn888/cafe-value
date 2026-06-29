@@ -4,11 +4,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://cafevaluecannabisdispensary.com"),
   title: {
-    default: "Cafe Value — Premium Cannabis Dispensary, Toronto",
+    default: "Cafe Value Cannabis | Toronto Dispensary",
     template: "%s | Cafe Value",
   },
   description:
-    "Shop 200+ premium cannabis strains at Cafe Value. Exotic, Premium, AAA+, AA & Budget flower from $3/g. Toronto's uplifting dispensary at 654 Spadina Ave. Open 10:00 AM - 10:00 PM.",
+    "Cafe Value is a Toronto cannabis dispensary on Spadina Ave with adult 19+ store info and category browsing for flower, pre-rolls, vapes, edibles, concentrates, and accessories. Open 10:00 AM - 10:00 PM.",
   keywords: [
     "cannabis dispensary Toronto",
     "weed store Center",
