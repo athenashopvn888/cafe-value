@@ -1,6 +1,7 @@
-import type { MetadataRoute } from "next";
+﻿import type { MetadataRoute } from "next";
 import { TIER_CONFIG, CATEGORY_CONFIG, allFlowers } from "./lib/products";
 import { SEO_PAGES } from "./lib/seoPages";
+import { STATIC_POSTS } from "./blog/staticPosts";
 
 const BASE = "https://cafevaluecannabisdispensary.com";
 
@@ -48,6 +49,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
+  /* Blog posts */
+  const blogPosts: MetadataRoute.Sitemap = STATIC_POSTS.map((post) => ({
+    url: `${BASE}/blog/${post.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
 
-  return [...staticPages, ...tierPages, ...itemPages, ...flowerPages, ...seoPages];
+
+  return [...staticPages, ...tierPages, ...itemPages, ...flowerPages, ...blogPosts, ...seoPages];
 }
