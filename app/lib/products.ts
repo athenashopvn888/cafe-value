@@ -66,7 +66,7 @@ export async function fetchLiveProducts(): Promise<{
   }
 
   try {
-    const res = await fetch(`${APPS_SCRIPT_URL}?store=CHC01`, {
+    const res = await fetch(`${APPS_SCRIPT_URL}?store=CVC01`, {
       next: { revalidate: 300 }, // Cache for 5 min during build
     });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
