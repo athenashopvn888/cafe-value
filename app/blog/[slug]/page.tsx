@@ -1,141 +1,36 @@
-"use client";
+import type { Metadata } from "next";
+import PostContent from "./PostContent";
+import { getStaticPost, STORE_BLOG_CONFIG } from "../staticPosts";
 
-import { useState, useEffect } from "react";
-import { useParams } from "next/navigation";
-import Link from "next/link";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
-import styles from "./blogpost.module.css";
+type BlogPostPageProps = {
+  params: Promise<{ slug: string }>;
+};
 
-const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx09_sDal1eMVF1r-hUck4e7oq_XBHEWhGvA79JuhZNQ6P4CdhCas0xE3FfexWQ3hq4/exec";
+export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const staticPost = getStaticPost(slug);
 
-interface BlogPost {
-  id: string;
-  title: string;
-  slug: string;
-  content: string;
-  author: string;
-  date: string;
-}
-
-/** Simple markdown-like renderer */
-function renderContent(raw: string) {
-  return raw.split("\n\n").map((block, i) => {
-    const trimmed = block.trim();
-    if (!trimmed) return null;
-
-    // Heading
-    if (trimmed.startsWith("## ")) {
-      return <h2 key={i} className={styles.contentH2}>{trimmed.replace("## ", "")}</h2>;
-    }
-    if (trimmed.startsWith("### ")) {
-      return <h3 key={i} className={styles.contentH3}>{trimmed.replace("### ", "")}</h3>;
-    }
-
-    // Bullet list
-    if (trimmed.startsWith("- ")) {
-      const items = trimmed.split("\n").filter(l => l.trim().startsWith("- "));
-      return (
-        <ul key={i} className={styles.contentList}>
-          {items.map((item, j) => (
-            <li key={j}>{item.replace(/^-\s*/, "")}</li>
-          ))}
-        </ul>
-      );
-    }
-
-    // Paragraph — handle **bold**
-    const html = trimmed.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
-    return <p key={i} className={styles.contentP} dangerouslySetInnerHTML={{ __html: html }} />;
-  });
-}
-
-export default function BlogPostPage() {
-  const params = useParams();
-  const slug = params.slug as string;
-  const [post, setPost] = useState<BlogPost | null>(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    fetch(`${APPS_SCRIPT_URL}?action=blog&store=CHC01`)
-      .then((r) => r.json())
-      .then((data) => {
-        const found = (data.posts || []).find((p: BlogPost) => p.slug === slug);
-        setPost(found || null);
-        setLoading(false);
-      })
-      .catch(() => setLoading(false));
-  }, [slug]);
-
-  if (loading) {
-    return (
-      <main className={styles.main}>
-        <Navbar />
-        <div className={styles.content}>
-          <div className={styles.loading}>Loading post...</div>
-        </div>
-        <Footer />
-      </main>
-    );
+  if (staticPost) {
+    return {
+      title: staticPost.seoTitle,
+      description: staticPost.metaDescription,
+      alternates: {
+        canonical: `https://${STORE_BLOG_CONFIG.domain}/blog/${slug}`,
+      },
+    };
   }
 
-  if (!post) {
-    return (
-      <main className={styles.main}>
-        <Navbar />
-        <div className={styles.content}>
-          <div className={styles.notFound}>
-            <h1>Post Not Found</h1>
-            <p>This blog post doesn&apos;t exist or has been removed.</p>
-            <Link href="/blog" className={styles.backLink}>← Back to Blog</Link>
-          </div>
-        </div>
-        <Footer />
-      </main>
-    );
-  }
+  const title = slug.split("-").map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+  return {
+    title: `${title} - Blog | ${STORE_BLOG_CONFIG.storeName}`,
+    description: `Read adult 19+ store guides and local visit-planning notes from ${STORE_BLOG_CONFIG.storeName}.`,
+    alternates: {
+      canonical: `https://${STORE_BLOG_CONFIG.domain}/blog/${slug}`,
+    },
+  };
+}
 
-  return (
-    <main className={styles.main}>
-      <Navbar />
-      <article className={styles.content}>
-        <nav className={styles.breadcrumb}>
-          <Link href="/">Home</Link>
-          <span>/</span>
-          <Link href="/blog">Blog</Link>
-          <span>/</span>
-          <span className={styles.breadcrumbCurrent}>{post.title}</span>
-        </nav>
-
-        <header className={styles.header}>
-          <h1 className={styles.title}>{post.title}</h1>
-          <div className={styles.meta}>
-            <span>{post.author}</span>
-            <span>·</span>
-            <span>
-              {new Date(post.date).toLocaleDateString("en-CA", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
-            </span>
-          </div>
-        </header>
-
-        <div className={styles.body}>
-          {renderContent(post.content)}
-        </div>
-
-        <div className={styles.cta}>
-          <p>
-            <strong>Cafe Value</strong> — 654 Spadina Ave, Toronto · Open 10:00 AM - 10:00 PM · (437) 577-2589
-          </p>
-          <Link href="/exotic" className={styles.ctaBtn}>Browse Our Menu</Link>
-        </div>
-
-        <Link href="/blog" className={styles.backLink}>← Back to Blog</Link>
-      </article>
-      <Footer />
-    </main>
-  );
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
+  const { slug } = await params;
+  return <PostContent slug={slug} storeCode={STORE_BLOG_CONFIG.storeCode} storeName={STORE_BLOG_CONFIG.storeName} />;
 }
