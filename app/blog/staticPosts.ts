@@ -25,7 +25,7 @@ export const STORE_BLOG_CONFIG = {
   storeCode: "CVC01",
   storeName: "Cafe Value",
   city: "Toronto",
-  domain: "cafevaluecannabisdispensary.com",
+  domain: "www.cafevaluecannabisdispensary.com",
   storePath: "/weed-dispensary-toronto",
 };
 
