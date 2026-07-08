@@ -39,7 +39,7 @@ export const STATIC_POSTS: StaticBlogPost[] = [
     meta_description: "Adult 19+ guide to Cafe Value around The Annex / Spadina, with local store-page checks, menu-category context, and safe visit planning.",
     h1: "Cafe Value Local Store Guide for Adults 19+",
     excerpt: "Cafe Value guide for adults 19+ reviewing store information around The Annex / Spadina.",
-    author: "Athena SEO Team",
+    author: "The Cafe Value Team",
     date: "2026-07-02",
     category: "Store Guide",
     readTime: "4 min",
