@@ -172,9 +172,7 @@ export default function HomePage() {
             <span className={styles.heroLit}>Cafe Value.</span>
           </h1>
           <p className={styles.heroSubtitle}>
-            200+ hand-picked strains · Exotic to Budget · THC up to 39% ·
-            Real-time inventory · 654 Spadina Ave, Toronto
-          </p>
+            Flower tiers, pre-rolls, edibles, THC vapes, concentrates, accessories, and current menu details</p>
           <div className={styles.heroButtons}>
             <a href="#menu" className={styles.heroBtn}>
               Browse Menu
@@ -192,9 +190,6 @@ export default function HomePage() {
                   d="M19 9l-7 7-7-7"
                 />
               </svg>
-            </a>
-            <a href="/games" className={styles.heroBtnGhost}>
-              🎮 Play Games
             </a>
           </div>
 
@@ -297,7 +292,7 @@ export default function HomePage() {
           <div className={styles.sectionBanner}>
             <img
               src="/banners/cafe-value-hot-right-now.png"
-              alt="Hot Right Now — Staff picks and top sellers"
+              alt="Hot Right Now — Current menu picks"
               className={styles.sectionBannerImg}
             />
           </div>
@@ -351,17 +346,6 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* ── GAMES ARCADE BANNER ── */}
-      <section className={styles.promoSection}>
-        <a href="/games" className={styles.promoBannerLink}>
-          <img
-            src="/banners/neon_arcade_gaming_promotion_banner.webp"
-            alt="Games Arcade — Flappy Bud, Snake Munchies, Brick Breaker 420"
-            className={styles.promoBannerImg}
-          />
-        </a>
       </section>
 
       {/* ── DEALS & PROMOS BANNER ── */}
