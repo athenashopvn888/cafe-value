@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "vapes",
     "pre-rolls",
     "native cigarettes Toronto",
-    "weed store Mississauga",
+    "weed store Toronto",
   ],
   openGraph: {
     type: "website",

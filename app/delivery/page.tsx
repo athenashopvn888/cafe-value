@@ -40,7 +40,7 @@ export default function DeliveryPage() {
           Delivery <span className={styles.highlight}>Coming Soon</span>
         </h1>
         <p className={styles.pageSubtitle}>
-          Cafe Value is launching delivery across Toronto &amp; Mississauga.
+          Cafe Value is launching delivery in Toronto.
           Sign up below to be the first to know when we go live — and get an exclusive launch-day deal.
         </p>
 
@@ -87,11 +87,11 @@ export default function DeliveryPage() {
           <div className={styles.infoCard}>
             <span className={styles.infoIcon}>📦</span>
             <h3 className={styles.infoTitle}>Same-Day Delivery</h3>
-            <p className={styles.infoDesc}>Order before 6 PM, delivered same day across Toronto.</p>
+            <p className={styles.infoDesc}>Order before 6 PM, delivered same day in Toronto.</p>
           </div>
           <div className={styles.infoCard}>
             <span className={styles.infoIcon}>🌉</span>
-            <h3 className={styles.infoTitle}>Toronto & Mississauga</h3>
+            <h3 className={styles.infoTitle}>Toronto</h3>
             <p className={styles.infoDesc}>Serving the entire National Capital Region.</p>
           </div>
           <div className={styles.infoCard}>
