@@ -108,7 +108,7 @@ export const RESOURCE_PAGES: ResourcePage[] = [
         "bullets": [
           "Flower shoppers should compare tiers.",
           "Pre-roll shoppers should compare format and package details.",
-          "Edible, vape, and concentrate shoppers should read product notes carefully."
+          "Edible, vape, and concentrate shoppers should review item details carefully."
         ]
       },
       {

@@ -97,16 +97,16 @@ export default function ContactPage() {
                 <br />
                 Just walk in and our staff will
                 <br />
-                help you find the perfect strain.
+                help you browse the menu categories.
               </p>
               <div className={styles.featureList}>
                 <div className={styles.featureItem}>
                   <span className={styles.featureCheck}>✓</span>
-                  200+ strains in stock
+                  Flower tiers and cannabis categories
                 </div>
                 <div className={styles.featureItem}>
                   <span className={styles.featureCheck}>✓</span>
-                  Lab-tested &amp; safe
+                  Adult 19+ store information
                 </div>
                 <div className={styles.featureItem}>
                   <span className={styles.featureCheck}>✓</span>

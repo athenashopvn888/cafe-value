@@ -57,9 +57,8 @@ function getJsonLd(flower: FlowerProduct) {
 
   const offers: any = {
     "@type": "Offer",
-    url: `https://cafevaluecannabisdispensary.com/flower/${flower.slug}`,
+    url: `https://www.cafevaluecannabisdispensary.com/flower/${flower.slug}`,
     priceCurrency: "CAD",
-    availability: "https://schema.org/InStock",
     itemCondition: "https://schema.org/NewCondition",
     seller: { "@type": "Organization", name: "Cafe Value" },
     hasMerchantReturnPolicy: {
@@ -77,7 +76,7 @@ function getJsonLd(flower: FlowerProduct) {
     "@context": "https://schema.org",
     "@type": "Product",
     name: flower.name,
-    image: flower.image ? [flower.image.startsWith('http') ? flower.image : `https://cafevaluecannabisdispensary.com${flower.image.startsWith('/') ? '' : '/'}${flower.image}`] : undefined,
+    image: flower.image ? [flower.image.startsWith('http') ? flower.image : `https://www.cafevaluecannabisdispensary.com${flower.image.startsWith('/') ? '' : '/'}${flower.image}`] : undefined,
     description: strainData.description,
     brand: { "@type": "Brand", name: "Cafe Value" },
     sku: cleanSku(flower.sku || flower.slug),

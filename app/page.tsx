@@ -9,7 +9,7 @@ const TIERS = [
   {
     name: "EXOTIC",
     slug: "exotic",
-    tagline: "Ultra-rare, top-shelf genetics",
+    tagline: "Explore Cafe Value's exotic flower tier",
     thc: "35-39%",
     unitPrice: 20,
     deal3g: "3g bundle for $40",
@@ -198,13 +198,13 @@ export default function HomePage() {
           {/* Stats bar */}
           <div className={styles.heroStats}>
             <div className={styles.heroStat}>
-              <span className={styles.heroStatNum}>200+</span>
-              <span className={styles.heroStatLabel}>Strains</span>
+              <span className={styles.heroStatNum}>Menu</span>
+              <span className={styles.heroStatLabel}>Categories</span>
             </div>
             <div className={styles.heroStatDivider}></div>
             <div className={styles.heroStat}>
-              <span className={styles.heroStatNum}>39%</span>
-              <span className={styles.heroStatLabel}>Max THC</span>
+              <span className={styles.heroStatNum}>19+</span>
+              <span className={styles.heroStatLabel}>Adults</span>
             </div>
             <div className={styles.heroStatDivider}></div>
             <div className={styles.heroStat}>
@@ -261,10 +261,10 @@ export default function HomePage() {
                   </h3>
                   <div className={styles.tierCardMeta}>
                     <span className={styles.tierCardThc}>
-                      THC {tier.thc}
+                      Details on menu
                     </span>
                     <span className={styles.tierCardCount}>
-                      {tier.count} strains
+                      Browse tier
                     </span>
                   </div>
                   <div className={styles.tierCardPrice}>

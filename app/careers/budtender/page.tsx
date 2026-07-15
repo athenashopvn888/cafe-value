@@ -6,7 +6,7 @@ import BudtenderApplicationForm from "./BudtenderApplicationForm";
 import styles from "./budtender.module.css";
 
 export const metadata: Metadata = {
-  title: "Budtender Or Manager Application | Cafe Value",
+  title: { absolute: "Budtender Or Manager Application | Cafe Value" },
   description:
     "Apply online for budtender or manager opportunities at Cafe Value in Toronto. Submit availability, experience, motivation, determination, and customer-service answers.",
   alternates: {

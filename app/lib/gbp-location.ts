@@ -1,7 +1,7 @@
 // Auto-generated Google Business Profile Local SEO Location Configuration
 export const gbpLocation = {
   storeName: "Cafe Value",
-  domain: "cafevaluecannabisdispensary.com",
+  domain: "www.cafevaluecannabisdispensary.com",
   city: "Toronto",
   province: "ON",
   country: "CA",
@@ -32,7 +32,7 @@ export const gbpLocation = {
   seoTitle: "Cafe Value | Weed Dispensary in Toronto",
   metaDescription: "Cafe Value is a local weed dispensary in Toronto offering flower, pre-rolls, edibles, vapes, concentrates, CBD, and service for adults 19+.",
   localLandmarks: ["Spadina Ave", "The Annex", "Bloor St W"],
-  introVariant: "Welcome to Cafe Value, your premier weed dispensary in Toronto situated right on 654 Spadina Ave. We are dedicated to providing adults 19+ with top-tier weed, premium cannabis flower, pre-rolls, edibles, THC vapes, concentrates, and CBD products. If you are looking for a trusted cannabis store near The Annex / Spadina or a weed shop near The Annex, stop by today to consult with our knowledgeable staff.",
+  introVariant: "Welcome to Cafe Value, a weed dispensary at 654 Spadina Ave in Toronto. Adults 19+ can browse cannabis flower, pre-rolls, edibles, THC vapes, concentrates, CBD products, and accessories. If you are looking for a cannabis store near The Annex or a weed shop near Spadina, visit the store page and menu categories for details.",
   neighborhoodDescription: "Located in the vibrant The Annex / Spadina district, our cannabis store fits right into this active and historic community, surrounded by local retail shops and convenient transit links.",
   parkingNote: "Metered street parking is available along Spadina Avenue",
   transitNote: "Steps from Spadina subway station and easily accessible via TTC streetcar and subway routes.",

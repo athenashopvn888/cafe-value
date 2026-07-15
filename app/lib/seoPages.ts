@@ -43,7 +43,7 @@ export const SEO_PAGES: SeoPageData[] = [
       },
       {
         "q": "Does Cafe Value carry flower and pre-rolls?",
-        "a": "The site has menu paths for flower tiers and pre-rolls. Check the current menu or ask staff for current details."
+        "a": "The site has menu categories for flower tiers and pre-rolls. Check the current menu or ask staff for current details."
       }
     ]
   },
@@ -151,7 +151,7 @@ export const SEO_PAGES: SeoPageData[] = [
       },
       {
         "q": "What categories can shoppers compare?",
-        "a": "Use the menu paths for flower, pre-rolls, edibles, THC vapes, concentrates, accessories, and cigarettes where listed."
+        "a": "Use the menu categories for flower, pre-rolls, edibles, THC vapes, concentrates, accessories, and cigarettes where listed."
       }
     ]
   },
@@ -165,7 +165,7 @@ export const SEO_PAGES: SeoPageData[] = [
     "sections": [
       {
         "heading": "Make The Search Useful",
-        "body": "A near-me search should get you to the right store page, not a wall of generic copy. Cafe Value gives shoppers a clear path to the store page, menu categories, and resources."
+        "body": "Cafe Value gives nearby shoppers a clear path to the store page, menu categories, and resources."
       },
       {
         "heading": "Compare Categories Naturally",
