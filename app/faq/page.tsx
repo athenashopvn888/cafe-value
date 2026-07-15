@@ -25,7 +25,7 @@ const FAQ_CATEGORIES = [
     faqs: [
       { q: "What menu categories can shoppers compare?", a: "The site has paths for flower, pre-rolls, edibles, THC vapes, concentrates, accessories, and cigarettes where listed." },
       { q: "How should shoppers use the menu?", a: "Pick one category first, then compare product name, format, weight or package size, posted price, and item notes." },
-      { q: "Do menu details change?", a: "Yes. Product names, prices, and availability can change, so use the current menu or ask staff before making the trip." },
+      { q: "Do menu details change?", a: "Yes. Use the current menu for the product names, prices, and package details currently listed before making the trip." },
     ],
   },
   {
@@ -40,7 +40,7 @@ const FAQ_CATEGORIES = [
     title: "Native Smokes",
     faqs: [
       { q: "Does Cafe Value list Native cigarettes?", a: "The cigarette menu may show Native smoke brands such as Canadian Lights, Canadian Full, Putters, Canadian Goose Full, Canadian Goose Lights, Canadian Menthol, Canadian Classics Original, Canadian Classics Silver, Rolled Gold Lights, Nexus Full, Nexus Lights, and Time Full. Confirm current options through the menu or staff." },
-      { q: "Are $25 prices guaranteed?", a: "No. Where $25 listings are shown, confirm current price and availability through the menu or staff." },
+      { q: "Where can I check $25 listings?", a: "Where those listings are shown, check the current menu or ask staff for the listed price and package details." },
       { q: "Where should cigarette shoppers start?", a: "Open the cigarette category first, then use the store page for directions, contact options, and listed hours." },
     ],
   },
