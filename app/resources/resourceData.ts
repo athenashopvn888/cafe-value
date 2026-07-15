@@ -53,7 +53,7 @@ export const RESOURCE_PAGES: ResourcePage[] = [
       {
         "title": "Native Smokes",
         "href": "/resources/native-smokes",
-        "text": "Brand names and carton notes for the cigarette menu where listed."
+        "text": "Brand names and price notes for the cigarette menu where listed."
       }
     ],
     "sections": [
@@ -68,7 +68,7 @@ export const RESOURCE_PAGES: ResourcePage[] = [
       },
       {
         "heading": "Local Notes For The Annex / Spadina",
-        "body": "Cafe Value serves shoppers around The Annex / Spadina, Spadina Ave, The Annex, Bloor St W. If you searched for a weed dispensary in The Annex / Spadina, this resource section keeps the visit simple: right store, best category, right next step."
+        "body": "Cafe Value serves shoppers around Spadina Ave and Toronto. If you searched for a weed dispensary in The Annex / Spadina, this resource section keeps the visit simple: right store, right category, right next step."
       }
     ]
   },
@@ -98,7 +98,7 @@ export const RESOURCE_PAGES: ResourcePage[] = [
       {
         "title": "Native Smokes",
         "href": "/resources/native-smokes",
-        "text": "Brand names and carton notes for the cigarette menu where listed."
+        "text": "Brand names and price notes for the cigarette menu where listed."
       }
     ],
     "sections": [
@@ -108,7 +108,7 @@ export const RESOURCE_PAGES: ResourcePage[] = [
         "bullets": [
           "Flower shoppers should compare tiers.",
           "Pre-roll shoppers should compare format and package details.",
-          "Edible, vape, and concentrate shoppers should read listing details carefully."
+          "Edible, vape, and concentrate shoppers should read product notes carefully."
         ]
       },
       {
@@ -168,7 +168,7 @@ export const RESOURCE_PAGES: ResourcePage[] = [
     "seoTitle": "Cafe Value Value Guide | Cheap Weed and Budget Weed",
     "description": "A practical value guide for shoppers comparing cheap weed, budget weed, affordable weed, and menu categories at Cafe Value.",
     "eyebrow": "Value Guide",
-    "intro": "Good value shopping is not just chasing the lowest number. It is choosing the best category, checking the current details, and knowing when Budget, AA, or another lane makes more sense.",
+    "intro": "Good value shopping is not just chasing the lowest number. It is choosing the right category, checking the current details, and knowing when Budget, AA, or another lane makes more sense.",
     "cards": [
       {
         "title": "Budget Flower",
@@ -233,7 +233,7 @@ export const RESOURCE_PAGES: ResourcePage[] = [
     "seoTitle": "Cafe Value Resource Centre Launch",
     "description": "The Cafe Value resource centre gives shoppers cleaner menu guides for flower, value, pre-rolls, and store visits.",
     "eyebrow": "Resource Update",
-    "intro": "The resource centre is here to make the menu easier to shop. No stiff SEO talk, no fake certainty, just cleaner notes for real shoppers.",
+    "intro": "The resource centre is here to make the menu easier to shop. No stiff SEO talk, no stale menu claims, just cleaner notes for real shoppers.",
     "cards": [
       {
         "title": "Menu Guide",
@@ -258,7 +258,7 @@ export const RESOURCE_PAGES: ResourcePage[] = [
       {
         "title": "Native Smokes",
         "href": "/resources/native-smokes",
-        "text": "Brand names and carton notes for the cigarette menu where listed."
+        "text": "Brand names and price notes for the cigarette menu where listed."
       }
     ],
     "sections": [
@@ -275,10 +275,10 @@ export const RESOURCE_PAGES: ResourcePage[] = [
   {
     "slug": "native-smokes",
     "title": "Cafe Value Native Smokes Resource",
-    "seoTitle": "Cafe Value Native Smokes | $25 Carton Notes",
-    "description": "Cafe Value Native smokes resource with cigarette brand names shown on the menu and $25 carton notes where listed.",
+    "seoTitle": "Cafe Value Native Smokes | $25 Cigarette Notes",
+    "description": "Cafe Value Native smokes resource with cigarette brand names shown in the store source and $25 notes where listed.",
     "eyebrow": "Native Smokes",
-    "intro": "Cafe Value shoppers looking for Native smokes can use this page as a cleaner starting point. Brand names shown on the cigarette menu include Canadian Lights, Canadian Full, Putters, Canadian Goose Full, Canadian Goose Lights, Canadian Menthol, Canadian Classics Original, Canadian Classics Silver, * Rolled Gold Lights, Nexus Full, Nexus Lights, and Time Full. Some carton-style listings show around $25, but shoppers should check the current menu or staff before making the trip.",
+    "intro": "Cafe Value shoppers looking for Native smokes can use this page as a cleaner starting point. The store source currently shows these $25 cigarette listings: Canadian Lights, Canadian Full, Putters, Canadian Goose Full, Canadian Goose Lights, Canadian Menthol, Canadian Classics Original, Canadian Classics Silver, Rolled Gold Lights, Nexus Full, Nexus Lights, and Time Full. Check the current menu or staff before making the trip.",
     "cards": [
       {
         "title": "Cigarette Menu",
@@ -298,8 +298,8 @@ export const RESOURCE_PAGES: ResourcePage[] = [
     ],
     "sections": [
       {
-        "heading": "Brands Shoppers May See",
-        "body": "The cigarette menu may show brands such as Canadian Lights, Canadian Full, Putters, Canadian Goose Full, Canadian Goose Lights, Canadian Menthol, Canadian Classics Original, Canadian Classics Silver, * Rolled Gold Lights, Nexus Full, Nexus Lights, and Time Full. The exact shelf can change, so treat this as a menu guide and confirm current options before choosing.",
+        "heading": "Brand Names Shown In The Store Source",
+        "body": "The cigarette menu source currently lists these $25 lines: Canadian Lights, Canadian Full, Putters, Canadian Goose Full, Canadian Goose Lights, Canadian Menthol, Canadian Classics Original, Canadian Classics Silver, Rolled Gold Lights, Nexus Full, Nexus Lights, and Time Full. Treat this as a menu guide and confirm current options before choosing.",
         "bullets": [
           "Canadian Lights",
           "Canadian Full",
@@ -309,15 +309,15 @@ export const RESOURCE_PAGES: ResourcePage[] = [
           "Canadian Menthol",
           "Canadian Classics Original",
           "Canadian Classics Silver",
-          "* Rolled Gold Lights",
+          "Rolled Gold Lights",
           "Nexus Full",
           "Nexus Lights",
           "Time Full"
         ]
       },
       {
-        "heading": "$25 Carton Notes",
-        "body": "Where the menu lists $25 carton-style Native cigarettes, this resource points shoppers to the cigarette category first. Check the current menu or ask staff for what is available today."
+        "heading": "$25 Cigarette Notes",
+        "body": "Where the menu lists $25 Native cigarettes, this resource points shoppers to the cigarette category first. Check the current menu or ask staff for what is available today."
       },
       {
         "heading": "Keep The Visit Simple",
@@ -328,10 +328,10 @@ export const RESOURCE_PAGES: ResourcePage[] = [
   {
     "slug": "native-smokes/native-cigarettes-guide",
     "title": "Cafe Value Native Cigarettes Guide",
-    "seoTitle": "Cafe Value Native Cigarettes Guide | Brands and Carton Notes",
-    "description": "A shopper-friendly Native cigarettes guide for Cafe Value, including brand names shown on the menu and $25 carton notes where listed.",
+    "seoTitle": "Cafe Value Native Cigarettes Guide | Brands and $25 Notes",
+    "description": "A shopper-friendly Native cigarettes guide for Cafe Value, including $25 brand names shown in the store source.",
     "eyebrow": "Native Cigarettes Guide",
-    "intro": "If Native cigarettes are part of the stop, start with the cigarette category and compare the current listings. Cafe Value menu brand names may include Canadian Lights, Canadian Full, Putters, Canadian Goose Full, Canadian Goose Lights, Canadian Menthol, Canadian Classics Original, Canadian Classics Silver, * Rolled Gold Lights, Nexus Full, Nexus Lights, and Time Full.",
+    "intro": "If Native cigarettes are part of the stop, start with the cigarette category and compare the current listings. Cafe Value source data currently includes these $25 lines: Canadian Lights, Canadian Full, Putters, Canadian Goose Full, Canadian Goose Lights, Canadian Menthol, Canadian Classics Original, Canadian Classics Silver, Rolled Gold Lights, Nexus Full, Nexus Lights, and Time Full.",
     "cards": [
       {
         "title": "Cigarette Menu",
@@ -351,8 +351,8 @@ export const RESOURCE_PAGES: ResourcePage[] = [
     ],
     "sections": [
       {
-        "heading": "Compare The Brand Names",
-        "body": "Look for the brand name first, then compare the posted price and any item notes. The menu may include Canadian Lights, Canadian Full, Putters, Canadian Goose Full, Canadian Goose Lights, Canadian Menthol, Canadian Classics Original, Canadian Classics Silver, * Rolled Gold Lights, Nexus Full, Nexus Lights, and Time Full.",
+        "heading": "Compare The $25 Brand Names",
+        "body": "Look for the brand name first, then compare the posted price and any item notes. The store source currently includes Canadian Lights, Canadian Full, Putters, Canadian Goose Full, Canadian Goose Lights, Canadian Menthol, Canadian Classics Original, Canadian Classics Silver, Rolled Gold Lights, Nexus Full, Nexus Lights, and Time Full.",
         "bullets": [
           "Canadian Lights",
           "Canadian Full",
@@ -362,7 +362,7 @@ export const RESOURCE_PAGES: ResourcePage[] = [
           "Canadian Menthol",
           "Canadian Classics Original",
           "Canadian Classics Silver",
-          "* Rolled Gold Lights",
+          "Rolled Gold Lights",
           "Nexus Full",
           "Nexus Lights",
           "Time Full"
@@ -370,7 +370,7 @@ export const RESOURCE_PAGES: ResourcePage[] = [
       },
       {
         "heading": "Ask If The Shelf Matters",
-        "body": "When a specific carton, full, light, or menthol option matters, ask staff before choosing. That is better than guessing from any resource page."
+        "body": "When a specific full, light, menthol, or package option matters, ask staff before choosing. That is better than guessing from any resource page."
       },
       {
         "heading": "Use The Cigarette Category",
