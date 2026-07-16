@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     template: "%s | Cafe Value",
   },
   description:
-    "Cafe Value is a Toronto cannabis dispensary on Spadina Ave with adult 19+ store info and category browsing for flower, pre-rolls, vapes, edibles, concentrates, and accessories. Open 10:00 AM - 10:00 PM.",
+    "Cafe Value is a Toronto cannabis dispensary on Spadina Ave with adult 19+ store info and category browsing for flower, pre-rolls, vapes, edibles, concentrates, and accessories. Open daily 10:00 AM - 12:00 AM.",
   keywords: [
     "cannabis dispensary Toronto",
     "weed store Center",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "Cafe Value",
     title: "Cafe Value — Premium Toronto Cannabis Dispensary",
     description:
-      "Browse flower tiers and cannabis categories at Cafe Value on Spadina Ave in Toronto. Open 10:00 AM - 10:00 PM.",
+      "Browse flower tiers and cannabis categories at Cafe Value on Spadina Ave in Toronto. Open daily 10:00 AM - 12:00 AM.",
     images: [
       {
         url: "/banners/cafe-value-dispensary.png",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Cafe Value — Toronto's Uplifting Dispensary",
-    description: "Browse Cafe Value's cannabis categories. Open 10:00 AM - 10:00 PM at 654 Spadina Ave, Toronto.",
+    description: "Browse Cafe Value's cannabis categories. Open daily 10:00 AM - 12:00 AM at 654 Spadina Ave, Toronto.",
     images: ["/banners/cafe-value-dispensary.png"],
   },
   robots: {
@@ -74,7 +74,7 @@ const jsonLd = {
   additionalType: "https://schema.org/Store",
   "@id": "https://www.cafevaluecannabisdispensary.com",
   name: "Cafe Value",
-  description: "Cannabis dispensary at 654 Spadina Ave in Toronto, ON. Shop exotic, premium, AAA+, AA, and budget flower tiers plus edibles, prerolls, and vapes. Open 10:00 AM - 10:00 PM.",
+  description: "Cannabis dispensary at 654 Spadina Ave in Toronto, ON. Shop exotic, premium, AAA+, AA, and budget flower tiers plus edibles, prerolls, and vapes. Open daily 10:00 AM - 12:00 AM.",
   url: "https://www.cafevaluecannabisdispensary.com",
   telephone: "+14375772589",
   image: "https://www.cafevaluecannabisdispensary.com/banners/cafe-value-dispensary.png",
@@ -96,8 +96,8 @@ const jsonLd = {
     {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-      opens: "00:00",
-      closes: "23:59",
+      opens: "10:00",
+      closes: "00:00",
     },
   ],
   areaServed: {

@@ -14,7 +14,7 @@ export default function Footer() {
             <p className={styles.desc}>
               Your Local Cannabis Dispensary At 654 Spadina Ave, Toronto. Visit
               Cafe Value For Premium Flower, Edibles, Vapes &amp; More.
-              Open 10:00 AM - 10:00 PM.
+              Open daily 10:00 AM - 12:00 AM.
             </p>
             <div className={styles.buttons}>
               <a
@@ -41,7 +41,7 @@ export default function Footer() {
             </div>
             <div className={styles.infoBlock}>
               <span className={styles.infoLabel}>Hours:</span>
-              <span className={styles.highlight}>Open 10:00 AM - 10:00 PM</span>
+              <span className={styles.highlight}>Daily 10:00 AM - 12:00 AM</span>
             </div>
           </div>
 
