@@ -65,7 +65,7 @@ export function GBPLandingPage() {
 
   // Inject real opening hours and coordinates if they exist
   if (gbpLocation.hours && gbpLocation.hours.length > 0) {
-    schemaMarkup.openingHours = gbpLocation.hours;
+    schemaMarkup.openingHours = ["Mo-Su 10:00-00:00"];
   }
 
   if (gbpLocation.latitude && gbpLocation.longitude) {

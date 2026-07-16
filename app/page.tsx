@@ -366,7 +366,7 @@ export default function HomePage() {
         <a href="/items/vapes" className={styles.promoBannerLink}>
           <img
             src="/banners/cafe-value-deals.png"
-            alt="24 Hour Cannabis Deals — Vapes, Pre-Rolls & More"
+            alt="Cafe Value Cannabis Deals — Vapes, Pre-Rolls & More"
             className={styles.promoBannerImg}
           />
         </a>
@@ -397,7 +397,7 @@ export default function HomePage() {
               <p className={styles.storeCardText}>
                 Open 7 Days a Week
                 <br />
-                <span className={styles.storeHighlight}>Open 10:00 AM - 10:00 PM</span>
+                <span className={styles.storeHighlight}>Open 10:00 AM - 12:00 AM</span>
               </p>
             </div>
             <div className={styles.storeCard}>

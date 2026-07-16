@@ -16,7 +16,7 @@ const FAQ_CATEGORIES = [
     title: "Location and Hours",
     faqs: [
       { q: "Where is Cafe Value located?", a: "Cafe Value is listed at 654 Spadina Ave, Toronto, ON M5S 2H7. Use the store page for directions and contact options before visiting." },
-      { q: "What are the listed hours?", a: "Open 24 Hours. Check the current store page or contact staff before visiting if timing matters." },
+      { q: "What are the listed hours?", a: "Cafe Value is open daily from 10:00 AM to 12:00 AM (midnight). Check the current store page or contact staff before visiting if timing matters." },
       { q: "What is the best way to plan the visit?", a: "Start with the store page, confirm directions and listed hours, then open the menu category that matches the visit." },
     ],
   },

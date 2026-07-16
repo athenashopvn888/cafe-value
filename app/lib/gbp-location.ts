@@ -28,7 +28,7 @@ export const gbpLocation = {
   mapEmbedUrl: "",
   latitude: "43.6631",
   longitude: "-79.4010",
-  hours: ["Open 24 Hours"],
+  hours: ["Daily: 10:00 AM - 12:00 AM (midnight)"],
   seoTitle: "Cafe Value | Weed Dispensary in Toronto",
   metaDescription: "Cafe Value is a local weed dispensary in Toronto offering flower, pre-rolls, edibles, vapes, concentrates, CBD, and service for adults 19+.",
   localLandmarks: ["Spadina Ave", "The Annex", "Bloor St W"],

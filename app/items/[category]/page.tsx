@@ -121,7 +121,7 @@ export default async function ItemsCategoryPage({
           <div className={styles.visitCta}>
             <h3 className={styles.visitTitle}>Visit Cafe Value</h3>
             <p className={styles.visitText}>
-              654 Spadina Ave, Toronto, ON M5S 2H7 · Open 24 Hours
+              654 Spadina Ave, Toronto, ON M5S 2H7 · Open Daily 10:00 AM - 12:00 AM
             </p>
           </div>
         </div>

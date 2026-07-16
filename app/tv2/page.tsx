@@ -136,7 +136,7 @@ function ItemCard({ title, accent, items, hiIdx, preset }: {
 const TICKER_SLIDES = [
   "🔥 Cafe Value — 654 Spadina Ave, Toronto",
   "Browse Flower Tiers",
-  "Open 24 Hours",
+  "Open Daily 10:00 AM - 12:00 AM",
   "Pre-Rolls · Edibles · Vapes · Concentrates",
   "ALL SALES ARE FINAL",
 ];

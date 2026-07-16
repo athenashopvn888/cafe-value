@@ -105,7 +105,7 @@ export default function DeliveryPage() {
         <div className={styles.ctaSection}>
           <p className={styles.ctaText}>
             Can&apos;t wait? Visit us in-store at <strong>654 Spadina Ave, Toronto</strong> —
-            open <strong>10:00 AM - 10:00 PM</strong>. Call <strong>(437) 577-2589</strong>.
+            open <strong>10:00 AM - 12:00 AM</strong>. Call <strong>(437) 577-2589</strong>.
           </p>
         </div>
       </div>
