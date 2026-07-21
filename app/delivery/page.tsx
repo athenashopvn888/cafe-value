@@ -86,18 +86,18 @@ export default function DeliveryPage() {
         <div className={styles.infoGrid}>
           <div className={styles.infoCard}>
             <span className={styles.infoIcon}>📦</span>
-            <h3 className={styles.infoTitle}>Same-Day Delivery</h3>
-            <p className={styles.infoDesc}>Order before 6 PM, delivered same day in Toronto.</p>
+            <h3 className={styles.infoTitle}>Delivery Details</h3>
+            <p className={styles.infoDesc}>Contact the store to confirm current delivery timing and availability.</p>
           </div>
           <div className={styles.infoCard}>
             <span className={styles.infoIcon}>🌉</span>
-            <h3 className={styles.infoTitle}>Toronto</h3>
-            <p className={styles.infoDesc}>Serving the entire National Capital Region.</p>
+            <h3 className={styles.infoTitle}>Serving Toronto</h3>
+            <p className={styles.infoDesc}>Ask the store whether delivery is available for your address.</p>
           </div>
           <div className={styles.infoCard}>
             <span className={styles.infoIcon}>💰</span>
-            <h3 className={styles.infoTitle}>Same Great Prices</h3>
-            <p className={styles.infoDesc}>All in-store promotions apply to delivery orders too.</p>
+            <h3 className={styles.infoTitle}>Before You Order</h3>
+            <p className={styles.infoDesc}>Confirm delivery details with the store before placing your order.</p>
           </div>
         </div>
 
