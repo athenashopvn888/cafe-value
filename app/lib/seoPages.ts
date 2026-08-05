@@ -128,8 +128,8 @@ export const SEO_PAGES: SeoPageData[] = [
     "heroTagline": "Local visit notes for Spadina Ave and Toronto",
     "sections": [
       {
-        "heading": "Confirm The Right Store Page",
-        "body": "When you search for a weed store near The Annex / Spadina, open the Cafe Value store page first. Confirm directions, contact options, listed hours, and the menu path before visiting."
+        "heading": "Plan Your Visit",
+        "body": "Before visiting Cafe Value, review the address, contact options, listed hours, and current menu on the official website."
       },
       {
         "heading": "Choose The Product Category",

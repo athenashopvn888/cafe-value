@@ -9,8 +9,8 @@ export const gbpLocation = {
   address: "654 Spadina Ave, Toronto, ON M5S 2H7",
   streetAddress: "654 Spadina Ave",
   postalCode: "M5S 2H7",
-  phone: "(437) 577-2589",
-  phoneIntl: "+14375772589",
+  phone: "+1 (289) 807-4161",
+  phoneIntl: "+12898074161",
   neighborhood: "The Annex / Spadina",
   nearbyAreas: ["Spadina Ave", "The Annex", "Bloor St W", "Harbord Village", "University of Toronto", "Spadina Station", "TTC"],
   products: [
