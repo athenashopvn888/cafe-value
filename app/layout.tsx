@@ -76,7 +76,7 @@ const jsonLd = {
   name: "Cafe Value",
   description: "Cannabis dispensary at 654 Spadina Ave in Toronto, ON. Shop exotic, premium, AAA+, AA, and budget flower tiers plus edibles, prerolls, and vapes. Open daily 10:00 AM - 12:00 AM.",
   url: "https://www.cafevaluecannabisdispensary.com",
-  telephone: "+14375772589",
+  telephone: "+12898074161",
   image: "https://www.cafevaluecannabisdispensary.com/banners/cafe-value-dispensary.png",
   priceRange: "$3 - $12/g",
   address: {
