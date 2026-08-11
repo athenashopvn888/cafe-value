@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "verify:category-banners": "node scripts/verify-category-banners.mjs",
     "verify:web-chat": "node scripts/verify-consent-webchat.mjs",
     "verify:delivery-images": "node scripts/verify-athena-delivery-images.mjs",
     "prebuild": "node scripts/prebuild-stock.js",

@@ -159,7 +159,7 @@ export interface CategoryInfo {
 
 export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
   EDIBLES: {
-    banner: "/banners/edibles_prerolls_more_banner.webp",
+    banner: "/banners/cafe-value-edibles-prerolls-more-banner.webp",
     name: "Edibles", slug: "edibles", color: "#f97316", icon: "ED",
     seoTitle: "Cannabis Edibles Toronto | Cafe Value",
     seoIntro: "Browse edible options at Cafe Value. Compare product names, package details, posted notes, and current menu information before choosing.",
@@ -170,7 +170,7 @@ export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
     ],
   },
   "VAPE PENS": {
-    banner: "/banners/01_Vape_Pens.webp",
+    banner: "/banners/cafe-value-thc-vape.png",
     name: "THC Vape", slug: "vapes", color: "#8b5cf6", icon: "VP",
     seoTitle: "Vapes Toronto | Cafe Value",
     seoIntro: "Compare vape listings at Cafe Value by product name, format, posted notes, and current menu details.",
@@ -181,7 +181,7 @@ export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
     ],
   },
   "VAPE DISPOSABLE": {
-    banner: "/banners/02_Vape_Disposable.webp",
+    banner: "/banners/cafe-value-nic-vape.png",
     name: "Nic Vape", slug: "vape-disposables", color: "#a78bfa", icon: "VD",
     seoTitle: "Disposable Vapes Toronto | Cafe Value",
     seoIntro: "Use the disposable vape category at Cafe Value for current product names, formats, and menu notes.",
@@ -192,7 +192,7 @@ export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
     ],
   },
   CONCENTRATES: {
-    banner: "/banners/03_Concentrates.webp",
+    banner: "/banners/cafe-value-concentrates.png",
     name: "Concentrates", slug: "concentrates", color: "#f59e0b", icon: "CN",
     seoTitle: "Concentrates Toronto | Cafe Value",
     seoIntro: "Compare concentrates at Cafe Value by product type, name, posted notes, and current menu details.",
@@ -203,7 +203,7 @@ export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
     ],
   },
   PREROLLS: {
-    banner: "/banners/04_Pre_Rolls.webp", name: "Pre-Rolls", slug: "prerolls", color: "#22c55e", icon: "PR",
+    banner: "/banners/cafe-value-prerolls.png", name: "Pre-Rolls", slug: "prerolls", color: "#22c55e", icon: "PR",
     seoTitle: "Pre-Rolls Toronto | Cafe Value",
     seoIntro: "Shop pre-rolls at Cafe Value by comparing the current product name, format, package details, and posted notes.",
     seoDescription: "Pre-rolls should be compared inside the pre-roll category instead of mixed into flower, edibles, vapes, or concentrates. Use the current menu for details that change.",
@@ -213,7 +213,7 @@ export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
     ],
   },
   "ADD ONS": {
-    banner: "/banners/05_Accessories.webp",
+    banner: "/banners/cafe-value-accessories.png",
     name: "Accessories", slug: "add-ons", color: "#34d399", icon: "+",
     seoTitle: "Cannabis Accessories Toronto | Cafe Value",
     seoIntro: "Browse accessories at Cafe Value and compare the current menu notes before visiting.",
@@ -233,7 +233,7 @@ export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
     ],
   },
   CIGARETTES: {
-    banner: "/banners/06_Cigarettes.webp",
+    banner: "/banners/cafe-value-cigarettes.png",
     name: "Cigarettes", slug: "cigarettes", color: "#78716c", icon: "CG",
     seoTitle: "Native Cigarettes Toronto | Cafe Value",
     seoIntro: "Native smokes at Cafe Value in Toronto. The cigarette menu may show $25 listings and brands such as Canadian Lights, Canadian Full, Putters, Canadian Goose Full, Canadian Goose Lights, Canadian Menthol, Canadian Classics Original, Canadian Classics Silver, Rolled Gold Lights, Nexus Full, Nexus Lights, and Time Full.",
