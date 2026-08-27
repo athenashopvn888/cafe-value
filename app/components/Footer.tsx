@@ -64,6 +64,7 @@ export default function Footer() {
               <Link href="/info/toronto-weed-dispensary">Toronto Dispensary</Link>
               <Link href="/info/cheap-weed-toronto">Cheap Weed Toronto</Link>
               <Link href="/info/native-cigarettes-toronto">Native Cigarettes</Link>
+              <Link href="/info/nicotine-vapes-toronto">Nicotine Vapes Toronto</Link>
               <Link href="/info/weed-store-near-the-annex-spadina">Weed Store Near Spadina</Link>
               <Link href="/weed-dispensary-toronto/">Cafe Value Weed Dispensary in Toronto</Link>
               <Link href="/contact">Contact Us</Link>

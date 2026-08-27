@@ -737,6 +737,20 @@
   padding: 40px 24px;
 }
 
+.guideLinkRow {
+  margin: 14px auto 0;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.guideLinkRow a {
+  color: var(--green-dark);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .promoBannerLink {
   display: block;
   max-width: 1200px;
