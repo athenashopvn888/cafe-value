@@ -1,4 +1,5 @@
 import styles from "./page.module.css";
+import Link from "next/link";
 import Navbar from "./components/Navbar";
 import HiringCallout from "./components/HiringCallout";
 import Footer from "./components/Footer";
@@ -370,6 +371,9 @@ export default function HomePage() {
             className={styles.promoBannerImg}
           />
         </a>
+        <p className={styles.guideLinkRow}>
+          Adults 19+: <Link href="/info/nicotine-vapes-toronto">read the Cafe Value nicotine vape guide</Link>.
+        </p>
       </section>
 
       {/* ── STORE INFO ── */}
