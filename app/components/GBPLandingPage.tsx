@@ -2,6 +2,7 @@
 import Link from "next/link";
 import styles from "./GBPLandingPage.module.css";
 import { gbpLocation } from "../lib/gbp-location";
+import PreferredSourceButton from "./PreferredSourceButton";
 
 // Dictionary mapping category names to their respective paths
 const categoryLinks: { [key: string]: string } = {
@@ -309,6 +310,7 @@ export function GBPLandingPage() {
           </div>
         </div>
       </section>
+      <PreferredSourceButton />
     </div>
   );
 }
