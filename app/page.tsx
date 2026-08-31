@@ -166,7 +166,7 @@ export default function HomePage() {
         <div className={styles.heroContent}>
           <div className={styles.heroBadge}>
             <span className={styles.heroBadgeDot}></span>
-            TORONTO'S FORTRESS OF CANNABIS
+            TORONTO&apos;S FORTRESS OF CANNABIS
           </div>
           <h1 className={styles.heroTitle}>
             Premium Cannabis.
@@ -353,24 +353,24 @@ export default function HomePage() {
 
       {/* ── DEALS & PROMOS BANNER ── */}
       <section className={styles.promoSection}>
-        <a href="/items/edibles" className={styles.promoBannerLink}>
+        <Link href="/items/edibles" className={styles.promoBannerLink}>
           <img
             src="/banners/cafe-value-edibles-prerolls-more-banner.webp"
             alt="High THC Gummies & Edibles — Cafe Value"
             className={styles.promoBannerImg}
           />
-        </a>
+        </Link>
       </section>
 
       {/* ── VAPES & PREROLL DEALS BANNER ── */}
       <section className={styles.promoSection}>
-        <a href="/items/vapes" className={styles.promoBannerLink}>
+        <Link href="/items/vapes" className={styles.promoBannerLink}>
           <img
             src="/banners/cafe-value-deals.png"
             alt="Cafe Value Cannabis Deals — Vapes, Pre-Rolls & More"
             className={styles.promoBannerImg}
           />
-        </a>
+        </Link>
         <p className={styles.guideLinkRow}>
           Adults 19+: <Link href="/info/nicotine-vapes-toronto">read the Cafe Value nicotine vape guide</Link>.
         </p>

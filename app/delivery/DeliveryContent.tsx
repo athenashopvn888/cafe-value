@@ -103,7 +103,7 @@ export default function DeliveryContent() {
   return <main className={styles.main}>
     <Navbar />
     <section className={`${styles.hero} ${styles.heroPlain}`}>
-      <div><p>Cafe Value</p><h1>Delivery Menu</h1><span>Browse the shared product catalog. The store confirms current availability and delivery details before an order is accepted.</span></div>
+      <div><p>Cafe Value</p><h1>Weed Delivery Menu</h1><span>Browse the shared product catalog. The store confirms current availability and delivery details before an order is accepted.</span></div>
     </section>
     <section className={styles.deliveryDetails} aria-label="Cafe Value delivery details"><strong>$60 PRODUCT MINIMUM</strong></section>
     <section className={styles.loyalty} aria-labelledby="loyalty-title">
