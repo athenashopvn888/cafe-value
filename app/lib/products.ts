@@ -170,9 +170,9 @@ export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
     ],
   },
   "VAPE PENS": {
-    banner: "/banners/cafe-value-thc-vape.png",
-    name: "THC Vape", slug: "vapes", color: "#8b5cf6", icon: "VP",
-    seoTitle: "Vapes Toronto | Cafe Value",
+    banner: "/banners/cafe-value-nic-vape.png",
+    name: "Nicotine Vapes", slug: "vapes", color: "#8b5cf6", icon: "VP",
+    seoTitle: "Nicotine Vapes Toronto | Cafe Value",
     seoIntro: "Compare vape listings at Cafe Value by product name, format, posted notes, and current menu details.",
     seoDescription: "Vape shoppers should use the current menu first, then ask staff if a cartridge, disposable, battery, or format detail needs a current answer.",
     faqs: [
@@ -181,9 +181,9 @@ export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
     ],
   },
   "VAPE DISPOSABLE": {
-    banner: "/banners/cafe-value-nic-vape.png",
-    name: "Nic Vape", slug: "vape-disposables", color: "#a78bfa", icon: "VD",
-    seoTitle: "Disposable Vapes Toronto | Cafe Value",
+    banner: "/banners/cafe-value-thc-vape.png",
+    name: "THC Vapes", slug: "vape-disposables", color: "#a78bfa", icon: "VD",
+    seoTitle: "THC Vapes Toronto | Cafe Value",
     seoIntro: "Use the disposable vape category at Cafe Value for current product names, formats, and menu notes.",
     seoDescription: "Disposable vape listings are easiest to compare inside their own category. Check the current menu and ask staff if a detail matters before choosing.",
     faqs: [
@@ -234,7 +234,7 @@ export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
   },
   CIGARETTES: {
     banner: "/banners/cafe-value-cigarettes.png",
-    name: "Cigarettes", slug: "cigarettes", color: "#78716c", icon: "CG",
+    name: "Native Cigarettes", slug: "cigarettes", color: "#78716c", icon: "CG",
     seoTitle: "Native Cigarettes Toronto | Cafe Value",
     seoIntro: "Native smokes at Cafe Value in Toronto. The cigarette menu may show $25 listings and brands such as Canadian Lights, Canadian Full, Putters, Canadian Goose Full, Canadian Goose Lights, Canadian Menthol, Canadian Classics Original, Canadian Classics Silver, Rolled Gold Lights, Nexus Full, Nexus Lights, and Time Full.",
     seoDescription: "Use the cigarette category to compare current Native smoke listings at Cafe Value. Specific brands, package options, and prices can change, so check the current menu or ask staff before visiting.",
