@@ -29,7 +29,9 @@ export async function generateMetadata({
   const items = getItemsByCategory(catInfo.key);
 
   return {
-    title: catInfo.config.seoTitle || `${catInfo.config.name} — ${items.length} Products`,
+    title: {
+      absolute: catInfo.config.seoTitle || `${catInfo.config.name} — ${items.length} Products`,
+    },
     description: catInfo.config.seoIntro || `Shop ${items.length} ${catInfo.config.name.toLowerCase()} at Cafe Value.`,
     alternates: {
       canonical: `https://www.cafevaluecannabisdispensary.com/items/${catSlug}`,
@@ -63,11 +65,16 @@ export default async function ItemsCategoryPage({
       {/* Hero Banner */}
       <section style={{ width: "100%", overflow: "hidden", marginTop: "92px", marginBottom: "24px" }}>
         {config.banner ? (
-          <img
-            src={config.banner}
-            alt={config.name}
-            style={{ width: "100%", height: "auto", display: "block", objectFit: "contain" }}
-          />
+          <>
+            <img
+              src={config.banner}
+              alt={config.name}
+              style={{ width: "100%", height: "auto", display: "block", objectFit: "contain" }}
+            />
+            <div className={styles.heroContent} style={{ padding: "24px", textAlign: "center" }}>
+              <h1 className={styles.heroTitle}>{config.name}</h1>
+            </div>
+          </>
         ) : (
           <div className={styles.heroContent} style={{ background: config.color, padding: "60px 24px", textAlign: "center" }}>
             <span className={styles.heroIcon}>{config.icon}</span>

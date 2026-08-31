@@ -24,7 +24,7 @@ export async function generateMetadata({
   if (!page) return {};
 
   return {
-    title: page.title,
+    title: { absolute: page.title },
     description: page.metaDescription,
     alternates: { canonical: page.canonical ?? `https://www.cafevaluecannabisdispensary.com/info/${page.slug}` },
   };
