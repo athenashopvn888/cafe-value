@@ -27,3 +27,10 @@ test("FMD-authoritative store identity remains unchanged", async () => {
   assert.match(location, /654 Spadina Ave, Toronto, ON M5S 2H7/);
   assert.match(location, /\+1 \(289\) 807-4161/);
 });
+
+test("nicotine, THC vape, and Native cigarette categories keep their verified routes", async () => {
+  const products = await read("app/lib/products.ts");
+  assert.match(products, /"VAPE PENS": \{[\s\S]*?name: "Nicotine Vapes", slug: "vapes"/);
+  assert.match(products, /"VAPE DISPOSABLE": \{[\s\S]*?name: "THC Vapes", slug: "vape-disposables"/);
+  assert.match(products, /CIGARETTES: \{[\s\S]*?name: "Native Cigarettes", slug: "cigarettes"/);
+});
