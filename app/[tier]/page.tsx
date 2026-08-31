@@ -11,6 +11,8 @@ import {
 import { TIER_SEO } from "../lib/tierSeoContent";
 import styles from "./tier.module.css";
 
+const SITE_ORIGIN = "https://www.cafevaluecannabisdispensary.com";
+
 /* -- Generate all tier pages at build -- */
 export function generateStaticParams() {
   return Object.values(TIER_CONFIG).map((t) => ({ tier: t.slug }));
@@ -31,9 +33,13 @@ export async function generateMetadata({
   return {
     title: seo?.seoTitle || `${tierInfo.config.name} Cannabis Flower — ${flowers.length} Strains`,
     description: seo?.seoIntro || `Shop ${flowers.length} ${tierInfo.config.name.toLowerCase()} cannabis strains at Cafe Value.`,
+    alternates: {
+      canonical: `${SITE_ORIGIN}/${tierSlug}`,
+    },
     openGraph: {
       title: `${tierInfo.config.name} Flower | Cafe Value`,
       description: `Browse the ${tierInfo.config.name.toLowerCase()} flower tier and review current menu details.`,
+      url: `${SITE_ORIGIN}/${tierSlug}`,
     },
   };
 }
