@@ -1,0 +1,24 @@
+.page { max-width: 1120px; margin: 0 auto; padding: 32px 20px 64px; color: var(--text-primary); }
+.hero { padding: 64px 28px; border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); background: linear-gradient(135deg, var(--green-deep), #07130d); text-align: center; }
+.hero h1 { max-width: 860px; margin: 10px auto 16px; color: #fff; font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.6rem); line-height: 1.05; }
+.hero > p:last-of-type { max-width: 700px; margin: 0 auto; color: #d9f4e4; font-size: 1.08rem; }
+.eyebrow { color: var(--green-light); font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 26px; }
+.actions a { padding: 13px 20px; border-radius: 999px; font-weight: 800; text-decoration: none; }
+.primary { color: #07130d; background: var(--green-light); }
+.secondary { color: #fff; border: 1px solid rgba(255,255,255,.5); }
+.section { margin-top: 26px; padding: 30px; border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); background: var(--bg-card); }
+.section h2 { margin: 0 0 16px; font-family: var(--font-display); font-size: clamp(1.55rem, 3vw, 2.15rem); }
+.section p { color: var(--text-secondary); line-height: 1.75; }
+.section a { color: var(--green-mid); font-weight: 750; }
+.cards, .terms { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.card { display: block; padding: 22px; border: 1px solid var(--border-subtle); border-radius: var(--radius-md); color: inherit !important; text-decoration: none; background: var(--bg-secondary); }
+.card:hover { border-color: var(--green-mid); transform: translateY(-2px); }
+.card h3, .terms h3, .faqs h3 { margin: 0 0 8px; font-size: 1.08rem; }
+.card p, .terms p, .faqs p { margin: 0; }
+.card span { display: inline-block; margin-top: 14px; color: var(--green-mid); font-weight: 800; }
+.terms div, .faqs article { padding: 18px; border: 1px solid var(--border-subtle); border-radius: var(--radius-md); }
+.note { margin: 18px 0 0; font-size: .92rem; }
+.address { font-style: normal; line-height: 1.75; }
+.faqs { display: grid; gap: 12px; }
+@media (max-width: 640px) { .page { padding-inline: 14px; } .hero { padding: 44px 18px; } .section { padding: 22px 18px; } .cards, .terms { grid-template-columns: 1fr; } }

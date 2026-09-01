@@ -376,6 +376,17 @@ export default function HomePage() {
         </p>
       </section>
 
+      <section className={styles.weedModule} aria-labelledby="weed-cannabis-heading">
+        <div className={styles.container}>
+          <h2 id="weed-cannabis-heading">Weed &amp; Cannabis at Cafe Value</h2>
+          <p>Cafe Value Cannabis is located at 654 Spadina Ave. Adults 19+ can explore the dedicated Toronto Weed and Cannabis section for store information and a clearer flower starting point.</p>
+          <div className={styles.weedModuleLinks}>
+            <Link href="/weed-dispensary-toronto/">Explore Cafe Value Weed &amp; Cannabis</Link>
+            <Link href="/budget/">Explore Budget Flower</Link>
+          </div>
+        </div>
+      </section>
+
       {/* ── STORE INFO ── */}
       <section className={styles.storeSection} id="contact">
         <div className={styles.container}>

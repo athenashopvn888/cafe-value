@@ -1,12 +1,12 @@
 import { Metadata } from "next";
-import { GBPLandingPage } from "@/app/components/GBPLandingPage";
-import { gbpLocation } from "@/app/lib/gbp-location";
+import { WeedOwnerPage } from "@/app/components/WeedOwnerPage";
 
 export const metadata: Metadata = {
-  title: { absolute: gbpLocation.seoTitle },
-  description: gbpLocation.metaDescription,
+  title: { absolute: "Weed Dispensary in Toronto | Cafe Value Cannabis" },
+  description:
+    "Cafe Value Cannabis is open daily from 10 AM to midnight at 654 Spadina Ave in Toronto. Adults 19+ can explore Weed, Cannabis and flower information.",
   alternates: {
-    canonical: `https://${gbpLocation.domain}/${gbpLocation.slug}/`,
+    canonical: "https://www.cafevaluecannabisdispensary.com/weed-dispensary-toronto/",
   },
   robots: {
     index: true,
@@ -15,5 +15,5 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <GBPLandingPage />;
+  return <WeedOwnerPage />;
 }
