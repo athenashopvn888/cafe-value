@@ -382,7 +382,7 @@ export default function HomePage() {
           <p>Cafe Value Cannabis is located at 654 Spadina Ave. Adults 19+ can explore the dedicated Toronto Weed and Cannabis section for store information and a clearer flower starting point.</p>
           <div className={styles.weedModuleLinks}>
             <Link href="/weed-dispensary-toronto/">Explore Cafe Value Weed &amp; Cannabis</Link>
-            <Link href="/budget/">Explore Budget Flower</Link>
+            <Link href="/budget-weed">Explore Budget Weed</Link>
           </div>
         </div>
       </section>
