@@ -38,7 +38,7 @@ export function WeedOwnerPage() {
         <h1>Cafe Value Cannabis — Weed Dispensary in Toronto</h1>
         <p>Weed, Cannabis and flower information for shoppers visiting 654 Spadina Ave.</p>
         <div className={styles.actions}>
-          <Link href="/budget/" className={styles.primary}>Explore Budget Flower</Link>
+          <Link href="/budget-weed" className={styles.primary}>Explore Budget Weed</Link>
           <a href="tel:+12898074161" className={styles.secondary}>Call +1 289-807-4161</a>
         </div>
       </header>
@@ -53,7 +53,7 @@ export function WeedOwnerPage() {
       <section className={styles.section}>
         <h2>Find Your Weed at Cafe Value</h2>
         <div className={styles.cards}>
-          <Link href="/budget/" className={styles.card}>
+          <Link href="/budget-weed" className={styles.card}>
             <h3>Start With Value-Oriented Flower</h3>
             <p>Explore the Budget section when value is your starting point.</p>
             <span>Budget Flower →</span>

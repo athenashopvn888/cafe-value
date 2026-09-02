@@ -120,7 +120,7 @@ export const RESOURCE_PAGES: ResourcePage[] = [
   {
     "slug": "flower-guide",
     "title": "Cafe Value Flower Guide",
-    "seoTitle": "Cafe Value Flower Guide | Exotic, Premium, Budget",
+    "seoTitle": "Flower Guide | Exotic Weed, Premium Weed, Budget Weed",
     "description": "Compare exotic flower, premium flower, budget weed, cheap weed, and affordable weed at Cafe Value with clearer category notes.",
     "eyebrow": "Flower Guide",
     "intro": "Flower gets easier when you compare one tier at a time. Exotic flower and premium flower sit in different lanes from AAA+, AA, and Budget, so start with the lane that matches the visit.",
@@ -165,7 +165,7 @@ export const RESOURCE_PAGES: ResourcePage[] = [
   {
     "slug": "value-guide",
     "title": "Cafe Value Value Guide",
-    "seoTitle": "Cafe Value Value Guide | Cheap Weed and Budget Weed",
+    "seoTitle": "Value Guide | Budget Weed and Cannabis Flower",
     "description": "A practical value guide for shoppers comparing cheap weed, budget weed, affordable weed, and menu categories at Cafe Value.",
     "eyebrow": "Value Guide",
     "intro": "Good value shopping is not just chasing the lowest number. It is choosing the right category, checking the current details, and knowing when Budget, AA, or another lane makes more sense.",

@@ -28,8 +28,11 @@ export async function generateMetadata({
   const strainData = getStrainData(flower.name, flower.type, flower.tier, flower.thc);
 
   return {
-    title: `${flower.name} | ${tierName} ${flower.type === "indica" ? "Indica" : flower.type === "sativa" ? "Sativa" : "Hybrid"} | THC ${flower.thc} | Cafe Value Toronto`,
+    title: `${flower.name} | ${tierName} ${flower.type === "indica" ? "Indica" : flower.type === "sativa" ? "Sativa" : "Hybrid"}`,
     description: strainData.metaDescription,
+    alternates: {
+      canonical: `https://www.cafevaluecannabisdispensary.com/flower/${flower.slug}`,
+    },
     openGraph: {
       title: `${flower.name} | Cafe Value`,
       description: strainData.metaDescription,
