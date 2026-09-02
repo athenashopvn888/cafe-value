@@ -8,8 +8,8 @@ import { allFlowers } from "./lib/products";
 /* ── Tier data (will come from Supabase later) ── */
 const TIERS = [
   {
-    name: "EXOTIC",
-    slug: "exotic",
+    name: "EXOTIC WEED",
+    slug: "exotic-weed",
     tagline: "Explore Cafe Value's exotic flower tier",
     thc: "35-39%",
     unitPrice: 20,
@@ -22,8 +22,8 @@ const TIERS = [
     banner: "/banners/cafe-value-exotics-banner.webp",
   },
   {
-    name: "PREMIUM",
-    slug: "premium",
+    name: "PREMIUM WEED",
+    slug: "premium-weed",
     tagline: "Hand-picked connoisseur grade",
     thc: "32-34%",
     unitPrice: 15,
@@ -36,8 +36,8 @@ const TIERS = [
     banner: "/banners/CafeValue_Premium.webp",
   },
   {
-    name: "AAA+",
-    slug: "aaa",
+    name: "AAA+ WEED",
+    slug: "aaa-weed",
     tagline: "Heavy hitters, proven strains",
     thc: "30-32%",
     unitPrice: 10,
@@ -50,8 +50,8 @@ const TIERS = [
     banner: "/banners/CafeValue_AAAplus.webp",
   },
   {
-    name: "AA",
-    slug: "aa",
+    name: "AA WEED",
+    slug: "aa-weed",
     tagline: "Quality daily drivers",
     thc: "27-29%",
     unitPrice: 4,
@@ -64,8 +64,8 @@ const TIERS = [
     banner: "/banners/cafe-value-aa-banner.webp",
   },
   {
-    name: "BUDGET",
-    slug: "budget",
+    name: "BUDGET WEED",
+    slug: "budget-weed",
     tagline: "Shreds & value OZs",
     thc: "24-27%",
     unitPrice: 3,

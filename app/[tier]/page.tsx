@@ -31,13 +31,15 @@ export async function generateMetadata({
   const seo = TIER_SEO[tierInfo.key];
 
   return {
-    title: seo?.seoTitle || `${tierInfo.config.name} Cannabis Flower — ${flowers.length} Strains`,
+    title: {
+      absolute: seo?.seoTitle || `${tierInfo.config.name} & Cannabis Flower Toronto | Cafe Value`,
+    },
     description: seo?.seoIntro || `Shop ${flowers.length} ${tierInfo.config.name.toLowerCase()} cannabis strains at Cafe Value.`,
     alternates: {
       canonical: `${SITE_ORIGIN}/${tierSlug}`,
     },
     openGraph: {
-      title: `${tierInfo.config.name} Flower | Cafe Value`,
+      title: `${tierInfo.config.name} & Cannabis Flower Toronto | Cafe Value`,
       description: `Browse the ${tierInfo.config.name.toLowerCase()} flower tier and review current menu details.`,
       url: `${SITE_ORIGIN}/${tierSlug}`,
     },

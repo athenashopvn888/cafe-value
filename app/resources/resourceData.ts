@@ -126,28 +126,28 @@ export const RESOURCE_PAGES: ResourcePage[] = [
     "intro": "Flower gets easier when you compare one tier at a time. Exotic flower and premium flower sit in different lanes from AAA+, AA, and Budget, so start with the lane that matches the visit.",
     "cards": [
       {
-        "title": "Exotic Flower",
-        "href": "/exotic",
+        "title": "Exotic Weed",
+        "href": "/exotic-weed",
         "text": "Start here when you want the higher shelf flower lane."
       },
       {
-        "title": "Premium Flower",
-        "href": "/premium",
+        "title": "Premium Weed",
+        "href": "/premium-weed",
         "text": "A strong lane for shoppers comparing quality and value."
       },
       {
-        "title": "AAA+ Flower",
-        "href": "/aaa",
+        "title": "AAA+ Weed",
+        "href": "/aaa-weed",
         "text": "A clear middle lane for flower comparison."
       },
       {
-        "title": "AA Flower",
-        "href": "/aa",
+        "title": "AA Weed",
+        "href": "/aa-weed",
         "text": "A straight value-minded flower lane."
       },
       {
-        "title": "Budget Flower",
-        "href": "/budget",
+        "title": "Budget Weed",
+        "href": "/budget-weed",
         "text": "Start here when cheap weed or affordable weed is the goal."
       }
     ],
@@ -171,13 +171,13 @@ export const RESOURCE_PAGES: ResourcePage[] = [
     "intro": "Good value shopping is not just chasing the lowest number. It is choosing the right category, checking the current details, and knowing when Budget, AA, or another lane makes more sense.",
     "cards": [
       {
-        "title": "Budget Flower",
-        "href": "/budget",
+        "title": "Budget Weed",
+        "href": "/budget-weed",
         "text": "The first stop for cheap weed and affordable weed comparisons."
       },
       {
-        "title": "AA Flower",
-        "href": "/aa",
+        "title": "AA Weed",
+        "href": "/aa-weed",
         "text": "A simple value lane for flower shoppers."
       },
       {
