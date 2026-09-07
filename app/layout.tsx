@@ -74,12 +74,11 @@ const jsonLd = {
   "@type": "Store",
   additionalType: "https://schema.org/Store",
   "@id": "https://www.cafevaluecannabisdispensary.com",
-  name: "Cafe Value",
+  name: "Cafe Value Cannabis",
   description: "Cannabis dispensary at 654 Spadina Ave in Toronto, ON. Shop exotic, premium, AAA+, AA, and budget flower tiers plus edibles, prerolls, and vapes. Open daily 10:00 AM - 12:00 AM.",
   url: "https://www.cafevaluecannabisdispensary.com",
   telephone: "+12898074161",
   image: "https://www.cafevaluecannabisdispensary.com/banners/cafe-value-dispensary.png",
-  priceRange: "$3 - $12/g",
   address: {
     "@type": "PostalAddress",
     streetAddress: "654 Spadina Ave",
@@ -101,10 +100,6 @@ const jsonLd = {
       closes: "00:00",
     },
   ],
-  areaServed: {
-    "@type": "City",
-    name: "Toronto",
-  },
 };
 
 export default function RootLayout({

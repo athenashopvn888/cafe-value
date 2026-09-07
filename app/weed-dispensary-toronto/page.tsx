@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import { WeedOwnerPage } from "@/app/components/WeedOwnerPage";
 
 export const metadata: Metadata = {
-  title: { absolute: "Weed Dispensary in Toronto | Cafe Value Cannabis" },
+  title: { absolute: "Weed Dispensary on Spadina Avenue | Cafe Value Cannabis" },
   description:
-    "Cafe Value Cannabis is open daily from 10 AM to midnight at 654 Spadina Ave in Toronto. Adults 19+ can explore Weed, Cannabis and flower information.",
+    "Visit Cafe Value Cannabis at 654 Spadina Ave in Toronto. Find local store information and explore established Weed flower tiers for adults 19+.",
   alternates: {
     canonical: "https://www.cafevaluecannabisdispensary.com/weed-dispensary-toronto/",
   },

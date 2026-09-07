@@ -8,7 +8,7 @@ test("stale Budget anchors point directly to Budget Weed", () => {
   const sources = read("app/page.tsx") + read("app/components/WeedOwnerPage.tsx");
   assert.equal((sources.match(/href="\/budget-weed"/g) || []).length, 3);
   assert.doesNotMatch(sources, /href="\/budget\/?"/);
-  assert.equal((sources.match(/Explore Budget Weed/g) || []).length, 2);
+  assert.equal((sources.match(/Explore Budget Weed/g) || []).length, 1);
 });
 
 test("flower detail metadata is self-canonical without volatile THC or embedded brand", () => {

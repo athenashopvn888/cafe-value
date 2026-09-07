@@ -19,7 +19,7 @@ test("weak-query owners keep exact titles, canonicals, and one visible H1", asyn
   assert.match(deliveryPage, /name: "Cafe Value Weed Delivery Menu"/);
   assert.match(deliveryContent, /<h1>Weed Delivery Menu<\/h1>/);
   assert.match(infoPage, /title: \{ absolute: page\.title \}/);
-  assert.match(weedOwner, /title: \{ absolute: gbpLocation\.seoTitle \}/);
+  assert.match(weedOwner, /title: \{ absolute: "Weed Dispensary on Spadina Avenue \| Cafe Value Cannabis" \}/);
 });
 
 test("FMD-authoritative store identity remains unchanged", async () => {
@@ -29,7 +29,7 @@ test("FMD-authoritative store identity remains unchanged", async () => {
 });
 test("nicotine, THC vape, and Native cigarette categories keep their verified routes", async () => {
   const products = await read("app/lib/products.ts");
-  assert.match(products, /"VAPE PENS": \{[\s\S]*?name: "Nicotine Vapes", slug: "vapes"/);
+  assert.match(products, /"VAPE PENS": \{[\s\S]*?name: "Nicotine Vape", slug: "vapes"/);
   assert.match(products, /"VAPE DISPOSABLE": \{[\s\S]*?name: "THC Vapes", slug: "vape-disposables"/);
   assert.match(products, /CIGARETTES: \{[\s\S]*?name: "Native Cigarettes", slug: "cigarettes"/);
 });

@@ -1,6 +1,6 @@
 // Auto-generated Google Business Profile Local SEO Location Configuration
 export const gbpLocation = {
-  storeName: "Cafe Value",
+  storeName: "Cafe Value Cannabis",
   domain: "www.cafevaluecannabisdispensary.com",
   city: "Toronto",
   province: "ON",
