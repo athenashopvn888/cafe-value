@@ -168,7 +168,7 @@ export default function HomePage() {
         <div className={styles.heroContent}>
           <div className={styles.heroBadge}>
             <span className={styles.heroBadgeDot}></span>
-            TORONTO&apos;S FORTRESS OF CANNABIS
+            SPADINA AVENUE • TORONTO
           </div>
           <h1 className={styles.heroTitle}>
             Premium Cannabis.
@@ -216,8 +216,8 @@ export default function HomePage() {
             </div>
             <div className={styles.heroStatDivider}></div>
             <div className={styles.heroStat}>
-              <span className={styles.heroStatNum}>24h</span>
-              <span className={styles.heroStatLabel}>Open</span>
+              <span className={styles.heroStatNum}>Adults 19+</span>
+              <span className={styles.heroStatLabel}>Store Information</span>
             </div>
           </div>
         </div>
@@ -380,11 +380,17 @@ export default function HomePage() {
 
       <section className={styles.weedModule} aria-labelledby="weed-cannabis-heading">
         <div className={styles.container}>
-          <h2 id="weed-cannabis-heading">Weed &amp; Cannabis at Cafe Value</h2>
-          <p>Cafe Value Cannabis is located at 654 Spadina Ave. Adults 19+ can explore the dedicated Toronto Weed and Cannabis section for store information and a clearer flower starting point.</p>
+          <h2 id="weed-cannabis-heading">Cafe Value Cannabis on Spadina Avenue</h2>
+          <p>Cafe Value Cannabis is located at 654 Spadina Ave in Toronto. Adults 19+ can use this website to find current store information, explore the established Weed flower tiers and read local guidance for Spadina Avenue and The Annex.</p>
+          <p>Start with the Toronto dispensary guide for the main local overview, or visit the dedicated Exotic Weed, Premium Weed, AAA+ Weed, AA Weed and Budget Weed pages for the site&apos;s established flower categories.</p>
           <div className={styles.weedModuleLinks}>
-            <Link href="/weed-dispensary-toronto/">Explore Cafe Value Weed &amp; Cannabis</Link>
-            <Link href="/budget-weed">Explore Budget Weed</Link>
+            <Link href="/weed-dispensary-toronto/">Toronto store information</Link>
+            <Link href="/info/weed-store-near-the-annex-spadina">Spadina and The Annex store information</Link>
+            <Link href="/exotic-weed">Exotic Weed</Link>
+            <Link href="/premium-weed">Premium Weed</Link>
+            <Link href="/aaa-weed">AAA+ Weed</Link>
+            <Link href="/aa-weed">AA Weed</Link>
+            <Link href="/budget-weed">Budget Weed</Link>
           </div>
         </div>
       </section>
@@ -424,7 +430,7 @@ export default function HomePage() {
                 No appointment needed
                 <br />
                 <span className={styles.storeHighlight}>
-                  Center St, Toronto
+                  654 Spadina Ave, Toronto
                 </span>
               </p>
             </div>

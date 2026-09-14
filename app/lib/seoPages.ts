@@ -218,37 +218,37 @@ export const SEO_PAGES: SeoPageData[] = [
   },
   {
     "slug": "weed-store-near-the-annex-spadina",
-    "title": "Weed Store Near The Annex / Spadina | Cafe Value",
-    "metaDescription": "Looking for a weed store near The Annex / Spadina? Use Cafe Value for store-page checks, menu categories, and local visit planning in Toronto.",
-    "h1": "Weed Store Near The Annex / Spadina",
+    "title": "Weed Store on Spadina Near The Annex | Cafe Value Cannabis",
+    "metaDescription": "Find Cafe Value Cannabis at 654 Spadina Ave and review practical store information for adults 19+ visiting Spadina Avenue and The Annex in Toronto.",
+    "h1": "Weed Store Information for Spadina Avenue and The Annex",
     "icon": ">",
-    "heroTagline": "Local visit notes for Spadina Ave and Toronto",
+    "heroTagline": "Cafe Value Cannabis is located at 654 Spadina Ave. This page connects the exact store address with its immediate Spadina Avenue and The Annex context for adults 19+.",
     "sections": [
       {
-        "heading": "Plan Your Visit",
-        "body": "Before visiting Cafe Value, review the address, contact options, listed hours, and current menu on the official website."
+        "heading": "Start with the exact address",
+        "body": "Use 654 Spadina Ave, Toronto, ON M5S 2H7 when checking the store location. Confirm the current phone number and hours displayed on the website before visiting."
       },
       {
-        "heading": "Choose The Product Category",
-        "body": "Flower, pre-rolls, edibles, THC vapes, concentrates, and accessories all shop differently. Pick the category first, then compare current product details."
+        "heading": "Local orientation without travel promises",
+        "body": "Spadina Avenue and The Annex are used as local orientation terms. The page does not guarantee that the store is nearest to a visitor, promise a travel time, or make an unsupported parking or transit claim."
       },
       {
-        "heading": "Use Staff For The Close Call",
-        "body": "If one detail decides the visit, ask staff. That is the cleanest way to handle current product questions."
+        "heading": "Continue to the main Toronto guide",
+        "body": "For the complete local overview and direct links to the established Weed tier pages, continue to the Weed dispensary on Spadina Avenue guide."
       }
     ],
     "faqs": [
       {
-        "q": "What is the best first step for a The Annex / Spadina visit?",
-        "a": "Open the Cafe Value store page, then use the current menu category that matches the visit."
+        "q": "What address should I use?",
+        "a": "Use 654 Spadina Ave, Toronto, ON M5S 2H7."
       },
       {
-        "q": "Should shoppers rely on old blog prices?",
-        "a": "No. Use the current menu or staff for details that change."
+        "q": "Does this page guarantee the nearest store?",
+        "a": "No. Search and travel results depend on the visitor's location and route."
       },
       {
-        "q": "What categories can shoppers compare?",
-        "a": "Use the menu categories for flower, pre-rolls, edibles, THC vapes, concentrates, accessories, and cigarettes where listed."
+        "q": "Where are the Weed category pages?",
+        "a": "The main local guide links directly to Exotic Weed, Premium Weed, AAA+ Weed, AA Weed and Budget Weed."
       }
     ]
   },
