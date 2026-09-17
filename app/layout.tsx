@@ -1,53 +1,49 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
+import { STORE, serializeJsonLd } from "./lib/storeIdentity";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.cafevaluecannabisdispensary.com"),
+  metadataBase: new URL(STORE.baseUrl),
   title: {
-    default: "Cafe Value Cannabis | Toronto Dispensary",
+    default: "Cafe Value Cannabis | Annex Spadina Dispensary",
     template: "%s | Cafe Value",
   },
   description:
-    "Cafe Value is a Toronto cannabis dispensary on Spadina Ave with adult 19+ store info and category browsing for flower, pre-rolls, vapes, edibles, concentrates, and accessories. Open daily 10:00 AM - 12:00 AM.",
+    "Cafe Value Cannabis is the Annex walk-in dispensary at 654 Spadina Ave, Toronto, ON M5S 2H7. Open daily 10:00 AM – 12:00 AM (not 24 hours). Call +1 (289) 807-4161. Adults 19+.",
   keywords: [
-    "cannabis dispensary Toronto",
-    "weed store Center",
-    "exotic flower Toronto",
-    "premium cannabis",
-    "Cafe Value",
-    "cheap weed Toronto",
-    "dispensary near me",
-    "THC flower",
-    "indica sativa hybrid",
-    "edibles Toronto",
-    "vapes",
-    "pre-rolls",
-    "native cigarettes Toronto",
-    "weed store Toronto",
+    "Annex dispensary",
+    "Spadina cannabis",
+    "weed store The Annex",
+    "Cafe Value Cannabis",
+    "654 Spadina Ave",
+    "Harbord cannabis",
+    "U of T dispensary",
+    "510 Spadina",
+    "THC flower Toronto Annex",
   ],
   openGraph: {
     type: "website",
     locale: "en_CA",
-    url: "https://www.cafevaluecannabisdispensary.com",
-    siteName: "Cafe Value",
-    title: "Cafe Value — Premium Toronto Cannabis Dispensary",
+    url: STORE.homepageUrl,
+    siteName: STORE.name,
+    title: "Cafe Value Cannabis | Annex Spadina Dispensary",
     description:
-      "Browse flower tiers and cannabis categories at Cafe Value on Spadina Ave in Toronto. Open daily 10:00 AM - 12:00 AM.",
+      "Walk-in cannabis store at 654 Spadina Ave in The Annex. Open daily 10:00 AM – 12:00 AM. Adults 19+.",
     images: [
       {
-        url: "/banners/cafe-value-dispensary.png",
+        url: STORE.schemaImage,
         width: 1200,
         height: 630,
-        alt: "Cafe Value — Premium Cannabis Dispensary Toronto",
+        alt: "Cafe Value Cannabis — Annex Spadina dispensary",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cafe Value — Toronto's Uplifting Dispensary",
-    description: "Browse Cafe Value's cannabis categories. Open daily 10:00 AM - 12:00 AM at 654 Spadina Ave, Toronto.",
-    images: ["/banners/cafe-value-dispensary.png"],
+    title: "Cafe Value Cannabis | Annex Spadina Dispensary",
+    description: "Annex walk-in at 654 Spadina Ave. Open daily 10:00 AM – 12:00 AM. Call +1 (289) 807-4161.",
+    images: [STORE.schemaImage],
   },
   robots: {
     index: true,
@@ -61,50 +57,58 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://www.cafevaluecannabisdispensary.com",
-  },
-  verification: {
-    // google: "your-google-verification-code",
+    canonical: STORE.homepageUrl,
   },
 };
 
-/* ── JSON-LD Structured Data ── */
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Store",
-  additionalType: "https://schema.org/Store",
-  "@id": "https://www.cafevaluecannabisdispensary.com",
-  name: "Cafe Value",
-  description: "Cannabis dispensary at 654 Spadina Ave in Toronto, ON. Shop exotic, premium, AAA+, AA, and budget flower tiers plus edibles, prerolls, and vapes. Open daily 10:00 AM - 12:00 AM.",
-  url: "https://www.cafevaluecannabisdispensary.com",
-  telephone: "+12898074161",
-  image: "https://www.cafevaluecannabisdispensary.com/banners/cafe-value-dispensary.png",
-  priceRange: "$3 - $12/g",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "654 Spadina Ave",
-    addressLocality: "Toronto",
-    addressRegion: "ON",
-    postalCode: "M5S 2H7",
-    addressCountry: "CA",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 43.6633088,
-    longitude: -79.4025299,
-  },
-  openingHoursSpecification: [
+  "@graph": [
     {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-      opens: "10:00",
-      closes: "00:00",
+      "@type": "WebSite",
+      "@id": `${STORE.baseUrl}/#website`,
+      url: STORE.homepageUrl,
+      name: STORE.name,
+      publisher: { "@id": `${STORE.baseUrl}/#store` },
+    },
+    {
+      "@type": "CannabisStore",
+      "@id": `${STORE.baseUrl}/#store`,
+      name: STORE.name,
+      description:
+        "Walk-in cannabis dispensary at 654 Spadina Ave in The Annex, Toronto. Spadina / Harbord / University of Toronto corridor. Open daily 10:00 AM to 12:00 AM. Adults 19+.",
+      url: STORE.homepageUrl,
+      telephone: STORE.phoneIntl,
+      image: STORE.schemaImage,
+      priceRange: "$3 - $12/g",
+      hasMap: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(STORE.mapsQuery)}`,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: STORE.streetAddress,
+        addressLocality: STORE.addressLocality,
+        addressRegion: STORE.addressRegion,
+        postalCode: STORE.postalCode,
+        addressCountry: STORE.addressCountry,
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: STORE.latitude,
+        longitude: STORE.longitude,
+      },
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          opens: STORE.opens,
+          closes: STORE.closes,
+        },
+      ],
+      areaServed: STORE.corridor.map((name) => ({
+        "@type": "Place",
+        name,
+      })),
     },
   ],
-  areaServed: {
-    "@type": "City",
-    name: "Toronto",
-  },
 };
 
 export default function RootLayout({
@@ -123,7 +127,7 @@ export default function RootLayout({
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }}
         />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFWL6WGNM6"></script>
         <script

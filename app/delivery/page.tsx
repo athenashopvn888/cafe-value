@@ -3,8 +3,8 @@ import DeliveryContent from "./DeliveryContent";
 import menu from "./delivery-menu.json";
 
 export const metadata: Metadata = {
-  title: { absolute: "Weed Delivery Menu | Cafe Value" },
-  description: "Browse the Cafe Value weed delivery menu and review how to order through the store dispatcher.",
+  title: { absolute: "Weed Delivery from Spadina Annex | Cafe Value Cannabis" },
+  description: "Cafe Value Cannabis delivery menu from the 654 Spadina Ave walk-in in The Annex. The dispatcher confirms availability and delivery details before an order is accepted. Adults 19+.",
   alternates: { canonical: "https://www.cafevaluecannabisdispensary.com/delivery" },
 };
 

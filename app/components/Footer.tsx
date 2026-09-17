@@ -12,9 +12,9 @@ export default function Footer() {
               CAFE<span className={styles.fire}>🔥</span>VALUE
             </div>
             <p className={styles.desc}>
-              Your Local Cannabis Dispensary At 654 Spadina Ave, Toronto. Visit
-              Cafe Value For Premium Flower, Edibles, Vapes &amp; More.
-              Open daily 10:00 AM - 12:00 AM.
+              Cafe Value Cannabis is the Annex walk-in at 654 Spadina Ave,
+              Toronto, ON M5S 2H7. Flower, edibles, vapes, and more. Open daily
+              10:00 AM – 12:00 AM — not 24 hours. Adults 19+.
             </p>
             <div className={styles.buttons}>
               <a
@@ -59,14 +59,13 @@ export default function Footer() {
               <Link href="/items/cigarettes">Cigarettes</Link>
               <Link href="/items/vapes">Nicotine Vape</Link>
               <Link href="/resources">Resources</Link>
+              <Link href="/visit">How to Reach The Annex</Link>
               <Link href="/faq">FAQ</Link>
               <Link href="/delivery">Delivery Menu</Link>
-              <Link href="/info/toronto-weed-dispensary">Toronto Dispensary</Link>
               <Link href="/info/cheap-weed-toronto">Cheap Weed Toronto</Link>
               <Link href="/info/native-cigarettes-toronto">Native Cigarettes</Link>
               <Link href="/info/nicotine-vapes-toronto">Nicotine Vapes Toronto</Link>
-              <Link href="/info/weed-store-near-the-annex-spadina">Weed Store Near Spadina</Link>
-              <Link href="/weed-dispensary-toronto/">Cafe Value Weed Dispensary in Toronto</Link>
+              <Link href="/info/weed-store-near-the-annex-spadina">Weed Store Near The Annex</Link>
               <Link href="/contact">Contact Us</Link>
             </nav>
           </div>

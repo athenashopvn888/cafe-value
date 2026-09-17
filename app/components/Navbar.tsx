@@ -20,6 +20,7 @@ const ALL_LINKS = [
   { href: "/items/magic", label: "Magic Stuff" },
   { href: "/items/cigarettes", label: "Cigarettes" },
   { href: "/items/add-ons", label: "Accessories" },
+  { href: "/visit", label: "Visit" },
   { href: "/delivery", label: "🚗 Delivery" },
   { href: "/faq", label: "FAQ" },
   { href: "/resources", label: "Resources" },
@@ -40,7 +41,7 @@ export default function Navbar() {
         <Link href="/" className={styles.logo}>
           <img
             src="/banners/logo.png"
-            alt="Cafe Value — Toronto Dispensary"
+            alt="Cafe Value Cannabis — Annex Spadina dispensary"
             className={styles.logoImg}
           />
         </Link>

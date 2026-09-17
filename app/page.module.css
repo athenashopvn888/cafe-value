@@ -801,6 +801,62 @@
   border: 1px solid var(--border-subtle);
 }
 
+.mapWrap iframe {
+  display: block;
+  width: 100%;
+  height: 360px;
+  border: 0;
+}
+
+.storeActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.storeActions a {
+  display: inline-flex;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(45, 106, 79, 0.14);
+  border: 1px solid rgba(45, 106, 79, 0.35);
+  color: var(--text-primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.homeFaq {
+  margin-top: 48px;
+  display: grid;
+  gap: 12px;
+}
+
+.homeFaq h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin: 0 0 8px;
+}
+
+.homeFaq article {
+  padding: 18px 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+}
+
+.homeFaq h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+
+.homeFaq p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
 .storeGrid {
   display: grid;
   grid-template-columns: 1fr;

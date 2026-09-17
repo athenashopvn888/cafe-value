@@ -28,6 +28,7 @@ export interface SeoPageData {
   heroTagline: string;
   banner?: string;
   canonical?: string;
+  noindex?: boolean;
   warning?: string;
   suppressCannabisSections?: boolean;
   heroPreview?: {
@@ -51,9 +52,10 @@ export interface SeoPageData {
 export const SEO_PAGES: SeoPageData[] = [
   {
     "slug": "toronto-weed-dispensary",
-    "title": "Cafe Value Weed Dispensary in Toronto",
-    "metaDescription": "Cafe Value is a weed dispensary in Toronto with flower, pre-rolls, edibles, THC vapes, concentrates, accessories, and shopper resources.",
-    "h1": "Cafe Value Weed Dispensary in Toronto",
+    "title": "Cafe Value Weed Notes | Annex Spadina",
+    "metaDescription": "Supporting notes for Cafe Value Cannabis at 654 Spadina Ave in The Annex. Use the homepage for NAP, hours, map, and directions.",
+    "h1": "Cafe Value Cannabis in The Annex on Spadina",
+    "noindex": true,
     "icon": "*",
     "heroTagline": "Menu shopping around The Annex / Spadina",
     "sections": [
@@ -218,29 +220,29 @@ export const SEO_PAGES: SeoPageData[] = [
   },
   {
     "slug": "weed-store-near-the-annex-spadina",
-    "title": "Weed Store Near The Annex / Spadina | Cafe Value",
-    "metaDescription": "Looking for a weed store near The Annex / Spadina? Use Cafe Value for store-page checks, menu categories, and local visit planning in Toronto.",
+    "title": "Weed Store Near The Annex / Spadina | Cafe Value Cannabis",
+    "metaDescription": "Cafe Value Cannabis is the Annex walk-in at 654 Spadina Ave near Harbord and U of T. Open 10:00 AM – 12:00 AM daily. 510 Spadina streetcar, metered parking, adults 19+.",
     "h1": "Weed Store Near The Annex / Spadina",
     "icon": ">",
-    "heroTagline": "Local visit notes for Spadina Ave and Toronto",
+    "heroTagline": "654 Spadina Ave · Harbord · University of Toronto St. George",
     "sections": [
       {
-        "heading": "Plan Your Visit",
-        "body": "Before visiting Cafe Value, review the address, contact options, listed hours, and current menu on the official website."
+        "heading": "The Annex walk-in on Spadina",
+        "body": "Cafe Value Cannabis sits at 654 Spadina Ave in The Annex, a short walk from Harbord Street and the University of Toronto St. George campus. This page is neighbourhood context. The homepage remains the visit hub for address, phone +1 (289) 807-4161, listed hours (10:00 AM – 12:00 AM daily, not 24 hours), map, and directions."
       },
       {
-        "heading": "Choose The Product Category",
-        "body": "Flower, pre-rolls, edibles, THC vapes, concentrates, and accessories all shop differently. Pick the category first, then compare current product details."
+        "heading": "Streetcar, subway, and parking",
+        "body": "The 510 Spadina streetcar runs the avenue. Spadina station at Bloor is the Line 1 and Line 2 transfer; walk south toward Harbord to 654. Metered street parking is the default on Spadina Avenue — read the signs. Full how-to-reach notes live on /visit."
       },
       {
-        "heading": "Use Staff For The Close Call",
-        "body": "If one detail decides the visit, ask staff. That is the cleanest way to handle current product questions."
+        "heading": "Choose the product category",
+        "body": "Flower, pre-rolls, edibles, THC vapes, concentrates, and accessories all shop differently. Pick the category first, then compare current product details on the live menu. Adults 19+ with government photo ID."
       }
     ],
     "faqs": [
       {
         "q": "What is the best first step for a The Annex / Spadina visit?",
-        "a": "Open the Cafe Value store page, then use the current menu category that matches the visit."
+        "a": "Open the Cafe Value Cannabis homepage for address, hours, map, and directions, then use /visit for 510 Spadina streetcar, Spadina station, and parking notes."
       },
       {
         "q": "Should shoppers rely on old blog prices?",
@@ -254,9 +256,10 @@ export const SEO_PAGES: SeoPageData[] = [
   },
   {
     "slug": "dispensary-near-me-toronto",
-    "title": "Cannabis Dispensary Near Me in Toronto | Cafe Value",
-    "metaDescription": "Use Cafe Value when searching for a cannabis dispensary near me in Toronto; compare menu categories and confirm current details before visiting.",
-    "h1": "Cannabis Dispensary Near Me in Toronto",
+    "title": "Cannabis Dispensary Near The Annex | Cafe Value",
+    "metaDescription": "Cafe Value Cannabis is the Annex walk-in at 654 Spadina Ave. Use the homepage for NAP and hours; this page is a supporting near-me note.",
+    "h1": "Cannabis Dispensary Near The Annex on Spadina",
+    "noindex": true,
     "icon": "o",
     "heroTagline": "Store page first, menu category second",
     "sections": [
