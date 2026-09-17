@@ -34,7 +34,7 @@ test("Cafe Value nicotine page has canonical and internal discovery", () => {
   assert.equal(page?.canonical, "https://www.cafevaluecannabisdispensary.com/info/nicotine-vapes-toronto");
   assert.ok(footerSource.includes('href="/info/nicotine-vapes-toronto"'));
   assert.ok(homeSource.includes('href="/info/nicotine-vapes-toronto"'));
-  assert.match(sitemapSource, /SEO_PAGES\.map\(/);
+  assert.match(sitemapSource, /SEO_PAGES\.filter\(\(p\) => !p\.noindex\)\.map\(/);
   assert.doesNotMatch(infoPageSource, /href=\{`?\/item\//);
 });
 

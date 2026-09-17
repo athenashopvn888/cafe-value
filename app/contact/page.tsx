@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import styles from "./contact.module.css";
+import { STORE, mapsEmbedUrl, mapsDirectionsUrl } from "../lib/storeIdentity";
 
 export const metadata: Metadata = {
-  title: "Contact Us — Cafe Value | 654 Spadina Ave, Toronto",
+  title: "Contact Cafe Value Cannabis | 654 Spadina Ave, The Annex",
   description:
-    "Visit Cafe Value at 654 Spadina Ave, Toronto, ON M5S 2H7. Open 10:00 AM - 12:00 AM daily. Walk-ins welcome. Spadina.",
+    "Visit Cafe Value Cannabis at 654 Spadina Ave, Toronto, ON M5S 2H7, in The Annex near Harbord Street. Open 10:00 AM – 12:00 AM daily — not 24 hours. Walk-ins welcome. Adults 19+.",
   openGraph: {
-    title: "Contact Cafe Value — Toronto Dispensary",
+    title: "Contact Cafe Value Cannabis | Annex Spadina",
     description:
-      "654 Spadina Ave, Toronto. Open 10:00 AM - 12:00 AM daily. Premium cannabis, always fire.",
+      "654 Spadina Ave, The Annex. Open 10:00 AM – 12:00 AM daily. Call +1 (289) 807-4161.",
   },
 };
 
@@ -26,7 +28,7 @@ export default function ContactPage() {
             Visit <span className={styles.heroAccent}>Cafe Value</span>
           </h1>
           <p className={styles.heroSub}>
-            654 Spadina Ave · Toronto, ON M5S 2H7
+            654 Spadina Ave · The Annex · Toronto, ON M5S 2H7
           </p>
         </div>
       </section>
@@ -44,7 +46,7 @@ export default function ContactPage() {
                 <br />
                 Toronto, ON M5S 2H7
                 <br />
-                <span className={styles.infoMuted}>Spadina &amp; Bathurst</span>
+                <span className={styles.infoMuted}>Spadina &amp; Harbord, The Annex</span>
               </p>
             </div>
 
@@ -84,7 +86,7 @@ export default function ContactPage() {
               </div>
               <div className={styles.openBadge}>
                 <span className={styles.openDot}></span>
-                Open Daily — 10:00 AM to Midnight
+                Open Daily — 10:00 AM to Midnight (not 24 hours)
               </div>
             </div>
 
@@ -122,6 +124,21 @@ export default function ContactPage() {
 
           {/* Map */}
           <div className={styles.mapSection}>
+            <iframe
+              title="Map of Cafe Value Cannabis at 654 Spadina Ave"
+              src={mapsEmbedUrl}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+              style={{ display: "block", width: "100%", height: 360, border: 0 }}
+            />
+            <p style={{ padding: "16px 20px", margin: 0 }}>
+              <a href={STORE.phoneTel}>{STORE.phoneDisplay}</a>
+              {" · "}
+              <a href={mapsDirectionsUrl} rel="noopener noreferrer" target="_blank">Directions</a>
+              {" · "}
+              <Link href="/visit">How to reach The Annex</Link>
+            </p>
           </div>
         </div>
       </section>

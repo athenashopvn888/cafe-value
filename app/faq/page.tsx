@@ -4,8 +4,8 @@ import Footer from "../components/Footer";
 import styles from "./faq.module.css";
 
 export const metadata: Metadata = {
-  title: "FAQ | Cafe Value",
-  description: "Frequently asked questions about Cafe Value in Toronto, including store-page checks, menu categories, value shopping, and Native smokes where listed.",
+  title: "FAQ | Cafe Value Cannabis Annex Spadina",
+  description: "Hours, 510 Spadina transit, parking, ID, and menu questions for Cafe Value Cannabis at 654 Spadina Ave in The Annex. Open 10:00 AM – 12:00 AM daily.",
   alternates: {
     canonical: "https://www.cafevaluecannabisdispensary.com/faq",
   },
@@ -15,9 +15,9 @@ const FAQ_CATEGORIES = [
   {
     title: "Location and Hours",
     faqs: [
-      { q: "Where is Cafe Value located?", a: "Cafe Value is listed at 654 Spadina Ave, Toronto, ON M5S 2H7. Use the store page for directions and contact options before visiting." },
-      { q: "What are the listed hours?", a: "Cafe Value is open daily from 10:00 AM to 12:00 AM (midnight). Check the current store page or contact staff before visiting if timing matters." },
-      { q: "What is the best way to plan the visit?", a: "Start with the store page, confirm directions and listed hours, then open the menu category that matches the visit." },
+      { q: "Where is Cafe Value located?", a: "Cafe Value Cannabis is at 654 Spadina Ave, Toronto, ON M5S 2H7, in The Annex near Harbord Street. Use the homepage for directions, map, and contact options before visiting." },
+      { q: "What are the listed hours?", a: "Cafe Value Cannabis is open daily from 10:00 AM to 12:00 AM (midnight). It is not a 24-hour store. Check the current homepage before visiting if timing matters." },
+      { q: "How do I reach the store on TTC?", a: "Ride the 510 Spadina streetcar, or take Line 1 / Line 2 to Spadina station at Bloor and walk south toward Harbord. Parking is metered street parking on Spadina Avenue. See /visit for the full how-to-reach notes." },
     ],
   },
   {

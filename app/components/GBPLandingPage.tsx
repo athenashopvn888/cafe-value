@@ -18,7 +18,7 @@ const categoryLinks: { [key: string]: string } = {
 
 type StoreSchemaMarkup = {
   "@context": "https://schema.org";
-  "@type": "Store";
+  "@type": "CannabisStore";
   name: string;
   url: string;
   telephone: string;
@@ -49,9 +49,9 @@ export function GBPLandingPage() {
   // Generate schema.org markup dynamically
   const schemaMarkup: StoreSchemaMarkup = {
     "@context": "https://schema.org",
-    "@type": "Store",
+    "@type": "CannabisStore",
     "name": gbpLocation.storeName,
-    "url": `https://${gbpLocation.domain}/${gbpLocation.slug}/`,
+    "url": `https://${gbpLocation.domain}/`,
     "telephone": gbpLocation.phone,
     "address": {
       "@type": "PostalAddress",
@@ -87,8 +87,8 @@ export function GBPLandingPage() {
 
       {/* Hero Header */}
       <header className={styles.hero}>
-        <h1 className={styles.h1}>{gbpLocation.storeName} - Weed Dispensary in {gbpLocation.city}</h1>
-        <p className={styles.heroTagline}>Serving {gbpLocation.city} & Nearby Neighborhoods</p>
+        <h1 className={styles.h1}>{gbpLocation.storeName} — Annex walk-in on Spadina</h1>
+        <p className={styles.heroTagline}>654 Spadina Ave · The Annex · Harbord · U of T St. George</p>
       </header>
 
       {/* Call to Actions */}

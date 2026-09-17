@@ -5,6 +5,14 @@ import Navbar from "./components/Navbar";
 import HiringCallout from "./components/HiringCallout";
 import Footer from "./components/Footer";
 import { allFlowers } from "./lib/products";
+import {
+  HOME_FAQS,
+  STORE,
+  faqPageJsonLd,
+  mapsDirectionsUrl,
+  mapsEmbedUrl,
+  serializeJsonLd,
+} from "./lib/storeIdentity";
 
 /* ── Tier data (will come from Supabase later) ── */
 const TIERS = [
@@ -150,6 +158,10 @@ function getTierColor(tier: string) {
 export default function HomePage() {
   return (
     <main className={styles.main}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(faqPageJsonLd(HOME_FAQS)) }}
+      />
       <FleetAnnouncementBanner />
       {/* ── NAVBAR ── */}
       <Navbar />
@@ -160,7 +172,7 @@ export default function HomePage() {
         <div className={styles.heroBanner}>
           <img
             src="/banners/cafe-value-dispensary.png"
-            alt="Cafe Value — Premium Toronto Cannabis Dispensary"
+            alt="Cafe Value Cannabis — Annex Spadina dispensary"
             className={styles.heroBannerImg}
           />
           <div className={styles.heroBannerOverlay}></div>
@@ -168,16 +180,16 @@ export default function HomePage() {
         <div className={styles.heroContent}>
           <div className={styles.heroBadge}>
             <span className={styles.heroBadgeDot}></span>
-            TORONTO&apos;S FORTRESS OF CANNABIS
+            THE ANNEX · 654 SPADINA AVE
           </div>
           <h1 className={styles.heroTitle}>
-            Premium Cannabis.
+            Cafe Value Cannabis.
             <br />
-            <span className={styles.heroFire}>Ascend to New Heights.</span>{" "}
-            <span className={styles.heroLit}>Cafe Value.</span>
+            <span className={styles.heroFire}>Annex walk-in on Spadina.</span>
           </h1>
           <p className={styles.heroSubtitle}>
-            Flower tiers, pre-rolls, edibles, THC vapes, concentrates, accessories, and current menu details</p>
+            Flower, pre-rolls, edibles, and vapes at 654 Spadina Ave beside U of T St. George. Open daily 10:00 AM – 12:00 AM — not 24 hours. Adults 19+.
+          </p>
           <div className={styles.heroButtons}>
             <a href="#menu" className={styles.heroBtn}>
               Browse Menu
@@ -196,6 +208,9 @@ export default function HomePage() {
                 />
               </svg>
             </a>
+            <Link href="/visit" className={styles.heroBtnGhost}>
+              How to reach Spadina
+            </Link>
           </div>
 
           {/* Stats bar */}
@@ -216,8 +231,8 @@ export default function HomePage() {
             </div>
             <div className={styles.heroStatDivider}></div>
             <div className={styles.heroStat}>
-              <span className={styles.heroStatNum}>24h</span>
-              <span className={styles.heroStatLabel}>Open</span>
+              <span className={styles.heroStatNum}>10–12</span>
+              <span className={styles.heroStatLabel}>Daily</span>
             </div>
           </div>
         </div>
@@ -381,9 +396,14 @@ export default function HomePage() {
       <section className={styles.weedModule} aria-labelledby="weed-cannabis-heading">
         <div className={styles.container}>
           <h2 id="weed-cannabis-heading">Weed &amp; Cannabis at Cafe Value</h2>
-          <p>Cafe Value Cannabis is located at 654 Spadina Ave. Adults 19+ can explore the dedicated Toronto Weed and Cannabis section for store information and a clearer flower starting point.</p>
+          <p>
+            Cafe Value Cannabis is the walk-in counter at 654 Spadina Ave in The Annex, beside the University of Toronto
+            St. George campus. This homepage is the visit hub: address, phone {STORE.phoneDisplay}, listed hours
+            (10:00 AM – 12:00 AM daily), map, and directions live here. Use /visit only if you need the 510 Spadina
+            streetcar, Spadina station, or parking notes.
+          </p>
           <div className={styles.weedModuleLinks}>
-            <Link href="/weed-dispensary-toronto/">Explore Cafe Value Weed &amp; Cannabis</Link>
+            <Link href="/visit">How to reach The Annex</Link>
             <Link href="/budget-weed">Explore Budget Weed</Link>
           </div>
         </div>
@@ -402,10 +422,11 @@ export default function HomePage() {
               <div className={styles.storeIcon}>📍</div>
               <h3 className={styles.storeCardTitle}>Location</h3>
               <p className={styles.storeCardText}>
-                654 Spadina Ave
+                {STORE.streetAddress}
                 <br />
-                Toronto, ON M5S 2H7
+                {STORE.addressLocality}, {STORE.addressRegion} {STORE.postalCode}
                 <br />
+                <a className={styles.storeLink} href={STORE.phoneTel}>{STORE.phoneDisplay}</a>
               </p>
             </div>
             <div className={styles.storeCard}>
@@ -414,7 +435,9 @@ export default function HomePage() {
               <p className={styles.storeCardText}>
                 Open 7 Days a Week
                 <br />
-                <span className={styles.storeHighlight}>Open 10:00 AM - 12:00 AM</span>
+                <span className={styles.storeHighlight}>{STORE.hoursLabel}</span>
+                <br />
+                Not 24 hours
               </p>
             </div>
             <div className={styles.storeCard}>
@@ -424,14 +447,36 @@ export default function HomePage() {
                 No appointment needed
                 <br />
                 <span className={styles.storeHighlight}>
-                  Center St, Toronto
+                  Spadina &amp; Harbord, The Annex
                 </span>
               </p>
             </div>
           </div>
 
-          {/* Embedded map */}
+          <div className={styles.storeActions}>
+            <a href={STORE.phoneTel}>Call {STORE.phoneDisplay}</a>
+            <a href={mapsDirectionsUrl} rel="noopener noreferrer" target="_blank">Directions</a>
+            <Link href="/visit">How to reach Spadina</Link>
+          </div>
+
           <div className={styles.mapWrap}>
+            <iframe
+              title="Map of Cafe Value Cannabis at 654 Spadina Ave"
+              src={mapsEmbedUrl}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+          </div>
+
+          <div className={styles.homeFaq} id="faq">
+            <h2>Frequently Asked Questions</h2>
+            {HOME_FAQS.map((faq) => (
+              <article key={faq.q}>
+                <h3>{faq.q}</h3>
+                <p>{faq.a}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
