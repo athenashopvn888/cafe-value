@@ -17,8 +17,8 @@ test("owner uses verified FMD identity and visit facts", () => {
   assert.match(owner, /Cafe Value Cannabis — Annex walk-in on Spadina/);
   assert.match(owner, /654 Spadina Ave/);
   assert.match(owner, /\+1 289-807-4161/);
-  assert.match(owner, /10:00 AM to midnight/);
-  assert.match(owner, /not 24 hours/);
+  assert.match(owner, /This location has closed and moved to Green Sundae in Mississauga/);
+  assert.doesNotMatch(owner, /openingHours/);
 });
 
 test("Find Your Weed uses only approved verified destinations", () => {

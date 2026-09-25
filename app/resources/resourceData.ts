@@ -61,7 +61,7 @@ export const RESOURCE_PAGES: ResourcePage[] = [
         "heading": "How To Use These Guides",
         "body": "Start with the store page, then choose the category that matches the visit. Flower, pre-rolls, edibles, THC vapes, concentrates, accessories, and cigarette options should not all be compared the same way.",
         "bullets": [
-          "Use the store page for directions, contact options, and listed hours.",
+          "Use the store page for directions and contact options. This location has closed and moved to Green Sundae in Mississauga.",
           "Use category pages to compare the current menu category.",
           "Ask staff when a product detail needs a current answer."
         ]
@@ -293,7 +293,7 @@ export const RESOURCE_PAGES: ResourcePage[] = [
       {
         "title": "Store Page",
         "href": "/weed-dispensary-toronto",
-        "text": "Use the store page for directions, contact options, and listed hours."
+        "text": "Use the store page for directions and contact options. This location has closed and moved to Green Sundae in Mississauga."
       }
     ],
     "sections": [
@@ -346,7 +346,7 @@ export const RESOURCE_PAGES: ResourcePage[] = [
       {
         "title": "Store Page",
         "href": "/weed-dispensary-toronto",
-        "text": "Use the store page for directions, contact options, and listed hours."
+        "text": "Use the store page for directions and contact options. This location has closed and moved to Green Sundae in Mississauga."
       }
     ],
     "sections": [

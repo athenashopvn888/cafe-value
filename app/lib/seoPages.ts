@@ -53,7 +53,7 @@ export const SEO_PAGES: SeoPageData[] = [
   {
     "slug": "toronto-weed-dispensary",
     "title": "Cafe Value Weed Notes | Annex Spadina",
-    "metaDescription": "Supporting notes for Cafe Value Cannabis at 654 Spadina Ave in The Annex. Use the homepage for NAP, hours, map, and directions.",
+    "metaDescription": "Supporting notes for Cafe Value Cannabis at 654 Spadina Ave in The Annex. Use the homepage for NAP, map, and directions. This location has closed and moved to Green Sundae in Mississauga.",
     "h1": "Cafe Value Cannabis in The Annex on Spadina",
     "noindex": true,
     "icon": "*",
@@ -69,13 +69,13 @@ export const SEO_PAGES: SeoPageData[] = [
       },
       {
         "heading": "What To Check Before Visiting",
-        "body": "Confirm the store page, directions, contact options, listed hours, and menu category first. For current product names, prices, and package details, use the menu or ask staff before leaving."
+        "body": "Confirm the store page, directions, contact options, and menu category first. This location has closed and moved to Green Sundae in Mississauga. For current product names, prices, and package details, use the menu or ask staff before leaving."
       }
     ],
     "faqs": [
       {
         "q": "Is Cafe Value a cannabis dispensary in Toronto?",
-        "a": "Yes. Cafe Value serves shoppers looking for a cannabis dispensary in Toronto. Use the store page for directions, contact options, and listed hours."
+        "a": "Yes. Cafe Value serves shoppers looking for a cannabis dispensary in Toronto. Use the store page for directions and contact options. This location has closed and moved to Green Sundae in Mississauga."
       },
       {
         "q": "What should I check before visiting Cafe Value?",
@@ -214,21 +214,21 @@ export const SEO_PAGES: SeoPageData[] = [
       },
       {
         "q": "Where should shoppers start?",
-        "a": "Open the cigarette category, then use the store page for directions, contact options, and listed hours."
+        "a": "Open the cigarette category, then use the store page for directions and contact options. This location has closed and moved to Green Sundae in Mississauga."
       }
     ]
   },
   {
     "slug": "weed-store-near-the-annex-spadina",
     "title": "Weed Store Near The Annex / Spadina | Cafe Value Cannabis",
-    "metaDescription": "Cafe Value Cannabis is the Annex walk-in at 654 Spadina Ave near Harbord and U of T. Open 10:00 AM – 12:00 AM daily. 510 Spadina streetcar, metered parking, adults 19+.",
+    "metaDescription": "Cafe Value Cannabis is the Annex walk-in at 654 Spadina Ave near Harbord and U of T. This location has closed and moved to Green Sundae in Mississauga. 510 Spadina streetcar, metered parking, adults 19+.",
     "h1": "Weed Store Near The Annex / Spadina",
     "icon": ">",
     "heroTagline": "654 Spadina Ave · Harbord · University of Toronto St. George",
     "sections": [
       {
         "heading": "The Annex walk-in on Spadina",
-        "body": "Cafe Value Cannabis sits at 654 Spadina Ave in The Annex, a short walk from Harbord Street and the University of Toronto St. George campus. This page is neighbourhood context. The homepage remains the visit hub for address, phone +1 (289) 807-4161, listed hours (10:00 AM – 12:00 AM daily, not 24 hours), map, and directions."
+        "body": "Cafe Value Cannabis sits at 654 Spadina Ave in The Annex, a short walk from Harbord Street and the University of Toronto St. George campus. This page is neighbourhood context. The homepage remains the visit hub for address, phone +1 (289) 807-4161, map, and directions. This location has closed and moved to Green Sundae in Mississauga."
       },
       {
         "heading": "Streetcar, subway, and parking",
@@ -242,7 +242,7 @@ export const SEO_PAGES: SeoPageData[] = [
     "faqs": [
       {
         "q": "What is the best first step for a The Annex / Spadina visit?",
-        "a": "Open the Cafe Value Cannabis homepage for address, hours, map, and directions, then use /visit for 510 Spadina streetcar, Spadina station, and parking notes."
+        "a": "Open the Cafe Value Cannabis homepage for address, map, and directions, then use /visit for 510 Spadina streetcar, Spadina station, and parking notes. This location has closed and moved to Green Sundae in Mississauga."
       },
       {
         "q": "Should shoppers rely on old blog prices?",
@@ -257,7 +257,7 @@ export const SEO_PAGES: SeoPageData[] = [
   {
     "slug": "dispensary-near-me-toronto",
     "title": "Cannabis Dispensary Near The Annex | Cafe Value",
-    "metaDescription": "Cafe Value Cannabis is the Annex walk-in at 654 Spadina Ave. Use the homepage for NAP and hours; this page is a supporting near-me note.",
+    "metaDescription": "Cafe Value Cannabis is the Annex walk-in at 654 Spadina Ave. Use the homepage for NAP. This location has closed and moved to Green Sundae in Mississauga. This page is a supporting near-me note.",
     "h1": "Cannabis Dispensary Near The Annex on Spadina",
     "noindex": true,
     "icon": "o",

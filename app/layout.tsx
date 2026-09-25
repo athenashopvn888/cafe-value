@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | Cafe Value",
   },
   description:
-    "Cafe Value Cannabis is the Annex walk-in dispensary at 654 Spadina Ave, Toronto, ON M5S 2H7. Open daily 10:00 AM – 12:00 AM (not 24 hours). Call +1 (289) 807-4161. Adults 19+.",
+    "Cafe Value Cannabis is the Annex walk-in dispensary at 654 Spadina Ave, Toronto, ON M5S 2H7. This location has closed and moved to Green Sundae in Mississauga. Call +1 (289) 807-4161. Adults 19+.",
   keywords: [
     "Annex dispensary",
     "Spadina cannabis",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: STORE.name,
     title: "Cafe Value Cannabis | Annex Spadina Dispensary",
     description:
-      "Walk-in cannabis store at 654 Spadina Ave in The Annex. Open daily 10:00 AM – 12:00 AM. Adults 19+.",
+      "Walk-in cannabis store at 654 Spadina Ave in The Annex. This location has closed and moved to Green Sundae in Mississauga. Adults 19+.",
     images: [
       {
         url: STORE.schemaImage,
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Cafe Value Cannabis | Annex Spadina Dispensary",
-    description: "Annex walk-in at 654 Spadina Ave. Open daily 10:00 AM – 12:00 AM. Call +1 (289) 807-4161.",
+    description: "Annex walk-in at 654 Spadina Ave. This location has closed and moved to Green Sundae in Mississauga. Call +1 (289) 807-4161.",
     images: [STORE.schemaImage],
   },
   robots: {
@@ -76,7 +76,7 @@ const jsonLd = {
       "@id": `${STORE.baseUrl}/#store`,
       name: STORE.name,
       description:
-        "Walk-in cannabis dispensary at 654 Spadina Ave in The Annex, Toronto. Spadina / Harbord / University of Toronto corridor. Open daily 10:00 AM to 12:00 AM. Adults 19+.",
+        "Walk-in cannabis dispensary at 654 Spadina Ave in The Annex, Toronto. Spadina / Harbord / University of Toronto corridor. This location has closed and moved to Green Sundae in Mississauga. Adults 19+.",
       url: STORE.homepageUrl,
       telephone: STORE.phoneIntl,
       image: STORE.schemaImage,
@@ -95,14 +95,6 @@ const jsonLd = {
         latitude: STORE.latitude,
         longitude: STORE.longitude,
       },
-      openingHoursSpecification: [
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-          opens: STORE.opens,
-          closes: STORE.closes,
-        },
-      ],
       areaServed: STORE.corridor.map((name) => ({
         "@type": "Place",
         name,
@@ -142,6 +134,12 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <p className="movedNotice">
+          <a href="https://greensundaecannabisdispensary.com">
+            We&apos;ve moved: Cafe Value is now Green Sundae Cannabis Dispensary, 723 Lakeshore Rd E, Mississauga ON L5G 1J7,
+          </a>{" "}
+          <a href="tel:+14377825669">(437) 782-5669</a>
+        </p>
         <Link className="deliveryAnnouncement" href="/delivery">
           NEW DELIVERY MENU IS HERE — CLICK TO EXPLORE
         </Link>

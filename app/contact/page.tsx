@@ -8,11 +8,11 @@ import { STORE, mapsEmbedUrl, mapsDirectionsUrl } from "../lib/storeIdentity";
 export const metadata: Metadata = {
   title: "Contact Cafe Value Cannabis | 654 Spadina Ave, The Annex",
   description:
-    "Visit Cafe Value Cannabis at 654 Spadina Ave, Toronto, ON M5S 2H7, in The Annex near Harbord Street. Open 10:00 AM – 12:00 AM daily — not 24 hours. Walk-ins welcome. Adults 19+.",
+    "Visit Cafe Value Cannabis at 654 Spadina Ave, Toronto, ON M5S 2H7, in The Annex near Harbord Street. This location has closed and moved to Green Sundae in Mississauga. Adults 19+.",
   openGraph: {
     title: "Contact Cafe Value Cannabis | Annex Spadina",
     description:
-      "654 Spadina Ave, The Annex. Open 10:00 AM – 12:00 AM daily. Call +1 (289) 807-4161.",
+      "654 Spadina Ave, The Annex. This location has closed and moved to Green Sundae in Mississauga. Call +1 (289) 807-4161.",
   },
 };
 
@@ -53,41 +53,7 @@ export default function ContactPage() {
             {/* Hours */}
             <div className={styles.infoCard}>
               <div className={styles.infoIcon}>🕒</div>
-              <h2 className={styles.infoTitle}>Hours</h2>
-              <div className={styles.hoursTable}>
-                <div className={styles.hoursRow}>
-                  <span>Monday</span>
-                  <span className={styles.hoursTime}>10:00 AM - 12:00 AM</span>
-                </div>
-                <div className={styles.hoursRow}>
-                  <span>Tuesday</span>
-                  <span className={styles.hoursTime}>10:00 AM - 12:00 AM</span>
-                </div>
-                <div className={styles.hoursRow}>
-                  <span>Wednesday</span>
-                  <span className={styles.hoursTime}>10:00 AM - 12:00 AM</span>
-                </div>
-                <div className={styles.hoursRow}>
-                  <span>Thursday</span>
-                  <span className={styles.hoursTime}>10:00 AM - 12:00 AM</span>
-                </div>
-                <div className={styles.hoursRow}>
-                  <span>Friday</span>
-                  <span className={styles.hoursTime}>10:00 AM - 12:00 AM</span>
-                </div>
-                <div className={styles.hoursRow}>
-                  <span>Saturday</span>
-                  <span className={styles.hoursTime}>10:00 AM - 12:00 AM</span>
-                </div>
-                <div className={styles.hoursRow}>
-                  <span>Sunday</span>
-                  <span className={styles.hoursTime}>10:00 AM - 12:00 AM</span>
-                </div>
-              </div>
-              <div className={styles.openBadge}>
-                <span className={styles.openDot}></span>
-                Open Daily — 10:00 AM to Midnight (not 24 hours)
-              </div>
+              <h2 className={styles.infoTitle}>{STORE.hoursNote}</h2>
             </div>
 
             {/* Walk-in */}

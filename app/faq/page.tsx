@@ -5,7 +5,7 @@ import styles from "./faq.module.css";
 
 export const metadata: Metadata = {
   title: "FAQ | Cafe Value Cannabis Annex Spadina",
-  description: "Hours, 510 Spadina transit, parking, ID, and menu questions for Cafe Value Cannabis at 654 Spadina Ave in The Annex. Open 10:00 AM – 12:00 AM daily.",
+  description: "510 Spadina transit, parking, ID, and menu questions for Cafe Value Cannabis at 654 Spadina Ave in The Annex. This location has closed and moved to Green Sundae in Mississauga.",
   alternates: {
     canonical: "https://www.cafevaluecannabisdispensary.com/faq",
   },
@@ -16,7 +16,7 @@ const FAQ_CATEGORIES = [
     title: "Location and Hours",
     faqs: [
       { q: "Where is Cafe Value located?", a: "Cafe Value Cannabis is at 654 Spadina Ave, Toronto, ON M5S 2H7, in The Annex near Harbord Street. Use the homepage for directions, map, and contact options before visiting." },
-      { q: "What are the listed hours?", a: "Cafe Value Cannabis is open daily from 10:00 AM to 12:00 AM (midnight). It is not a 24-hour store. Check the current homepage before visiting if timing matters." },
+      { q: "What are the listed hours?", a: "This location has closed and moved to Green Sundae in Mississauga." },
       { q: "How do I reach the store on TTC?", a: "Ride the 510 Spadina streetcar, or take Line 1 / Line 2 to Spadina station at Bloor and walk south toward Harbord. Parking is metered street parking on Spadina Avenue. See /visit for the full how-to-reach notes." },
     ],
   },
@@ -41,7 +41,7 @@ const FAQ_CATEGORIES = [
     faqs: [
       { q: "Does Cafe Value list Native cigarettes?", a: "The cigarette menu may show Native smoke brands such as Canadian Lights, Canadian Full, Putters, Canadian Goose Full, Canadian Goose Lights, Canadian Menthol, Canadian Classics Original, Canadian Classics Silver, Rolled Gold Lights, Nexus Full, Nexus Lights, and Time Full. Confirm current options through the menu or staff." },
       { q: "Where can I check $25 listings?", a: "Where those listings are shown, check the current menu or ask staff for the listed price and package details." },
-      { q: "Where should cigarette shoppers start?", a: "Open the cigarette category first, then use the store page for directions, contact options, and listed hours." },
+      { q: "Where should cigarette shoppers start?", a: "Open the cigarette category first, then use the store page for directions and contact options. This location has closed and moved to Green Sundae in Mississauga." },
     ],
   },
 ];
