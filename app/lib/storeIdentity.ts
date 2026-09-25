@@ -1,4 +1,6 @@
 /** Cafe Value Cannabis (CVC01) — standalone Annex / Spadina walk-in. Homepage is the NAP hub. */
+export const CLOSED_NOTICE = "This location has closed and moved to Green Sundae in Mississauga";
+
 export const STORE = {
   name: "Cafe Value Cannabis",
   shortName: "Cafe Value",
@@ -17,10 +19,8 @@ export const STORE = {
   phoneDisplay: "+1 (289) 807-4161",
   phoneIntl: "+12898074161",
   phoneTel: "tel:+12898074161",
-  hoursLabel: "10:00 AM – 12:00 AM",
-  hoursNote: "Open daily 10:00 AM – 12:00 AM (midnight). Not 24 hours.",
-  opens: "10:00",
-  closes: "00:00",
+  hoursLabel: CLOSED_NOTICE,
+  hoursNote: CLOSED_NOTICE,
   latitude: 43.6633088,
   longitude: -79.4025299,
   intersection: "Spadina Avenue at Harbord Street, in The Annex",
@@ -40,11 +40,11 @@ export type StoreFaq = { q: string; a: string };
 export const HOME_FAQS: StoreFaq[] = [
   {
     q: "Where is Cafe Value Cannabis?",
-    a: "Cafe Value Cannabis is the walk-in counter at 654 Spadina Ave, Toronto, ON M5S 2H7, on the Spadina spine in The Annex near Harbord Street and the University of Toronto St. George campus. Call +1 (289) 807-4161. This homepage is the visit hub for address, hours, map, and directions.",
+    a: "Cafe Value Cannabis is the walk-in counter at 654 Spadina Ave, Toronto, ON M5S 2H7, on the Spadina spine in The Annex near Harbord Street and the University of Toronto St. George campus. Call +1 (289) 807-4161. This homepage is the visit hub for address, map, and directions. This location has closed and moved to Green Sundae in Mississauga.",
   },
   {
     q: "What hours is Cafe Value Cannabis open?",
-    a: "The Spadina counter is open daily from 10:00 AM to 12:00 AM (midnight). Cafe Value Cannabis is not a 24-hour store. Confirm the listed hours on this homepage before a late visit.",
+    a: "This location has closed and moved to Green Sundae in Mississauga.",
   },
   {
     q: "How do I get to 654 Spadina Ave on TTC?",
@@ -56,7 +56,7 @@ export const HOME_FAQS: StoreFaq[] = [
   },
   {
     q: "Do I need ID to shop at Cafe Value Cannabis?",
-    a: "Yes. Cafe Value Cannabis is for adults 19+ with valid government photo ID. Bring ID for every visit, including evening walk-ins before midnight.",
+    a: "Yes. Cafe Value Cannabis is for adults 19+ with valid government photo ID. Bring ID for every visit.",
   },
   {
     q: "What can I browse on the Cafe Value menu?",
@@ -84,11 +84,11 @@ export const VISIT_FAQS: StoreFaq[] = [
   },
   {
     q: "Is Cafe Value Cannabis open 24 hours?",
-    a: "No. Listed hours are 10:00 AM to 12:00 AM daily. Do not plan a 3 a.m. walk-in. Call +1 (289) 807-4161 if a late evening visit depends on one item.",
+    a: "This location has closed and moved to Green Sundae in Mississauga.",
   },
   {
     q: "Can I walk in from campus or The Annex without an appointment?",
-    a: "Yes. Walk-ins are welcome during listed hours. Adults 19+ with government photo ID. No appointment is required.",
+    a: "Adults 19+ with government photo ID. This location has closed and moved to Green Sundae in Mississauga.",
   },
 ];
 

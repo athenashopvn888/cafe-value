@@ -188,7 +188,7 @@ export default function HomePage() {
             <span className={styles.heroFire}>Annex walk-in on Spadina.</span>
           </h1>
           <p className={styles.heroSubtitle}>
-            Flower, pre-rolls, edibles, and vapes at 654 Spadina Ave beside U of T St. George. Open daily 10:00 AM – 12:00 AM — not 24 hours. Adults 19+.
+            Flower, pre-rolls, edibles, and vapes at 654 Spadina Ave beside U of T St. George. This location has closed and moved to Green Sundae in Mississauga. Adults 19+.
           </p>
           <div className={styles.heroButtons}>
             <a href="#menu" className={styles.heroBtn}>
@@ -228,11 +228,6 @@ export default function HomePage() {
             <div className={styles.heroStat}>
               <span className={styles.heroStatNum}>$3</span>
               <span className={styles.heroStatLabel}>From /g</span>
-            </div>
-            <div className={styles.heroStatDivider}></div>
-            <div className={styles.heroStat}>
-              <span className={styles.heroStatNum}>10–12</span>
-              <span className={styles.heroStatLabel}>Daily</span>
             </div>
           </div>
         </div>
@@ -398,8 +393,7 @@ export default function HomePage() {
           <h2 id="weed-cannabis-heading">Weed &amp; Cannabis at Cafe Value</h2>
           <p>
             Cafe Value Cannabis is the walk-in counter at 654 Spadina Ave in The Annex, beside the University of Toronto
-            St. George campus. This homepage is the visit hub: address, phone {STORE.phoneDisplay}, listed hours
-            (10:00 AM – 12:00 AM daily), map, and directions live here. Use /visit only if you need the 510 Spadina
+            St. George campus. This homepage is the visit hub: address, phone {STORE.phoneDisplay}, map, and directions live here. This location has closed and moved to Green Sundae in Mississauga. Use /visit only if you need the 510 Spadina
             streetcar, Spadina station, or parking notes.
           </p>
           <div className={styles.weedModuleLinks}>
@@ -431,14 +425,7 @@ export default function HomePage() {
             </div>
             <div className={styles.storeCard}>
               <div className={styles.storeIcon}>🕒</div>
-              <h3 className={styles.storeCardTitle}>Hours</h3>
-              <p className={styles.storeCardText}>
-                Open 7 Days a Week
-                <br />
-                <span className={styles.storeHighlight}>{STORE.hoursLabel}</span>
-                <br />
-                Not 24 hours
-              </p>
+              <h3 className={styles.storeCardTitle}>{STORE.hoursNote}</h3>
             </div>
             <div className={styles.storeCard}>
               <div className={styles.storeIcon}>🔥</div>

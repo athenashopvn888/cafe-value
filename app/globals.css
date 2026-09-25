@@ -6,9 +6,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 /* -- CSS Variables -- */
-.deliveryAnnouncement {
+.movedNotice {
   position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1200;
+  display: block;
+  width: 100%;
+  height: var(--moved-notice-height);
+  min-height: var(--moved-notice-height);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0.45rem 1rem;
+  background: #7f1d1d;
+  border-bottom: 3px solid #fecaca;
+  color: #fff;
+  font: 700 clamp(0.78rem, 2.4vw, 0.95rem)/1.35 system-ui, sans-serif;
+  text-align: center;
+}
+
+.movedNotice a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.movedNotice a:hover,
+.movedNotice a:focus-visible {
+  color: #fff;
+}
+
+.movedNotice a:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+
+.deliveryAnnouncement {
+  position: fixed;
+  top: var(--moved-notice-height);
   right: 0;
   left: 0;
   z-index: 1100;
@@ -30,7 +66,7 @@
 }
 
 body > .deliveryAnnouncement ~ * nav {
-  top: var(--delivery-announcement-height) !important;
+  top: calc(var(--moved-notice-height) + var(--delivery-announcement-height)) !important;
 }
 
 .deliveryAnnouncement:hover,
@@ -46,6 +82,7 @@ body > .deliveryAnnouncement ~ * nav {
 }
 
 :root {
+  --moved-notice-height: 88px;
   --delivery-announcement-height: 42px;
   /* Core palette - clean white */
   --bg-primary: #ffffff;
@@ -131,7 +168,7 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   min-height: 100vh;
-  padding-top: var(--delivery-announcement-height);
+  padding-top: calc(var(--moved-notice-height) + var(--delivery-announcement-height));
 }
 
 /* Subtle organic background */
@@ -487,5 +524,17 @@ button { cursor: pointer; font-family: inherit; }
 }
 
 main:has(> [data-fleet-homepage-announcement]) > #main-nav {
-  top: calc(var(--delivery-announcement-height, 0px) + var(--fleet-homepage-announcement-height)) !important;
+  top: calc(var(--moved-notice-height, 0px) + var(--delivery-announcement-height, 0px) + var(--fleet-homepage-announcement-height)) !important;
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --moved-notice-height: 64px;
+  }
+}
+
+@media (max-width: 700px) {
+  :root {
+    --moved-notice-height: 120px;
+  }
 }

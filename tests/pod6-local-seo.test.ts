@@ -22,8 +22,8 @@ test("CVC01 homepage schema is CannabisStore + FAQPage with FMD phone and non-24
   assert.match(layout, /"@type": "CannabisStore"/);
   assert.match(layout, /telephone: STORE\.phoneIntl/);
   assert.match(identity, /phoneIntl: "\+12898074161"/);
-  assert.match(identity, /opens: "10:00"/);
-  assert.match(identity, /closes: "00:00"/);
+  assert.match(identity, /This location has closed and moved to Green Sundae in Mississauga/);
+  assert.doesNotMatch(layout, /OpeningHoursSpecification|openingHours/);
   assert.doesNotMatch(identity, /Open 24 Hours/);
   assert.match(home, /faqPageJsonLd\(HOME_FAQS\)/);
   assert.match(identity, /"@type": "FAQPage"/);
@@ -43,7 +43,7 @@ test("CVC01 /visit is a real Annex/Spadina how-to-reach page with NAP, transit, 
   assert.match(visit, /Harbord/);
   assert.match(visit, /stays the visit hub/i);
   assert.match(visit, /faqPageGraphNode\(VISIT_FAQS\)/);
-  assert.match(visit, /Not 24 hours|not a 24-hour|not 24 hours/i);
+  assert.match(visit, /This location has closed and moved to Green Sundae in Mississauga/);
   assert.match(sitemap, /\$\{BASE\}\/visit/);
 });
 
@@ -74,7 +74,8 @@ test("CVC01 has no Center St copy and does not claim 24h hours", () => {
   }
   const home = read("app/page.tsx");
   assert.match(home, /Spadina &amp; Harbord, The Annex/);
-  assert.match(home, /10–12/);
+  assert.match(home, /This location has closed and moved to Green Sundae in Mississauga/);
+  assert.doesNotMatch(home, /Open daily|10:00 AM/);
 });
 
 test("CVC01 titles and homepage stay Annex / Spadina, not city-wide Toronto Dispensary", () => {
@@ -120,5 +121,5 @@ test("CVC01 delivery NAP uses the FMD phone and Annex scope", () => {
   assert.match(delivery, /\+1 \(289\) 807-4161/);
   assert.doesNotMatch(delivery, /437\) 577-2589/);
   assert.match(delivery, /The Annex/);
-  assert.match(delivery, /not 24 hours/);
+  assert.match(delivery, /This location has closed and moved to Green Sundae in Mississauga/);
 });

@@ -36,7 +36,7 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar} id="main-nav">
-      {/* Top bar — logo + open now */}
+      {/* Top bar — logo */}
       <div className={styles.topBar}>
         <Link href="/" className={styles.logo}>
           <img
@@ -46,9 +46,8 @@ export default function Navbar() {
           />
         </Link>
         <div className={styles.topBarRight}>
-          <span className={styles.open}>
-            <span className={styles.dot}></span>
-            Open Now
+          <span className={styles.closedNotice}>
+            This location has closed and moved to Green Sundae in Mississauga
           </span>
         </div>
       </div>

@@ -17,7 +17,7 @@ const canonical = `${STORE.baseUrl}${STORE.visitPath}`;
 export const metadata: Metadata = {
   title: { absolute: "How to Reach Cafe Value Cannabis | Annex Spadina" },
   description:
-    "How to reach Cafe Value Cannabis at 654 Spadina Ave in The Annex: 510 Spadina streetcar, Spadina station, Harbord Street, metered parking. Open 10:00 AM–12:00 AM. Call +1 (289) 807-4161. Adults 19+.",
+    "How to reach Cafe Value Cannabis at 654 Spadina Ave in The Annex: 510 Spadina streetcar, Spadina station, Harbord Street, metered parking. This location has closed and moved to Green Sundae in Mississauga. Call +1 (289) 807-4161. Adults 19+.",
   alternates: { canonical },
   robots: { index: true, follow: true },
 };
@@ -31,7 +31,7 @@ const pageSchema = {
       url: canonical,
       name: "How to Reach Cafe Value Cannabis on Spadina in The Annex",
       description:
-        "Transit, parking, and corridor directions to the Cafe Value Cannabis walk-in at 654 Spadina Ave, The Annex. Open 10:00 AM to midnight.",
+        "Transit, parking, and corridor directions to the Cafe Value Cannabis walk-in at 654 Spadina Ave, The Annex. This location has closed and moved to Green Sundae in Mississauga.",
       isPartOf: { "@id": `${STORE.baseUrl}/#website` },
       about: { "@id": `${STORE.baseUrl}/#store` },
       speakable: {
@@ -63,9 +63,9 @@ export default function VisitPage() {
           <p className={styles.eyebrow}>How to reach · The Annex / Spadina / U of T · Adults 19+</p>
           <h1>How to Reach Cafe Value Cannabis on Spadina in The Annex</h1>
           <p className={styles.lede}>
-            This is the supporting reach page. The homepage stays the visit hub for NAP, hours, map, and directions.
-            Cafe Value Cannabis is the walk-in at 654 Spadina Ave — not a downtown King West pin, and not a 24-hour
-            counter.
+            This is the supporting reach page. The homepage stays the visit hub for NAP, map, and directions.
+            Cafe Value Cannabis is the walk-in at 654 Spadina Ave — not a downtown King West pin. This location has
+            closed and moved to Green Sundae in Mississauga.
           </p>
         </header>
 
@@ -102,8 +102,8 @@ export default function VisitPage() {
           <p>
             The 510 Spadina streetcar is the corridor ride. Stay on Spadina until the Harbord / Sussex stretch and walk
             to 654. If you are already on Line 1 or Line 2, get off at Spadina station at Bloor and walk south along
-            Spadina toward Harbord. Evening headways stretch, so check live TTC times if you are aiming for a visit
-            close to midnight — the counter closes at 12:00 AM.
+            Spadina toward Harbord. Evening headways stretch, so check live TTC times. This location has closed and
+            moved to Green Sundae in Mississauga.
           </p>
         </section>
 
@@ -128,7 +128,7 @@ export default function VisitPage() {
         <section>
           <h2>Hours honesty</h2>
           <p>
-            Cafe Value Cannabis does not stay open overnight. Listed hours are 10:00 AM to 12:00 AM daily. Bring valid
+            This location has closed and moved to Green Sundae in Mississauga. Bring valid
             government photo ID. Adults 19+ only. Posted menu names and prices move, so use the live menu when one exact
             pack is the reason for the trip.
           </p>

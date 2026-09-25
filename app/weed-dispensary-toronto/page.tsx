@@ -5,7 +5,7 @@ import { WeedOwnerPage } from "@/app/components/WeedOwnerPage";
 export const metadata: Metadata = {
   title: { absolute: "Weed Dispensary in The Annex | Cafe Value Cannabis" },
   description:
-    "Cafe Value Cannabis is the Annex walk-in at 654 Spadina Ave. Open daily 10:00 AM to midnight — not 24 hours. Use the homepage for NAP, hours, map, and directions.",
+    "Cafe Value Cannabis is the Annex walk-in at 654 Spadina Ave. This location has closed and moved to Green Sundae in Mississauga. Use the homepage for NAP, map, and directions.",
   alternates: {
     canonical: "https://www.cafevaluecannabisdispensary.com/weed-dispensary-toronto",
   },

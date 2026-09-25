@@ -20,7 +20,7 @@ export const TIER_SEO: Record<string, TierSeoData> = {
       },
       {
         "heading": "Local The Annex / Spadina Menu Tip",
-        "body": "If you searched for a weed dispensary in The Annex / Spadina or a cannabis dispensary in Toronto, keep the Exotic page open while you compare. Use the store page for directions, contact options, and listed hours."
+        "body": "If you searched for a weed dispensary in The Annex / Spadina or a cannabis dispensary in Toronto, keep the Exotic page open while you compare. Use the store page for directions and contact options. This location has closed and moved to Green Sundae in Mississauga."
       }
     ],
     "faqs": [
@@ -52,7 +52,7 @@ export const TIER_SEO: Record<string, TierSeoData> = {
       },
       {
         "heading": "Local The Annex / Spadina Menu Tip",
-        "body": "If you searched for a weed dispensary in The Annex / Spadina or a cannabis dispensary in Toronto, keep the Premium page open while you compare. Use the store page for directions, contact options, and listed hours."
+        "body": "If you searched for a weed dispensary in The Annex / Spadina or a cannabis dispensary in Toronto, keep the Premium page open while you compare. Use the store page for directions and contact options. This location has closed and moved to Green Sundae in Mississauga."
       }
     ],
     "faqs": [
@@ -84,7 +84,7 @@ export const TIER_SEO: Record<string, TierSeoData> = {
       },
       {
         "heading": "Local The Annex / Spadina Menu Tip",
-        "body": "If you searched for a weed dispensary in The Annex / Spadina or a cannabis dispensary in Toronto, keep the AAA+ page open while you compare. Use the store page for directions, contact options, and listed hours."
+        "body": "If you searched for a weed dispensary in The Annex / Spadina or a cannabis dispensary in Toronto, keep the AAA+ page open while you compare. Use the store page for directions and contact options. This location has closed and moved to Green Sundae in Mississauga."
       }
     ],
     "faqs": [
@@ -116,7 +116,7 @@ export const TIER_SEO: Record<string, TierSeoData> = {
       },
       {
         "heading": "Local The Annex / Spadina Menu Tip",
-        "body": "If you searched for a weed dispensary in The Annex / Spadina or a cannabis dispensary in Toronto, keep the AA page open while you compare. Use the store page for directions, contact options, and listed hours."
+        "body": "If you searched for a weed dispensary in The Annex / Spadina or a cannabis dispensary in Toronto, keep the AA page open while you compare. Use the store page for directions and contact options. This location has closed and moved to Green Sundae in Mississauga."
       }
     ],
     "faqs": [
@@ -148,7 +148,7 @@ export const TIER_SEO: Record<string, TierSeoData> = {
       },
       {
         "heading": "Local The Annex / Spadina Menu Tip",
-        "body": "If you searched for a weed dispensary in The Annex / Spadina or a cannabis dispensary in Toronto, keep the Budget page open while you compare. Use the store page for directions, contact options, and listed hours."
+        "body": "If you searched for a weed dispensary in The Annex / Spadina or a cannabis dispensary in Toronto, keep the Budget page open while you compare. Use the store page for directions and contact options. This location has closed and moved to Green Sundae in Mississauga."
       }
     ],
     "faqs": [

@@ -13,8 +13,8 @@ export default function Footer() {
             </div>
             <p className={styles.desc}>
               Cafe Value Cannabis is the Annex walk-in at 654 Spadina Ave,
-              Toronto, ON M5S 2H7. Flower, edibles, vapes, and more. Open daily
-              10:00 AM – 12:00 AM — not 24 hours. Adults 19+.
+              Toronto, ON M5S 2H7. Flower, edibles, vapes, and more. This location
+              has closed and moved to Green Sundae in Mississauga. Adults 19+.
             </p>
             <div className={styles.buttons}>
               <a
@@ -40,8 +40,7 @@ export default function Footer() {
               <span><a href="tel:+12898074161" style={{color: "inherit"}}>+1 (289) 807-4161</a></span>
             </div>
             <div className={styles.infoBlock}>
-              <span className={styles.infoLabel}>Hours:</span>
-              <span className={styles.highlight}>Daily 10:00 AM - 12:00 AM</span>
+              <span>This location has closed and moved to Green Sundae in Mississauga</span>
             </div>
           </div>
 

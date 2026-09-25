@@ -31,7 +31,6 @@ type StoreSchemaMarkup = {
     addressCountry: string;
   };
   priceRange: string;
-  openingHours?: string[];
   geo?: {
     "@type": "GeoCoordinates";
     latitude: number;
@@ -63,11 +62,6 @@ export function GBPLandingPage() {
     },
     "priceRange": "$$"
   };
-
-  // Inject real opening hours and coordinates if they exist
-  if (gbpLocation.hours && gbpLocation.hours.length > 0) {
-    schemaMarkup.openingHours = ["Mo-Su 10:00-00:00"];
-  }
 
   if (gbpLocation.latitude && gbpLocation.longitude) {
     schemaMarkup.geo = {
@@ -129,7 +123,7 @@ export function GBPLandingPage() {
       <section className={styles.section}>
         <h2 className={styles.h2}>Plan a Visit Near {gbpLocation.neighborhood}</h2>
         <p className={styles.infoText}>
-          Planning a visit to {gbpLocation.storeName} is easier when the local details are in one place. This page brings together the store address, hours, phone number, nearby areas like {nearbyAreaList}, and helpful category links for adults 19+ comparing general menu sections before visiting.
+          Planning a visit to {gbpLocation.storeName} is easier when the local details are in one place. This page brings together the store address, phone number, nearby areas like {nearbyAreaList}, and helpful category links for adults 19+ comparing general menu sections before visiting. This location has closed and moved to Green Sundae in Mississauga.
         </p>
         <p className={styles.infoText}>
           If you are coming from {landmarkList}, use the visit details below to confirm the location and review the main site categories before visiting.
@@ -169,7 +163,6 @@ export function GBPLandingPage() {
           </div>
           {gbpLocation.hours && gbpLocation.hours.length > 0 && (
             <div className={styles.napItem}>
-              <span className={styles.napLabel}>Hours</span>
               {gbpLocation.hours.map((line) => (
                 <span key={line} style={{ fontSize: "0.95rem" }}>{line}</span>
               ))}
@@ -204,7 +197,6 @@ export function GBPLandingPage() {
             </div>
             {gbpLocation.hours && gbpLocation.hours.length > 0 && (
               <div className={styles.napItem}>
-                <span className={styles.napLabel}>Store Hours</span>
                 {gbpLocation.hours.map((line) => (
                   <span key={line} style={{ fontSize: "0.95rem" }}>{line}</span>
                 ))}
@@ -271,7 +263,7 @@ export function GBPLandingPage() {
           <div className={styles.faqItem}>
             <h3 className={styles.faqQuestion}>How should I plan a visit to {gbpLocation.storeName}?</h3>
             <p className={styles.faqAnswer}>
-              Start by confirming the address, store hours, and nearby area details on this page. Then use the category links for general browsing context before visiting the store in person.
+              Start by confirming the address and nearby area details on this page. This location has closed and moved to Green Sundae in Mississauga. Then use the category links for general browsing context.
             </p>
           </div>
           <div className={styles.faqItem}>
@@ -287,7 +279,7 @@ export function GBPLandingPage() {
           <div className={styles.faqItem}>
             <h3 className={styles.faqQuestion}>What can customers check before visiting {gbpLocation.storeName}?</h3>
             <p className={styles.faqAnswer}>
-              Customers can use this local page to review the store address, contact details, hours shown on the page, and menu/category links before visiting.
+              Customers can use this local page to review the store address, contact details, and menu/category links. This location has closed and moved to Green Sundae in Mississauga.
             </p>
           </div>
           <div className={styles.faqItem}>
@@ -305,7 +297,7 @@ export function GBPLandingPage() {
           <div className={styles.faqItem}>
             <h3 className={styles.faqQuestion}>How should customers confirm current hours?</h3>
             <p className={styles.faqAnswer}>
-              Customers should use the hours shown on the current store page or contact the store directly before visiting.
+              This location has closed and moved to Green Sundae in Mississauga.
             </p>
           </div>
         </div>

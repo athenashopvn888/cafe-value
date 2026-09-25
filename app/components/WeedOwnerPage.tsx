@@ -5,9 +5,9 @@ import { STORE } from "../lib/storeIdentity";
 
 const faqs = [
   ["Where is Cafe Value Cannabis?", "Cafe Value Cannabis is the walk-in at 654 Spadina Ave, Toronto, ON M5S 2H7, in The Annex near Harbord Street."],
-  ["What are Cafe Value Cannabis's hours?", "Cafe Value Cannabis is open daily from 10:00 AM to midnight. It is not a 24-hour store."],
+  ["What are Cafe Value Cannabis's hours?", "This location has closed and moved to Green Sundae in Mississauga."],
   ["Is Cafe Value Cannabis for adults 19+?", "Yes. Cafe Value Cannabis is for adults 19+ with valid government photo ID."],
-  ["How do I reach the Spadina counter?", "Use the homepage for address, hours, map, and directions. The /visit page covers the 510 Spadina streetcar, Spadina station, and parking."],
+  ["How do I reach the Spadina counter?", "Use the homepage for address, map, and directions. The /visit page covers the 510 Spadina streetcar, Spadina station, and parking. This location has closed and moved to Green Sundae in Mississauga."],
   ["What is the difference between weed and cannabis?", "Weed is common conversational terminology for cannabis. Cannabis is the broader term and can include several different product formats."],
   ["Where can I begin if value matters to me?", "The Budget section provides a value-oriented flower starting point without implying any current price, deal or promotion."],
   ["How can I ask about a specific product?", "Call Cafe Value Cannabis at +1 289-807-4161 before making a special trip for one particular item."],
@@ -28,7 +28,6 @@ export function WeedOwnerPage() {
       postalCode: STORE.postalCode,
       addressCountry: STORE.addressCountry,
     },
-    openingHours: "Mo-Su 10:00-00:00",
   };
 
   return (
@@ -37,7 +36,7 @@ export function WeedOwnerPage() {
       <header className={styles.hero}>
         <p className={styles.eyebrow}>Cafe Value Cannabis · The Annex · Adults 19+</p>
         <h1>Cafe Value Cannabis — Annex walk-in on Spadina</h1>
-        <p>Supporting notes for 654 Spadina Ave. The homepage stays the visit hub for NAP, hours, map, and directions.</p>
+        <p>Supporting notes for 654 Spadina Ave. The homepage stays the visit hub for NAP, map, and directions. This location has closed and moved to Green Sundae in Mississauga.</p>
         <div className={styles.actions}>
           <Link href="/" className={styles.primary}>Homepage visit hub</Link>
           <Link href="/visit" className={styles.secondary}>How to reach Spadina</Link>
@@ -46,7 +45,7 @@ export function WeedOwnerPage() {
 
       <section className={styles.section}>
         <h2>Weed and Cannabis at Cafe Value Cannabis</h2>
-        <p>Cafe Value Cannabis is located at 654 Spadina Ave in The Annex and is open daily from 10:00 AM to midnight — not 24 hours.</p>
+        <p>Cafe Value Cannabis is located at 654 Spadina Ave in The Annex. This location has closed and moved to Green Sundae in Mississauga.</p>
         <p>Adults 19+ can begin with flower or narrow their choices by the type of cannabis they are interested in. The most useful next step is deciding whether flower, value-focused options or another cannabis format is the priority.</p>
         <p>For one specific item, call <a href={STORE.phoneTel}>+1 289-807-4161</a> before making a special trip.</p>
       </section>
@@ -85,7 +84,7 @@ export function WeedOwnerPage() {
           <strong>Cafe Value Cannabis</strong><br />
           654 Spadina Ave<br />Toronto, ON M5S 2H7<br />
           <a href={STORE.phoneTel}>+1 289-807-4161</a><br />
-          10:00 AM–12:00 AM daily (not 24 hours)
+          This location has closed and moved to Green Sundae in Mississauga
         </address>
         <p>Adults 19+. If your visit depends on one particular item, call ahead first. Streetcar and parking notes are on <Link href="/visit">how to reach The Annex</Link>.</p>
       </section>
