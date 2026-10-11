@@ -4,7 +4,8 @@ import Link from "next/link";
 import Navbar from "./components/Navbar";
 import HiringCallout from "./components/HiringCallout";
 import Footer from "./components/Footer";
-import { allFlowers, fetchLiveProducts } from "./lib/products";
+import { headers } from "next/headers";
+import { allFlowers, type FlowerProduct } from "./lib/products";
 import { storeTierRange, tierRangeText } from "./lib/tierPriceRanges";
 import {
   HOME_FAQS,
@@ -113,6 +114,21 @@ const TIER_KEY_BY_SLUG: Record<string, string> = {
   "budget-weed": "BUDGET",
 };
 
+async function fetchHomepageFlowers(): Promise<FlowerProduct[]> {
+  try {
+    const requestHeaders = await headers();
+    const host = (requestHeaders.get("x-forwarded-host") || requestHeaders.get("host") || "").split(",")[0].trim();
+    if (!host) return [];
+    const protocol = (requestHeaders.get("x-forwarded-proto") || (host.startsWith("localhost") ? "http" : "https")).split(",")[0].trim();
+    const response = await fetch(`${protocol}://${host}/api/tv-data?type=flowers`, { cache: "no-store" });
+    if (!response.ok) return [];
+    const data: unknown = await response.json();
+    return Array.isArray(data) ? data as FlowerProduct[] : [];
+  } catch {
+    return [];
+  }
+}
+
 /* ── Build featured strains dynamically from real inventory ── */
 function buildFeatured() {
   const pool = [...allFlowers].filter(f => f.image);
@@ -167,8 +183,7 @@ function getTierColor(tier: string) {
 }
 
 export default async function HomePage() {
-  const liveProducts = await fetchLiveProducts();
-  const liveFlowers = liveProducts.isLive ? liveProducts.flowers : [];
+  const liveFlowers = await fetchHomepageFlowers();
   return (
     <main className={styles.main}>
       <script
