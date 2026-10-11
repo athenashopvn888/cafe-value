@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import HiringCallout from "./components/HiringCallout";
 import Footer from "./components/Footer";
 import { allFlowers } from "./lib/products";
+import { storeTierRange, tierRangeText } from "./lib/tierPriceRanges";
 import {
   HOME_FAQS,
   STORE,
@@ -101,6 +102,14 @@ const TIERS = [
     banner: "/banners/cafe-value-edibles-prerolls-more-banner.webp",
   },
 ];
+
+const TIER_KEY_BY_SLUG: Record<string, string> = {
+  "exotic-weed": "EXOTIC",
+  "premium-weed": "PREMIUM",
+  "aaa-weed": "AAA+",
+  "aa-weed": "AA",
+  "budget-weed": "BUDGET",
+};
 
 /* ── Build featured strains dynamically from real inventory ── */
 function buildFeatured() {
@@ -244,6 +253,7 @@ export default function HomePage() {
             />
           </div>
 
+          <p className="price-rule-notice"><strong>IN-STORE PRICES ONLY.</strong> These prices do not apply to delivery orders. Delivery has its own prices. Why? <Link href="/faq#delivery-price-rule">See the FAQ</Link></p>
           <div className={styles.tierGrid}>
             {TIERS.map((tier, i) => (
               <a
@@ -281,14 +291,14 @@ export default function HomePage() {
                     </span>
                   </div>
                   <div className={styles.tierCardPrice}>
-                    {tier.unitPrice !== null && (
-                      <span className={styles.tierCardUnitPrice}>
-                        ${tier.unitPrice}/g
-                      </span>
-                    )}
+                    {TIER_KEY_BY_SLUG[tier.slug] ? (() => {
+                      const line = tierRangeText(storeTierRange(allFlowers, TIER_KEY_BY_SLUG[tier.slug]));
+                      return line ? <span className={styles.tierCardUnitPrice}><small className="price-scope-label">In-store price</small>{line}</span> : null;
+                    })() : null}
                   </div>
                   {tier.deal3g && (
                     <div className={styles.tierCardDeals}>
+                      <small className="price-scope-label">In-store price</small>
                       <span className={styles.tierCardDeal}>🎁 {tier.deal3g}</span>
                       {tier.deal6g && <span className={styles.tierCardDeal}>🎁 {tier.deal6g}</span>}
                     </div>
