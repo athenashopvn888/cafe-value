@@ -4,7 +4,9 @@ import Link from "next/link";
 import Navbar from "./components/Navbar";
 import HiringCallout from "./components/HiringCallout";
 import Footer from "./components/Footer";
-import { allFlowers } from "./lib/products";
+import { headers } from "next/headers";
+import { allFlowers, type FlowerProduct } from "./lib/products";
+import { storeTierRange, tierRangeText } from "./lib/tierPriceRanges";
 import {
   HOME_FAQS,
   STORE,
@@ -15,6 +17,8 @@ import {
 } from "./lib/storeIdentity";
 
 /* ── Tier data (will come from Supabase later) ── */
+export const dynamic = "force-dynamic";
+
 const TIERS = [
   {
     name: "EXOTIC WEED",
@@ -102,6 +106,29 @@ const TIERS = [
   },
 ];
 
+const TIER_KEY_BY_SLUG: Record<string, string> = {
+  "exotic-weed": "EXOTIC",
+  "premium-weed": "PREMIUM",
+  "aaa-weed": "AAA+",
+  "aa-weed": "AA",
+  "budget-weed": "BUDGET",
+};
+
+async function fetchHomepageFlowers(): Promise<FlowerProduct[]> {
+  try {
+    const requestHeaders = await headers();
+    const host = (requestHeaders.get("x-forwarded-host") || requestHeaders.get("host") || "").split(",")[0].trim();
+    if (!host) return [];
+    const protocol = (requestHeaders.get("x-forwarded-proto") || (host.startsWith("localhost") ? "http" : "https")).split(",")[0].trim();
+    const response = await fetch(`${protocol}://${host}/api/tv-data?type=flowers`, { cache: "no-store" });
+    if (!response.ok) return [];
+    const data: unknown = await response.json();
+    return Array.isArray(data) ? data as FlowerProduct[] : [];
+  } catch {
+    return [];
+  }
+}
+
 /* ── Build featured strains dynamically from real inventory ── */
 function buildFeatured() {
   const pool = [...allFlowers].filter(f => f.image);
@@ -155,7 +182,8 @@ function getTierColor(tier: string) {
   return t?.color || "#94a3b8";
 }
 
-export default function HomePage() {
+export default async function HomePage() {
+  const liveFlowers = await fetchHomepageFlowers();
   return (
     <main className={styles.main}>
       <script
@@ -244,6 +272,7 @@ export default function HomePage() {
             />
           </div>
 
+          <p className="price-rule-notice"><strong>IN-STORE PRICES ONLY.</strong> These prices do not apply to delivery orders. Delivery has its own prices. Why? <Link href="/faq#delivery-price-rule">See the FAQ</Link></p>
           <div className={styles.tierGrid}>
             {TIERS.map((tier, i) => (
               <a
@@ -281,14 +310,14 @@ export default function HomePage() {
                     </span>
                   </div>
                   <div className={styles.tierCardPrice}>
-                    {tier.unitPrice !== null && (
-                      <span className={styles.tierCardUnitPrice}>
-                        ${tier.unitPrice}/g
-                      </span>
-                    )}
+                    {TIER_KEY_BY_SLUG[tier.slug] ? (() => {
+                      const line = tierRangeText(storeTierRange(liveFlowers, TIER_KEY_BY_SLUG[tier.slug]));
+                      return line ? <span className={styles.tierCardUnitPrice}><small className="price-scope-label">In-store price</small>{line}</span> : null;
+                    })() : null}
                   </div>
                   {tier.deal3g && (
                     <div className={styles.tierCardDeals}>
+                      <small className="price-scope-label">In-store price</small>
                       <span className={styles.tierCardDeal}>🎁 {tier.deal3g}</span>
                       {tier.deal6g && <span className={styles.tierCardDeal}>🎁 {tier.deal6g}</span>}
                     </div>
