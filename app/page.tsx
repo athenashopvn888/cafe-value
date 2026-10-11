@@ -4,7 +4,7 @@ import Link from "next/link";
 import Navbar from "./components/Navbar";
 import HiringCallout from "./components/HiringCallout";
 import Footer from "./components/Footer";
-import { allFlowers } from "./lib/products";
+import { allFlowers, fetchLiveProducts } from "./lib/products";
 import { storeTierRange, tierRangeText } from "./lib/tierPriceRanges";
 import {
   HOME_FAQS,
@@ -16,6 +16,8 @@ import {
 } from "./lib/storeIdentity";
 
 /* ── Tier data (will come from Supabase later) ── */
+export const dynamic = "force-dynamic";
+
 const TIERS = [
   {
     name: "EXOTIC WEED",
@@ -164,7 +166,9 @@ function getTierColor(tier: string) {
   return t?.color || "#94a3b8";
 }
 
-export default function HomePage() {
+export default async function HomePage() {
+  const liveProducts = await fetchLiveProducts();
+  const liveFlowers = liveProducts.isLive ? liveProducts.flowers : [];
   return (
     <main className={styles.main}>
       <script
@@ -292,7 +296,7 @@ export default function HomePage() {
                   </div>
                   <div className={styles.tierCardPrice}>
                     {TIER_KEY_BY_SLUG[tier.slug] ? (() => {
-                      const line = tierRangeText(storeTierRange(allFlowers, TIER_KEY_BY_SLUG[tier.slug]));
+                      const line = tierRangeText(storeTierRange(liveFlowers, TIER_KEY_BY_SLUG[tier.slug]));
                       return line ? <span className={styles.tierCardUnitPrice}><small className="price-scope-label">In-store price</small>{line}</span> : null;
                     })() : null}
                   </div>
