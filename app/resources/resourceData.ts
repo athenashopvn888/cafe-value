@@ -7,13 +7,21 @@ export interface ResourceCard {
 export interface ResourceSection {
   heading: string;
   body: string;
+  paragraphs?: string[];
   bullets?: string[];
+  faqs?: ResourceFaq[];
+}
+
+export interface ResourceFaq {
+  question: string;
+  answer: string;
 }
 
 export interface ResourcePage {
   slug: string;
   title: string;
   seoTitle: string;
+  absoluteTitle?: boolean;
   description: string;
   eyebrow: string;
   intro: string;
@@ -34,6 +42,11 @@ export const RESOURCE_PAGES: ResourcePage[] = [
         "title": "Menu Guide",
         "href": "/resources/menu-guide",
         "text": "Pick the category first, then compare the details that matter."
+      },
+      {
+        "title": "Cannabis Dispensary vs. Weed Dispensary",
+        "href": "/resources/cannabis-dispensary-vs-weed-dispensary",
+        "text": "Learn how common dispensary and near-me search terms relate."
       },
       {
         "title": "Flower Guide",
@@ -69,6 +82,60 @@ export const RESOURCE_PAGES: ResourcePage[] = [
       {
         "heading": "Local Notes For The Annex / Spadina",
         "body": "Cafe Value serves shoppers around Spadina Ave and Toronto. If you searched for a weed dispensary in The Annex / Spadina, this resource section keeps the visit simple: right store, right category, right next step."
+      }
+    ]
+  },
+  {
+    "slug": "cannabis-dispensary-vs-weed-dispensary",
+    "title": "Cannabis Dispensary vs. Weed Dispensary in Local Search",
+    "seoTitle": "Cannabis vs Weed Dispensary Guide | Cafe Value Cannabis",
+    "absoluteTitle": true,
+    "description": "Weed dispensary, cannabis dispensary or dispensary near me? Learn how these local-search terms connect at Cafe Value Cannabis in Toronto.",
+    "eyebrow": "Dispensary Terminology Guide",
+    "intro": "When someone searches locally, terminology can be more flexible than it looks. Cannabis is the formal term, weed is common conversational language, and dispensary identifies the business type people are trying to locate. That is why several different phrases can lead toward the same local-search goal.",
+    "cards": [
+      {
+        "title": "Cafe Value Weed Dispensary in Toronto",
+        "href": "/weed-dispensary-toronto/",
+        "text": "Use the local store page for verified visit information."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Formal Language vs. Everyday Language",
+        "body": "“Cannabis” is the language most often used in formal business and regulatory contexts. “Weed” is common everyday language. “Dispensary” tells the searcher what kind of place they are trying to find.",
+        "paragraphs": [
+          "That is why a customer can move between cannabis, weed, store and dispensary wording without necessarily changing the underlying objective."
+        ]
+      },
+      {
+        "heading": "Why the Local Page Still Leads",
+        "body": "The purpose of this article is educational. It explains the relationship among dispensary, cannabis dispensary, weed dispensary and cannabis store.",
+        "paragraphs": [
+          "For real visit intent in Toronto, Cafe Value Cannabis should continue directing users to the existing canonical local/store page, where the business’s verified location information belongs."
+        ]
+      },
+      {
+        "heading": "Frequently Asked Questions",
+        "body": "",
+        "faqs": [
+          {
+            "question": "Is cannabis the same word as weed?",
+            "answer": "They overlap in everyday use, but cannabis is the formal term while weed is more conversational."
+          },
+          {
+            "question": "What does dispensary mean in this context?",
+            "answer": "It identifies the local business type a searcher is trying to find."
+          },
+          {
+            "question": "Can one page support several related searches?",
+            "answer": "Yes. A useful page can naturally explain the connected terminology without repeating every phrase unnaturally."
+          },
+          {
+            "question": "What is the role of the local store page?",
+            "answer": "It remains the main page for location and visit intent, while this guide provides supporting topical context."
+          }
+        ]
       }
     ]
   },

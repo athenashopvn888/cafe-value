@@ -37,13 +37,24 @@ export default function ResourceView({ page }: ResourceViewProps) {
         {page.sections.map((section) => (
           <article key={section.heading} className={styles.section}>
             <h2>{section.heading}</h2>
-            <p>{section.body}</p>
+            {section.body && <p>{section.body}</p>}
+            {section.paragraphs?.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             {section.bullets && (
               <ul>
                 {section.bullets.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
               </ul>
+            )}
+            {section.faqs && (
+              <div className={styles.faqList}>
+                {section.faqs.map((faq) => (
+                  <div key={faq.question} className={styles.faq}>
+                    <h3>{faq.question}</h3>
+                    <p>{faq.answer}</p>
+                  </div>
+                ))}
+              </div>
             )}
           </article>
         ))}
